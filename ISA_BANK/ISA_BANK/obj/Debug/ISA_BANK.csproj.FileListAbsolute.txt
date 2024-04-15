@@ -1,0 +1,15 @@
+D:\Michelle (nitip)\KULIAH\SEMESTER 4\ISA\ISA_BANK\ISA_BANK\ISA_BANK\bin\Debug\ISA_BANK.exe.config
+D:\Michelle (nitip)\KULIAH\SEMESTER 4\ISA\ISA_BANK\ISA_BANK\ISA_BANK\bin\Debug\ISA_BANK.exe
+D:\Michelle (nitip)\KULIAH\SEMESTER 4\ISA\ISA_BANK\ISA_BANK\ISA_BANK\bin\Debug\ISA_BANK.pdb
+D:\Michelle (nitip)\KULIAH\SEMESTER 4\ISA\ISA_BANK\ISA_BANK\ISA_BANK\obj\Debug\ISA_BANK.csproj.AssemblyReference.cache
+D:\Michelle (nitip)\KULIAH\SEMESTER 4\ISA\ISA_BANK\ISA_BANK\ISA_BANK\obj\Debug\ISA_BANK.FormLogin.resources
+D:\Michelle (nitip)\KULIAH\SEMESTER 4\ISA\ISA_BANK\ISA_BANK\ISA_BANK\obj\Debug\ISA_BANK.MainForm.resources
+D:\Michelle (nitip)\KULIAH\SEMESTER 4\ISA\ISA_BANK\ISA_BANK\ISA_BANK\obj\Debug\ISA_BANK.Properties.Resources.resources
+D:\Michelle (nitip)\KULIAH\SEMESTER 4\ISA\ISA_BANK\ISA_BANK\ISA_BANK\obj\Debug\ISA_BANK.csproj.GenerateResource.cache
+D:\Michelle (nitip)\KULIAH\SEMESTER 4\ISA\ISA_BANK\ISA_BANK\ISA_BANK\obj\Debug\ISA_BANK.csproj.CoreCompileInputs.cache
+D:\Michelle (nitip)\KULIAH\SEMESTER 4\ISA\ISA_BANK\ISA_BANK\ISA_BANK\obj\Debug\ISA_BANK.exe
+D:\Michelle (nitip)\KULIAH\SEMESTER 4\ISA\ISA_BANK\ISA_BANK\ISA_BANK\obj\Debug\ISA_BANK.pdb
+D:\Michelle (nitip)\KULIAH\SEMESTER 4\ISA\ISA_BANK\ISA_BANK\ISA_BANK\obj\Debug\ISA_BANK.FormMain.resources
+D:\Michelle (nitip)\KULIAH\SEMESTER 4\ISA\ISA_BANK\ISA_BANK\ISA_BANK\obj\Debug\ISA_BANK.FormRegister.resources
+D:\Michelle (nitip)\KULIAH\SEMESTER 4\ISA\ISA_BANK\ISA_BANK\ISA_BANK\obj\Debug\ISA_BANK.FormTransactionHistory.resources
+D:\Michelle (nitip)\KULIAH\SEMESTER 4\ISA\ISA_BANK\ISA_BANK\ISA_BANK\obj\Debug\ISA_BANK.FormTransfer.resources
