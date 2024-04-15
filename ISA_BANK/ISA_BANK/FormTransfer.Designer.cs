@@ -30,16 +30,16 @@
         {
             this.lblTransfer = new System.Windows.Forms.Label();
             this.gbFrom = new System.Windows.Forms.GroupBox();
-            this.txtCustName = new System.Windows.Forms.TextBox();
-            this.lblCustName = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txtAccNum = new System.Windows.Forms.TextBox();
-            this.lblAccNum = new System.Windows.Forms.Label();
+            this.btnSearch = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.lblCurBalance = new System.Windows.Forms.Label();
-            this.btnSearch = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtAccNum = new System.Windows.Forms.TextBox();
+            this.lblAccNum = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtCustName = new System.Windows.Forms.TextBox();
+            this.lblCustName = new System.Windows.Forms.Label();
             this.gbTo = new System.Windows.Forms.GroupBox();
             this.button1 = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
@@ -93,69 +93,15 @@
             this.gbFrom.TabStop = false;
             this.gbFrom.Text = "From";
             // 
-            // txtCustName
+            // btnSearch
             // 
-            this.txtCustName.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCustName.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.txtCustName.Location = new System.Drawing.Point(314, 59);
-            this.txtCustName.Margin = new System.Windows.Forms.Padding(4);
-            this.txtCustName.Name = "txtCustName";
-            this.txtCustName.Size = new System.Drawing.Size(549, 34);
-            this.txtCustName.TabIndex = 5;
-            // 
-            // lblCustName
-            // 
-            this.lblCustName.AutoSize = true;
-            this.lblCustName.BackColor = System.Drawing.Color.Transparent;
-            this.lblCustName.Font = new System.Drawing.Font("Microsoft YaHei", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCustName.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblCustName.Location = new System.Drawing.Point(23, 55);
-            this.lblCustName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblCustName.Name = "lblCustName";
-            this.lblCustName.Size = new System.Drawing.Size(233, 36);
-            this.lblCustName.TabIndex = 4;
-            this.lblCustName.Text = "Customer Name";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(274, 55);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(22, 36);
-            this.label1.TabIndex = 6;
-            this.label1.Text = ":";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(274, 112);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(22, 36);
-            this.label2.TabIndex = 9;
-            this.label2.Text = ":";
-            // 
-            // txtAccNum
-            // 
-            this.txtAccNum.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAccNum.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.txtAccNum.Location = new System.Drawing.Point(314, 116);
-            this.txtAccNum.Margin = new System.Windows.Forms.Padding(4);
-            this.txtAccNum.Name = "txtAccNum";
-            this.txtAccNum.Size = new System.Drawing.Size(549, 34);
-            this.txtAccNum.TabIndex = 8;
-            // 
-            // lblAccNum
-            // 
-            this.lblAccNum.AutoSize = true;
-            this.lblAccNum.BackColor = System.Drawing.Color.Transparent;
-            this.lblAccNum.Font = new System.Drawing.Font("Microsoft YaHei", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAccNum.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblAccNum.Location = new System.Drawing.Point(23, 112);
-            this.lblAccNum.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblAccNum.Name = "lblAccNum";
-            this.lblAccNum.Size = new System.Drawing.Size(244, 36);
-            this.lblAccNum.TabIndex = 7;
-            this.lblAccNum.Text = "Account Number";
+            this.btnSearch.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSearch.Location = new System.Drawing.Point(761, 228);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(102, 37);
+            this.btnSearch.TabIndex = 13;
+            this.btnSearch.Text = "Search";
+            this.btnSearch.UseVisualStyleBackColor = true;
             // 
             // label3
             // 
@@ -189,15 +135,69 @@
             this.lblCurBalance.TabIndex = 10;
             this.lblCurBalance.Text = "Current Balance";
             // 
-            // btnSearch
+            // label2
             // 
-            this.btnSearch.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSearch.Location = new System.Drawing.Point(761, 228);
-            this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(102, 37);
-            this.btnSearch.TabIndex = 13;
-            this.btnSearch.Text = "Search";
-            this.btnSearch.UseVisualStyleBackColor = true;
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(274, 112);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(22, 36);
+            this.label2.TabIndex = 9;
+            this.label2.Text = ":";
+            // 
+            // txtAccNum
+            // 
+            this.txtAccNum.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAccNum.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.txtAccNum.Location = new System.Drawing.Point(314, 116);
+            this.txtAccNum.Margin = new System.Windows.Forms.Padding(4);
+            this.txtAccNum.Name = "txtAccNum";
+            this.txtAccNum.Size = new System.Drawing.Size(549, 34);
+            this.txtAccNum.TabIndex = 8;
+            // 
+            // lblAccNum
+            // 
+            this.lblAccNum.AutoSize = true;
+            this.lblAccNum.BackColor = System.Drawing.Color.Transparent;
+            this.lblAccNum.Font = new System.Drawing.Font("Microsoft YaHei", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAccNum.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblAccNum.Location = new System.Drawing.Point(23, 112);
+            this.lblAccNum.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblAccNum.Name = "lblAccNum";
+            this.lblAccNum.Size = new System.Drawing.Size(244, 36);
+            this.lblAccNum.TabIndex = 7;
+            this.lblAccNum.Text = "Account Number";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(274, 55);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(22, 36);
+            this.label1.TabIndex = 6;
+            this.label1.Text = ":";
+            // 
+            // txtCustName
+            // 
+            this.txtCustName.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCustName.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.txtCustName.Location = new System.Drawing.Point(314, 59);
+            this.txtCustName.Margin = new System.Windows.Forms.Padding(4);
+            this.txtCustName.Name = "txtCustName";
+            this.txtCustName.Size = new System.Drawing.Size(549, 34);
+            this.txtCustName.TabIndex = 5;
+            // 
+            // lblCustName
+            // 
+            this.lblCustName.AutoSize = true;
+            this.lblCustName.BackColor = System.Drawing.Color.Transparent;
+            this.lblCustName.Font = new System.Drawing.Font("Microsoft YaHei", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCustName.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblCustName.Location = new System.Drawing.Point(23, 55);
+            this.lblCustName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblCustName.Name = "lblCustName";
+            this.lblCustName.Size = new System.Drawing.Size(233, 36);
+            this.lblCustName.TabIndex = 4;
+            this.lblCustName.Text = "Customer Name";
             // 
             // gbTo
             // 

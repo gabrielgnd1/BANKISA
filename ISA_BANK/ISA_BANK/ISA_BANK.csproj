@@ -46,6 +46,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DB_CLASS\Akun.cs" />
+    <Compile Include="DB_CLASS\Cabang.cs" />
+    <Compile Include="DB_CLASS\CS.cs" />
+    <Compile Include="DB_CLASS\Nasabah.cs" />
+    <Compile Include="DB_CLASS\Rekening.cs" />
+    <Compile Include="FormAccountDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAccountDetails.Designer.cs">
+      <DependentUpon>FormAccountDetails.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormCreateNewBankAccount.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -70,6 +81,24 @@
     <Compile Include="FormRegister.Designer.cs">
       <DependentUpon>FormRegister.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormTes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTes.Designer.cs">
+      <DependentUpon>FormTes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTes3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTes3.Designer.cs">
+      <DependentUpon>FormTes3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formtesssss.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formtesssss.Designer.cs">
+      <DependentUpon>Formtesssss.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormTransactionHistory.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -82,15 +111,24 @@
     <Compile Include="FormTransfer.Designer.cs">
       <DependentUpon>FormTransfer.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormUpdateAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUpdateAccount.Designer.cs">
+      <DependentUpon>FormUpdateAccount.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainFormLama.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MainFormLama.Designer.cs">
       <DependentUpon>MainFormLama.cs</DependentUpon>
     </Compile>
-    <Compile Include="Nasabah.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TESTGIT\test.cs" />
+    <EmbeddedResource Include="FormAccountDetails.resx">
+      <DependentUpon>FormAccountDetails.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormCreateNewBankAccount.resx">
       <DependentUpon>FormCreateNewBankAccount.cs</DependentUpon>
     </EmbeddedResource>
@@ -103,11 +141,17 @@
     <EmbeddedResource Include="FormRegister.resx">
       <DependentUpon>FormRegister.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormTes.resx">
+      <DependentUpon>FormTes.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormTransactionHistory.resx">
       <DependentUpon>FormTransactionHistory.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormTransfer.resx">
       <DependentUpon>FormTransfer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUpdateAccount.resx">
+      <DependentUpon>FormUpdateAccount.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainFormLama.resx">
       <DependentUpon>MainFormLama.cs</DependentUpon>
@@ -134,8 +178,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="IMG\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
