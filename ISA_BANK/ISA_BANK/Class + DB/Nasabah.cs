@@ -27,7 +27,7 @@ namespace ISA_BANK.Class___DB
         }
         #endregion
 
-
+        //test
         #region properties
         public string Id { get => id; set => id = value; }
         public string Nama { get => nama; set => nama = value; }
