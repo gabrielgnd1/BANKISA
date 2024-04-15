@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FormAccountDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAccountDetails.Designer.cs">
+      <DependentUpon>FormAccountDetails.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormCreateNewBankAccount.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -82,6 +88,12 @@
     <Compile Include="FormTransfer.Designer.cs">
       <DependentUpon>FormTransfer.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormUpdateAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUpdateAccount.Designer.cs">
+      <DependentUpon>FormUpdateAccount.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainFormLama.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -91,6 +103,9 @@
     <Compile Include="Nasabah.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormAccountDetails.resx">
+      <DependentUpon>FormAccountDetails.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormCreateNewBankAccount.resx">
       <DependentUpon>FormCreateNewBankAccount.cs</DependentUpon>
     </EmbeddedResource>
@@ -108,6 +123,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormTransfer.resx">
       <DependentUpon>FormTransfer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUpdateAccount.resx">
+      <DependentUpon>FormUpdateAccount.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainFormLama.resx">
       <DependentUpon>MainFormLama.cs</DependentUpon>

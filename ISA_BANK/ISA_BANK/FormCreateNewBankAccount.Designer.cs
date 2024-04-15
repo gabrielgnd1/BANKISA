@@ -53,6 +53,9 @@
             this.txtInitial = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.btnCreate = new System.Windows.Forms.Button();
+            this.label11 = new System.Windows.Forms.Label();
+            this.txtEmail = new System.Windows.Forms.TextBox();
+            this.lblEmail = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblTransfer
@@ -139,7 +142,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(317, 285);
+            this.label2.Location = new System.Drawing.Point(317, 342);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(22, 32);
             this.label2.TabIndex = 25;
@@ -151,7 +154,7 @@
             this.lblTtl.BackColor = System.Drawing.Color.Transparent;
             this.lblTtl.Font = new System.Drawing.Font("Microsoft YaHei", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTtl.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblTtl.Location = new System.Drawing.Point(55, 284);
+            this.lblTtl.Location = new System.Drawing.Point(55, 341);
             this.lblTtl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTtl.Name = "lblTtl";
             this.lblTtl.Size = new System.Drawing.Size(184, 36);
@@ -161,7 +164,7 @@
             // dateTimePickerBirth
             // 
             this.dateTimePickerBirth.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePickerBirth.Location = new System.Drawing.Point(368, 285);
+            this.dateTimePickerBirth.Location = new System.Drawing.Point(368, 342);
             this.dateTimePickerBirth.Name = "dateTimePickerBirth";
             this.dateTimePickerBirth.Size = new System.Drawing.Size(549, 30);
             this.dateTimePickerBirth.TabIndex = 26;
@@ -170,7 +173,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(317, 363);
+            this.label3.Location = new System.Drawing.Point(317, 420);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(22, 32);
             this.label3.TabIndex = 28;
@@ -182,7 +185,7 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Microsoft YaHei", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label4.Location = new System.Drawing.Point(55, 361);
+            this.label4.Location = new System.Drawing.Point(55, 418);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(114, 36);
@@ -193,7 +196,7 @@
             // 
             this.rdoMale.AutoSize = true;
             this.rdoMale.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdoMale.Location = new System.Drawing.Point(368, 366);
+            this.rdoMale.Location = new System.Drawing.Point(368, 423);
             this.rdoMale.Name = "rdoMale";
             this.rdoMale.Size = new System.Drawing.Size(80, 31);
             this.rdoMale.TabIndex = 29;
@@ -205,7 +208,7 @@
             // 
             this.rdoFemale.AutoSize = true;
             this.rdoFemale.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdoFemale.Location = new System.Drawing.Point(509, 366);
+            this.rdoFemale.Location = new System.Drawing.Point(509, 423);
             this.rdoFemale.Name = "rdoFemale";
             this.rdoFemale.Size = new System.Drawing.Size(101, 31);
             this.rdoFemale.TabIndex = 30;
@@ -217,7 +220,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(317, 440);
+            this.label5.Location = new System.Drawing.Point(317, 497);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(22, 32);
             this.label5.TabIndex = 33;
@@ -227,7 +230,7 @@
             // 
             this.textBoxPhoneNum.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxPhoneNum.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.textBoxPhoneNum.Location = new System.Drawing.Point(438, 438);
+            this.textBoxPhoneNum.Location = new System.Drawing.Point(438, 495);
             this.textBoxPhoneNum.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxPhoneNum.Name = "textBoxPhoneNum";
             this.textBoxPhoneNum.Size = new System.Drawing.Size(479, 34);
@@ -239,7 +242,7 @@
             this.lblPhone.BackColor = System.Drawing.Color.Transparent;
             this.lblPhone.Font = new System.Drawing.Font("Microsoft YaHei", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPhone.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblPhone.Location = new System.Drawing.Point(55, 434);
+            this.lblPhone.Location = new System.Drawing.Point(55, 491);
             this.lblPhone.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblPhone.Name = "lblPhone";
             this.lblPhone.Size = new System.Drawing.Size(213, 36);
@@ -252,7 +255,7 @@
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Microsoft YaHei", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label6.Location = new System.Drawing.Point(362, 440);
+            this.label6.Location = new System.Drawing.Point(362, 497);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(68, 36);
@@ -263,7 +266,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(317, 514);
+            this.label7.Location = new System.Drawing.Point(317, 571);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(22, 32);
             this.label7.TabIndex = 37;
@@ -273,7 +276,7 @@
             // 
             this.txtAddress.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtAddress.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.txtAddress.Location = new System.Drawing.Point(368, 516);
+            this.txtAddress.Location = new System.Drawing.Point(368, 573);
             this.txtAddress.Margin = new System.Windows.Forms.Padding(4);
             this.txtAddress.Name = "txtAddress";
             this.txtAddress.Size = new System.Drawing.Size(549, 34);
@@ -285,7 +288,7 @@
             this.lblPostalAddr.BackColor = System.Drawing.Color.Transparent;
             this.lblPostalAddr.Font = new System.Drawing.Font("Microsoft YaHei", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPostalAddr.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblPostalAddr.Location = new System.Drawing.Point(55, 508);
+            this.lblPostalAddr.Location = new System.Drawing.Point(55, 565);
             this.lblPostalAddr.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblPostalAddr.Name = "lblPostalAddr";
             this.lblPostalAddr.Size = new System.Drawing.Size(212, 36);
@@ -296,7 +299,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(317, 589);
+            this.label8.Location = new System.Drawing.Point(317, 646);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(22, 32);
             this.label8.TabIndex = 40;
@@ -306,7 +309,7 @@
             // 
             this.txtInitial.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtInitial.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.txtInitial.Location = new System.Drawing.Point(368, 585);
+            this.txtInitial.Location = new System.Drawing.Point(368, 642);
             this.txtInitial.Margin = new System.Windows.Forms.Padding(4);
             this.txtInitial.Name = "txtInitial";
             this.txtInitial.Size = new System.Drawing.Size(549, 34);
@@ -318,7 +321,7 @@
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("Microsoft YaHei", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label9.Location = new System.Drawing.Point(55, 583);
+            this.label9.Location = new System.Drawing.Point(55, 640);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(197, 36);
@@ -328,19 +331,55 @@
             // btnCreate
             // 
             this.btnCreate.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCreate.Location = new System.Drawing.Point(815, 649);
+            this.btnCreate.Location = new System.Drawing.Point(815, 706);
             this.btnCreate.Name = "btnCreate";
             this.btnCreate.Size = new System.Drawing.Size(102, 37);
             this.btnCreate.TabIndex = 41;
             this.btnCreate.Text = "Create";
             this.btnCreate.UseVisualStyleBackColor = true;
             // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(317, 277);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(22, 32);
+            this.label11.TabIndex = 44;
+            this.label11.Text = ":";
+            // 
+            // txtEmail
+            // 
+            this.txtEmail.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEmail.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.txtEmail.Location = new System.Drawing.Point(368, 279);
+            this.txtEmail.Margin = new System.Windows.Forms.Padding(4);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(549, 34);
+            this.txtEmail.TabIndex = 43;
+            // 
+            // lblEmail
+            // 
+            this.lblEmail.AutoSize = true;
+            this.lblEmail.BackColor = System.Drawing.Color.Transparent;
+            this.lblEmail.Font = new System.Drawing.Font("Microsoft YaHei", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEmail.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblEmail.Location = new System.Drawing.Point(55, 271);
+            this.lblEmail.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblEmail.Name = "lblEmail";
+            this.lblEmail.Size = new System.Drawing.Size(85, 36);
+            this.lblEmail.TabIndex = 42;
+            this.lblEmail.Text = "Email";
+            // 
             // FormCreateNewBankAccount
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.ClientSize = new System.Drawing.Size(1001, 721);
+            this.ClientSize = new System.Drawing.Size(1001, 812);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.txtEmail);
+            this.Controls.Add(this.lblEmail);
             this.Controls.Add(this.btnCreate);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.txtInitial);
@@ -401,5 +440,8 @@
         private System.Windows.Forms.TextBox txtInitial;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Button btnCreate;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.TextBox txtEmail;
+        private System.Windows.Forms.Label lblEmail;
     }
 }
