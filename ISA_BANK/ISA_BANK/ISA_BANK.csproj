@@ -70,6 +70,12 @@
     <Compile Include="FormRegister.Designer.cs">
       <DependentUpon>FormRegister.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormTes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTes.Designer.cs">
+      <DependentUpon>FormTes.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormTransactionHistory.cs">
       <SubType>Form</SubType>
     </Compile>
