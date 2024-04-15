@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ISA_BANK.CLASS
+namespace ISA_BANK.TESTGIT
 {
-    internal class Class2
+    internal class test
     {
     }
 }
