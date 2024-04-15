@@ -10,17 +10,11 @@ using System.Windows.Forms;
 
 namespace ISA_BANK
 {
-    public partial class FormTes : Form
+    public partial class FormTes3 : Form
     {
-        public FormTes()
-            //github kontol
+        public FormTes3()
         {
             InitializeComponent();
-        }
-
-        private void FormTes_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }
