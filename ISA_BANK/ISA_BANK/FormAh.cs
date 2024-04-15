@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ISA_BANK.DBCLASS
+namespace ISA_BANK
 {
-    public partial class Formicip : Form
+    public partial class FormAh : Form
     {
-        public Formicip()
+        public FormAh()
         {
             InitializeComponent();
         }
