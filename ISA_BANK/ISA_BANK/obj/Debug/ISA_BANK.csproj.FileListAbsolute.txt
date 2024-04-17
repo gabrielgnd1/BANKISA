@@ -13,3 +13,23 @@ D:\Michelle (nitip)\KULIAH\SEMESTER 4\ISA\ISA_BANK\ISA_BANK\ISA_BANK\obj\Debug\I
 D:\Michelle (nitip)\KULIAH\SEMESTER 4\ISA\ISA_BANK\ISA_BANK\ISA_BANK\obj\Debug\ISA_BANK.FormRegister.resources
 D:\Michelle (nitip)\KULIAH\SEMESTER 4\ISA\ISA_BANK\ISA_BANK\ISA_BANK\obj\Debug\ISA_BANK.FormTransactionHistory.resources
 D:\Michelle (nitip)\KULIAH\SEMESTER 4\ISA\ISA_BANK\ISA_BANK\ISA_BANK\obj\Debug\ISA_BANK.FormTransfer.resources
+C:\Users\user\Documents\GitHub\BANKISA\ISA_BANK\ISA_BANK\bin\Debug\ISA_BANK.exe.config
+C:\Users\user\Documents\GitHub\BANKISA\ISA_BANK\ISA_BANK\bin\Debug\ISA_BANK.exe
+C:\Users\user\Documents\GitHub\BANKISA\ISA_BANK\ISA_BANK\bin\Debug\ISA_BANK.pdb
+C:\Users\user\Documents\GitHub\BANKISA\ISA_BANK\ISA_BANK\obj\Debug\ISA_BANK.csproj.AssemblyReference.cache
+C:\Users\user\Documents\GitHub\BANKISA\ISA_BANK\ISA_BANK\obj\Debug\ISA_BANK.FormAccountDetails.resources
+C:\Users\user\Documents\GitHub\BANKISA\ISA_BANK\ISA_BANK\obj\Debug\ISA_BANK.FormCreateNewBankAccount.resources
+C:\Users\user\Documents\GitHub\BANKISA\ISA_BANK\ISA_BANK\obj\Debug\ISA_BANK.FormDeposit.resources
+C:\Users\user\Documents\GitHub\BANKISA\ISA_BANK\ISA_BANK\obj\Debug\ISA_BANK.FormLogin.resources
+C:\Users\user\Documents\GitHub\BANKISA\ISA_BANK\ISA_BANK\obj\Debug\ISA_BANK.FormMain.resources
+C:\Users\user\Documents\GitHub\BANKISA\ISA_BANK\ISA_BANK\obj\Debug\ISA_BANK.FormRegister.resources
+C:\Users\user\Documents\GitHub\BANKISA\ISA_BANK\ISA_BANK\obj\Debug\ISA_BANK.FormTes.resources
+C:\Users\user\Documents\GitHub\BANKISA\ISA_BANK\ISA_BANK\obj\Debug\ISA_BANK.FormTransactionHistory.resources
+C:\Users\user\Documents\GitHub\BANKISA\ISA_BANK\ISA_BANK\obj\Debug\ISA_BANK.FormTransfer.resources
+C:\Users\user\Documents\GitHub\BANKISA\ISA_BANK\ISA_BANK\obj\Debug\ISA_BANK.FormUpdateAccount.resources
+C:\Users\user\Documents\GitHub\BANKISA\ISA_BANK\ISA_BANK\obj\Debug\ISA_BANK.MainFormLama.resources
+C:\Users\user\Documents\GitHub\BANKISA\ISA_BANK\ISA_BANK\obj\Debug\ISA_BANK.Properties.Resources.resources
+C:\Users\user\Documents\GitHub\BANKISA\ISA_BANK\ISA_BANK\obj\Debug\ISA_BANK.csproj.GenerateResource.cache
+C:\Users\user\Documents\GitHub\BANKISA\ISA_BANK\ISA_BANK\obj\Debug\ISA_BANK.csproj.CoreCompileInputs.cache
+C:\Users\user\Documents\GitHub\BANKISA\ISA_BANK\ISA_BANK\obj\Debug\ISA_BANK.exe
+C:\Users\user\Documents\GitHub\BANKISA\ISA_BANK\ISA_BANK\obj\Debug\ISA_BANK.pdb

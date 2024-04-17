@@ -48,9 +48,9 @@
             this.lblLogin.BackColor = System.Drawing.Color.DarkSlateBlue;
             this.lblLogin.Font = new System.Drawing.Font("Microsoft YaHei", 10.8F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblLogin.ForeColor = System.Drawing.Color.Red;
-            this.lblLogin.Location = new System.Drawing.Point(249, 640);
+            this.lblLogin.Location = new System.Drawing.Point(263, 640);
             this.lblLogin.Name = "lblLogin";
-            this.lblLogin.Size = new System.Drawing.Size(58, 24);
+            this.lblLogin.Size = new System.Drawing.Size(63, 25);
             this.lblLogin.TabIndex = 15;
             this.lblLogin.Text = "Login";
             // 
@@ -61,7 +61,7 @@
             this.lblLog.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.lblLog.Location = new System.Drawing.Point(33, 640);
             this.lblLog.Name = "lblLog";
-            this.lblLog.Size = new System.Drawing.Size(210, 24);
+            this.lblLog.Size = new System.Drawing.Size(231, 25);
             this.lblLog.TabIndex = 14;
             this.lblLog.Text = "I don\'t have an account";
             // 
@@ -108,7 +108,7 @@
             this.lblPass.Location = new System.Drawing.Point(30, 336);
             this.lblPass.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblPass.Name = "lblPass";
-            this.lblPass.Size = new System.Drawing.Size(178, 44);
+            this.lblPass.Size = new System.Drawing.Size(179, 44);
             this.lblPass.TabIndex = 10;
             this.lblPass.Text = "Password";
             // 
@@ -121,7 +121,7 @@
             this.lblUsername.Location = new System.Drawing.Point(29, 232);
             this.lblUsername.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblUsername.Name = "lblUsername";
-            this.lblUsername.Size = new System.Drawing.Size(185, 44);
+            this.lblUsername.Size = new System.Drawing.Size(186, 44);
             this.lblUsername.TabIndex = 9;
             this.lblUsername.Text = "Username";
             // 
@@ -135,7 +135,7 @@
             this.lblRegister.Location = new System.Drawing.Point(29, 43);
             this.lblRegister.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblRegister.Name = "lblRegister";
-            this.lblRegister.Size = new System.Drawing.Size(201, 50);
+            this.lblRegister.Size = new System.Drawing.Size(209, 50);
             this.lblRegister.TabIndex = 8;
             this.lblRegister.Text = "REGISTER";
             // 
@@ -161,7 +161,7 @@
             this.lblFullname.Location = new System.Drawing.Point(29, 125);
             this.lblFullname.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblFullname.Name = "lblFullname";
-            this.lblFullname.Size = new System.Drawing.Size(169, 44);
+            this.lblFullname.Size = new System.Drawing.Size(170, 44);
             this.lblFullname.TabIndex = 16;
             this.lblFullname.Text = "Fullname";
             // 
@@ -187,7 +187,7 @@
             this.lblCardNum.Location = new System.Drawing.Point(29, 436);
             this.lblCardNum.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCardNum.Name = "lblCardNum";
-            this.lblCardNum.Size = new System.Drawing.Size(242, 44);
+            this.lblCardNum.Size = new System.Drawing.Size(243, 44);
             this.lblCardNum.TabIndex = 18;
             this.lblCardNum.Text = "Card Number";
             // 

@@ -64,7 +64,7 @@
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(299, 340);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(22, 32);
+            this.label7.Size = new System.Drawing.Size(23, 32);
             this.label7.TabIndex = 62;
             this.label7.Text = ":";
             // 
@@ -95,12 +95,12 @@
             // 
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.label6.Font = new System.Drawing.Font("Microsoft YaHei", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Font = new System.Drawing.Font("Microsoft YaHei", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label6.Location = new System.Drawing.Point(344, 411);
+            this.label6.Location = new System.Drawing.Point(352, 414);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(68, 36);
+            this.label6.Size = new System.Drawing.Size(60, 31);
             this.label6.TabIndex = 59;
             this.label6.Text = "+62";
             // 
@@ -110,7 +110,7 @@
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(299, 413);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(22, 32);
+            this.label5.Size = new System.Drawing.Size(23, 32);
             this.label5.TabIndex = 58;
             this.label5.Text = ":";
             // 
@@ -143,7 +143,7 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(299, 209);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(22, 32);
+            this.label1.Size = new System.Drawing.Size(23, 32);
             this.label1.TabIndex = 48;
             this.label1.Text = ":";
             // 
@@ -177,7 +177,7 @@
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.Location = new System.Drawing.Point(299, 148);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(22, 32);
+            this.label10.Size = new System.Drawing.Size(23, 32);
             this.label10.TabIndex = 45;
             this.label10.Text = ":";
             // 
@@ -214,7 +214,7 @@
             this.lblTransfer.Location = new System.Drawing.Point(28, 60);
             this.lblTransfer.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTransfer.Name = "lblTransfer";
-            this.lblTransfer.Size = new System.Drawing.Size(564, 50);
+            this.lblTransfer.Size = new System.Drawing.Size(585, 50);
             this.lblTransfer.TabIndex = 42;
             this.lblTransfer.Text = "UPDATE EXISTING ACCOUNT";
             // 
@@ -224,7 +224,7 @@
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.Location = new System.Drawing.Point(299, 277);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(22, 32);
+            this.label11.Size = new System.Drawing.Size(23, 32);
             this.label11.TabIndex = 69;
             this.label11.Text = ":";
             // 

@@ -63,6 +63,12 @@
     <Compile Include="FormCreateNewBankAccount.Designer.cs">
       <DependentUpon>FormCreateNewBankAccount.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormDeposit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDeposit.Designer.cs">
+      <DependentUpon>FormDeposit.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -117,6 +123,12 @@
     <Compile Include="FormUpdateAccount.Designer.cs">
       <DependentUpon>FormUpdateAccount.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormWithdrawal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormWithdrawal.Designer.cs">
+      <DependentUpon>FormWithdrawal.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainFormLama.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -131,6 +143,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormCreateNewBankAccount.resx">
       <DependentUpon>FormCreateNewBankAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDeposit.resx">
+      <DependentUpon>FormDeposit.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
@@ -152,6 +167,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormUpdateAccount.resx">
       <DependentUpon>FormUpdateAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormWithdrawal.resx">
+      <DependentUpon>FormWithdrawal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainFormLama.resx">
       <DependentUpon>MainFormLama.cs</DependentUpon>

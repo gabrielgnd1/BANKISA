@@ -38,11 +38,13 @@
             this.transferToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.transactionHistoryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.managerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.deleteAccountToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.labelDate = new System.Windows.Forms.Label();
             this.labelClock = new System.Windows.Forms.Label();
-            this.deleteAccountToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.depositToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.withdrawalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -91,6 +93,9 @@
             // 
             // tellerToolStripMenuItem
             // 
+            this.tellerToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.depositToolStripMenuItem,
+            this.withdrawalToolStripMenuItem});
             this.tellerToolStripMenuItem.Name = "tellerToolStripMenuItem";
             this.tellerToolStripMenuItem.Size = new System.Drawing.Size(59, 24);
             this.tellerToolStripMenuItem.Text = "Teller";
@@ -107,13 +112,13 @@
             // transferToolStripMenuItem
             // 
             this.transferToolStripMenuItem.Name = "transferToolStripMenuItem";
-            this.transferToolStripMenuItem.Size = new System.Drawing.Size(218, 26);
+            this.transferToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.transferToolStripMenuItem.Text = "Transfer";
             // 
             // transactionHistoryToolStripMenuItem
             // 
             this.transactionHistoryToolStripMenuItem.Name = "transactionHistoryToolStripMenuItem";
-            this.transactionHistoryToolStripMenuItem.Size = new System.Drawing.Size(218, 26);
+            this.transactionHistoryToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.transactionHistoryToolStripMenuItem.Text = "Transaction History";
             // 
             // managerToolStripMenuItem
@@ -123,6 +128,12 @@
             this.managerToolStripMenuItem.Name = "managerToolStripMenuItem";
             this.managerToolStripMenuItem.Size = new System.Drawing.Size(82, 24);
             this.managerToolStripMenuItem.Text = "Manager";
+            // 
+            // deleteAccountToolStripMenuItem
+            // 
+            this.deleteAccountToolStripMenuItem.Name = "deleteAccountToolStripMenuItem";
+            this.deleteAccountToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.deleteAccountToolStripMenuItem.Text = "Delete Account";
             // 
             // panel1
             // 
@@ -162,15 +173,21 @@
             this.labelClock.Location = new System.Drawing.Point(47, 12);
             this.labelClock.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelClock.Name = "labelClock";
-            this.labelClock.Size = new System.Drawing.Size(106, 50);
+            this.labelClock.Size = new System.Drawing.Size(108, 50);
             this.labelClock.TabIndex = 3;
             this.labelClock.Text = "time";
             // 
-            // deleteAccountToolStripMenuItem
+            // depositToolStripMenuItem
             // 
-            this.deleteAccountToolStripMenuItem.Name = "deleteAccountToolStripMenuItem";
-            this.deleteAccountToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.deleteAccountToolStripMenuItem.Text = "Delete Account";
+            this.depositToolStripMenuItem.Name = "depositToolStripMenuItem";
+            this.depositToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.depositToolStripMenuItem.Text = "Deposit";
+            // 
+            // withdrawalToolStripMenuItem
+            // 
+            this.withdrawalToolStripMenuItem.Name = "withdrawalToolStripMenuItem";
+            this.withdrawalToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.withdrawalToolStripMenuItem.Text = "Withdrawal";
             // 
             // FormMain
             // 
@@ -210,5 +227,7 @@
         private System.Windows.Forms.ToolStripMenuItem transferToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem transactionHistoryToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem deleteAccountToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem depositToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem withdrawalToolStripMenuItem;
     }
 }

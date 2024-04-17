@@ -38,6 +38,10 @@
             this.txtAccNum = new System.Windows.Forms.TextBox();
             this.lblAccNum = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.curBalance = new System.Windows.Forms.Label();
+            this.address = new System.Windows.Forms.Label();
+            this.phoneNum = new System.Windows.Forms.Label();
+            this.gender = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -58,10 +62,6 @@
             this.lblNik = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.lblCustName = new System.Windows.Forms.Label();
-            this.gender = new System.Windows.Forms.Label();
-            this.phoneNum = new System.Windows.Forms.Label();
-            this.address = new System.Windows.Forms.Label();
-            this.curBalance = new System.Windows.Forms.Label();
             this.gbFrom.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -76,7 +76,7 @@
             this.lblTransfer.Location = new System.Drawing.Point(29, 51);
             this.lblTransfer.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTransfer.Name = "lblTransfer";
-            this.lblTransfer.Size = new System.Drawing.Size(379, 50);
+            this.lblTransfer.Size = new System.Drawing.Size(393, 50);
             this.lblTransfer.TabIndex = 43;
             this.lblTransfer.Text = "ACCOUNT DETAILS";
             // 
@@ -112,7 +112,7 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(234, 112);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(19, 30);
+            this.label3.Size = new System.Drawing.Size(20, 31);
             this.label3.TabIndex = 12;
             this.label3.Text = ":";
             // 
@@ -135,7 +135,7 @@
             this.lblCurBalance.Location = new System.Drawing.Point(23, 112);
             this.lblCurBalance.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCurBalance.Name = "lblCurBalance";
-            this.lblCurBalance.Size = new System.Drawing.Size(54, 30);
+            this.lblCurBalance.Size = new System.Drawing.Size(56, 31);
             this.lblCurBalance.TabIndex = 10;
             this.lblCurBalance.Text = "NIK";
             // 
@@ -144,7 +144,7 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(234, 58);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(19, 30);
+            this.label2.Size = new System.Drawing.Size(20, 31);
             this.label2.TabIndex = 9;
             this.label2.Text = ":";
             // 
@@ -167,7 +167,7 @@
             this.lblAccNum.Location = new System.Drawing.Point(23, 58);
             this.lblAccNum.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblAccNum.Name = "lblAccNum";
-            this.lblAccNum.Size = new System.Drawing.Size(204, 30);
+            this.lblAccNum.Size = new System.Drawing.Size(211, 31);
             this.lblAccNum.TabIndex = 7;
             this.lblAccNum.Text = "Account Number";
             // 
@@ -201,6 +201,46 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(995, 279);
             this.panel1.TabIndex = 45;
+            // 
+            // curBalance
+            // 
+            this.curBalance.AutoSize = true;
+            this.curBalance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.curBalance.Location = new System.Drawing.Point(748, 192);
+            this.curBalance.Name = "curBalance";
+            this.curBalance.Size = new System.Drawing.Size(81, 25);
+            this.curBalance.TabIndex = 75;
+            this.curBalance.Text = "balance";
+            // 
+            // address
+            // 
+            this.address.AutoSize = true;
+            this.address.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.address.Location = new System.Drawing.Point(748, 147);
+            this.address.Name = "address";
+            this.address.Size = new System.Drawing.Size(82, 25);
+            this.address.TabIndex = 74;
+            this.address.Text = "address";
+            // 
+            // phoneNum
+            // 
+            this.phoneNum.AutoSize = true;
+            this.phoneNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.phoneNum.Location = new System.Drawing.Point(748, 95);
+            this.phoneNum.Name = "phoneNum";
+            this.phoneNum.Size = new System.Drawing.Size(43, 25);
+            this.phoneNum.TabIndex = 73;
+            this.phoneNum.Text = "telp";
+            // 
+            // gender
+            // 
+            this.gender.AutoSize = true;
+            this.gender.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gender.Location = new System.Drawing.Point(748, 45);
+            this.gender.Name = "gender";
+            this.gender.Size = new System.Drawing.Size(73, 25);
+            this.gender.TabIndex = 72;
+            this.gender.Text = "gender";
             // 
             // label11
             // 
@@ -426,52 +466,12 @@
             this.lblCustName.TabIndex = 45;
             this.lblCustName.Text = "Customer Name";
             // 
-            // gender
-            // 
-            this.gender.AutoSize = true;
-            this.gender.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gender.Location = new System.Drawing.Point(748, 45);
-            this.gender.Name = "gender";
-            this.gender.Size = new System.Drawing.Size(73, 25);
-            this.gender.TabIndex = 72;
-            this.gender.Text = "gender";
-            // 
-            // phoneNum
-            // 
-            this.phoneNum.AutoSize = true;
-            this.phoneNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.phoneNum.Location = new System.Drawing.Point(748, 95);
-            this.phoneNum.Name = "phoneNum";
-            this.phoneNum.Size = new System.Drawing.Size(43, 25);
-            this.phoneNum.TabIndex = 73;
-            this.phoneNum.Text = "telp";
-            // 
-            // address
-            // 
-            this.address.AutoSize = true;
-            this.address.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.address.Location = new System.Drawing.Point(748, 147);
-            this.address.Name = "address";
-            this.address.Size = new System.Drawing.Size(82, 25);
-            this.address.TabIndex = 74;
-            this.address.Text = "address";
-            // 
-            // curBalance
-            // 
-            this.curBalance.AutoSize = true;
-            this.curBalance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.curBalance.Location = new System.Drawing.Point(748, 192);
-            this.curBalance.Name = "curBalance";
-            this.curBalance.Size = new System.Drawing.Size(81, 25);
-            this.curBalance.TabIndex = 75;
-            this.curBalance.Text = "balance";
-            // 
             // FormAccountDetails
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.ClientSize = new System.Drawing.Size(1109, 691);
+            this.ClientSize = new System.Drawing.Size(1073, 691);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.gbFrom);
             this.Controls.Add(this.lblTransfer);
