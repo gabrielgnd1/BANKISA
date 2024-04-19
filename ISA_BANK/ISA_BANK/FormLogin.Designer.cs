@@ -95,7 +95,7 @@
             this.txtUsername.Text = "Input Your Username";
             this.txtUsername.Enter += new System.EventHandler(this.txtUsername_Enter);
             this.txtUsername.Leave += new System.EventHandler(this.txtUsername_Leave);
-            this.txtUsername.Validating += new System.ComponentModel.CancelEventHandler(this.txtUsername_Validating);
+            
             // 
             // txtPassword
             // 

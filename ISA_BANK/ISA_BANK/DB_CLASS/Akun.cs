@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,8 +20,17 @@ namespace ISA_BANK.DB_CLASS
             this.Password = password;
         }
 
+        public Akun()
+        {
+            Id = 0;
+            Username = "";
+            Password = "";
+        }
+
         public int Id { get => id; set => id = value; }
         public string Username { get => username; set => username = value; }
         public string Password { get => password; set => password = value; }
+
+        
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -27,6 +28,17 @@ namespace ISA_BANK.DB_CLASS
             this.Gender = gender;
         }
 
+        public Nasabah()
+        {
+            Id = 0;
+            Nama = "";
+            Ttl = DateTime.Now;
+            Akun = new Akun();
+            Nik = "";
+            No_telepon = "";
+            Gender = "";
+        }
+
         public int Id { get => id; set => id = value; }
         public string Nama { get => nama; set => nama = value; }
         public DateTime Ttl { get => ttl; set => ttl = value; }
@@ -34,5 +46,33 @@ namespace ISA_BANK.DB_CLASS
         public string Nik { get => nik; set => nik = value; }
         public string No_telepon { get => no_telepon; set => no_telepon = value; }
         public string Gender { get => gender; set => gender = value; }
+
+        public static Nasabah CekLogin(string uid, string pwd)
+        {
+            Nasabah n = new Nasabah();
+
+            string perintah = "SELECT id, nama, cabangs_id, akuns_id FROM manajers";
+
+            MySqlDataReader hasil = Koneksi.JalankanPerintahQuery(perintah); //eksekusi perintah diatas
+
+            // selama masih ada data yang dibaca di data reader
+            if (hasil.Read() == true)
+            {
+                Nasabah tampung = new Nasabah(); //tampung ke sebuah kategori
+                tampung.Id = int.Parse(hasil.GetValue(0).ToString());
+                tampung.Nama = hasil.GetValue(1).ToString();
+                tampung.Tt
+
+                Akun a = new Akun();
+                a.Id = int.Parse(hasil.GetValue(4).ToString());
+                a.Username = hasil.GetValue(5).ToString();
+                a.Password = hasil.GetValue(6).ToString();
+
+                tampung.Akun = a;
+                return tampung;
+            }
+
+            else return null;
+        }
     }
 }

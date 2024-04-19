@@ -68,7 +68,7 @@
             this.lblTransfer.Location = new System.Drawing.Point(46, 46);
             this.lblTransfer.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTransfer.Name = "lblTransfer";
-            this.lblTransfer.Size = new System.Drawing.Size(489, 50);
+            this.lblTransfer.Size = new System.Drawing.Size(505, 50);
             this.lblTransfer.TabIndex = 11;
             this.lblTransfer.Text = "CREATE BANK ACCOUNT";
             // 
@@ -78,7 +78,7 @@
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.Location = new System.Drawing.Point(317, 134);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(22, 32);
+            this.label10.Size = new System.Drawing.Size(23, 32);
             this.label10.TabIndex = 19;
             this.label10.Text = ":";
             // 
@@ -111,7 +111,7 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(317, 209);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(22, 32);
+            this.label1.Size = new System.Drawing.Size(23, 32);
             this.label1.TabIndex = 22;
             this.label1.Text = ":";
             // 
@@ -144,7 +144,7 @@
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(317, 342);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(22, 32);
+            this.label2.Size = new System.Drawing.Size(23, 32);
             this.label2.TabIndex = 25;
             this.label2.Text = ":";
             // 
@@ -175,7 +175,7 @@
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(317, 420);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(22, 32);
+            this.label3.Size = new System.Drawing.Size(23, 32);
             this.label3.TabIndex = 28;
             this.label3.Text = ":";
             // 
@@ -222,7 +222,7 @@
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(317, 497);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(22, 32);
+            this.label5.Size = new System.Drawing.Size(23, 32);
             this.label5.TabIndex = 33;
             this.label5.Text = ":";
             // 
@@ -268,7 +268,7 @@
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(317, 571);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(22, 32);
+            this.label7.Size = new System.Drawing.Size(23, 32);
             this.label7.TabIndex = 37;
             this.label7.Text = ":";
             // 
@@ -301,7 +301,7 @@
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(317, 646);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(22, 32);
+            this.label8.Size = new System.Drawing.Size(23, 32);
             this.label8.TabIndex = 40;
             this.label8.Text = ":";
             // 
@@ -344,7 +344,7 @@
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.Location = new System.Drawing.Point(317, 277);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(22, 32);
+            this.label11.Size = new System.Drawing.Size(23, 32);
             this.label11.TabIndex = 44;
             this.label11.Text = ":";
             // 

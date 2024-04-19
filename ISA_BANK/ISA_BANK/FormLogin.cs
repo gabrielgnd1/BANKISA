@@ -33,10 +33,7 @@ namespace ISA_BANK
             {
                 txtUsername.Text = "Input Your Username";
                 txtUsername.ForeColor = Color.Silver;
-            }
-            else
-            {
-                MessageBox.Show("Username can't be empty");
+                MessageBox.Show("Input Username first");
             }
         }
 
@@ -55,6 +52,7 @@ namespace ISA_BANK
             {
                 txtPassword.Text = "Input Your Password";
                 txtPassword.ForeColor = Color.Silver;
+                MessageBox.Show("Input Password first");
             }
         }
 
@@ -72,41 +70,22 @@ namespace ISA_BANK
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            if (ValidateChildren(ValidationConstraints.Enabled))
+            string uid = txtUsername.Text;
+            string pwd = txtPassword.Text;
+            FormMain frm = (FormMain)this.Owner;
+            Akun userLogin = Akun.CekLogin(uid, pwd);
+            frm.userLogin = Pegawai.CekLogin(uid, pwd);
+            if (userLogin is null)
             {
-                MessageBox.Show (txtUsername.Text, "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-            //if (string.IsNullOrEmpty(txtUsername.Text.Trim()))
-            //{
-            //    errorProviderUsername.SetError(txtUsername, "Username is required");
-            //    return;
-            //}
-            //else if (string.IsNullOrEmpty(txtPassword.Text.Trim()))
-            //{
-            //    errorProviderPassword.SetError(txtPassword, "Password is required");
-            //    return;
-            //}
-            //else
-            //{
-            //    errorProviderUsername.SetError(txtUsername, string.Empty);
-            //    errorProviderPassword.SetError(txtPassword, string.Empty);
-            //}
-        }
-
-        private void txtUsername_Validating(object sender, CancelEventArgs e)
-        {
-            if (string.IsNullOrEmpty(txtUsername.Text.Trim()))
-            {
-                e.Cancel = true;
-                txtUsername.Focus();
-                errorProviderUsername.SetError(txtUsername, "Username is required");
+                Application.Exit();
             }
             else
             {
-                e.Cancel = true;
-                errorProviderUsername.SetError(txtUsername, null);
-            }
 
+                frm.Visible = true;
+                this.Close();
+            }
         }
+
     }
 }
