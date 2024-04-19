@@ -70,7 +70,6 @@ D:\Michelle (nitip)\KULIAH\SEMESTER 4\ISA\BANKISA\ISA_BANK\ISA_BANK\bin\Debug\Sy
 D:\Michelle (nitip)\KULIAH\SEMESTER 4\ISA\BANKISA\ISA_BANK\ISA_BANK\obj\Debug\ISA_BANK.csproj.AssemblyReference.cache
 D:\Michelle (nitip)\KULIAH\SEMESTER 4\ISA\BANKISA\ISA_BANK\ISA_BANK\obj\Debug\ISA_BANK.FormAccountDetails.resources
 D:\Michelle (nitip)\KULIAH\SEMESTER 4\ISA\BANKISA\ISA_BANK\ISA_BANK\obj\Debug\ISA_BANK.FormCreateNewBankAccount.resources
-D:\Michelle (nitip)\KULIAH\SEMESTER 4\ISA\BANKISA\ISA_BANK\ISA_BANK\obj\Debug\ISA_BANK.FormAllAccount.resources
 D:\Michelle (nitip)\KULIAH\SEMESTER 4\ISA\BANKISA\ISA_BANK\ISA_BANK\obj\Debug\ISA_BANK.FormDeposit.resources
 D:\Michelle (nitip)\KULIAH\SEMESTER 4\ISA\BANKISA\ISA_BANK\ISA_BANK\obj\Debug\ISA_BANK.FormLogin.resources
 D:\Michelle (nitip)\KULIAH\SEMESTER 4\ISA\BANKISA\ISA_BANK\ISA_BANK\obj\Debug\ISA_BANK.FormMain.resources
@@ -86,3 +85,4 @@ D:\Michelle (nitip)\KULIAH\SEMESTER 4\ISA\BANKISA\ISA_BANK\ISA_BANK\obj\Debug\IS
 D:\Michelle (nitip)\KULIAH\SEMESTER 4\ISA\BANKISA\ISA_BANK\ISA_BANK\obj\Debug\ISA_BANK.csproj.CopyComplete
 D:\Michelle (nitip)\KULIAH\SEMESTER 4\ISA\BANKISA\ISA_BANK\ISA_BANK\obj\Debug\ISA_BANK.exe
 D:\Michelle (nitip)\KULIAH\SEMESTER 4\ISA\BANKISA\ISA_BANK\ISA_BANK\obj\Debug\ISA_BANK.pdb
+D:\Michelle (nitip)\KULIAH\SEMESTER 4\ISA\BANKISA\ISA_BANK\ISA_BANK\obj\Debug\ISA_BANK.FormDisplayAllAccount.resources

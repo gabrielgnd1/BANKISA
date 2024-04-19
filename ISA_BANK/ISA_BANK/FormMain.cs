@@ -30,5 +30,23 @@ namespace ISA_BANK
         {
             Application.Exit();
         }
+
+        private void updateAccountToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormUpdateAccount updateAcc = new FormUpdateAccount();
+            updateAcc.TopLevel = false;
+            panelMain.Controls.Add(updateAcc);
+            updateAcc.BringToFront();
+            updateAcc.Show();
+        }
+
+        private void DisplayAccountToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormDisplayAllAccount displayAcc = new FormDisplayAllAccount();
+            displayAcc.TopLevel = false;
+            panelMain.Controls.Add(displayAcc);
+            displayAcc.BringToFront();
+            displayAcc.Show();
+        }
     }
 }

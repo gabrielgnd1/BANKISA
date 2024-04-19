@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ISA_BANK
 {
-    public partial class FormAllAccount : Form
+    public partial class FormDisplayAllAccount : Form
     {
-        public FormAllAccount()
+        public FormDisplayAllAccount()
         {
             InitializeComponent();
         }
