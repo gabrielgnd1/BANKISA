@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,6 +16,7 @@ namespace ISA_BANK.DB_CLASS
         private Nasabah nasabah;
         private string jenis_kartu;
 
+        public Rekening() { }
         public Rekening(int id, string nomor, int jumlah_saldo, string nomor_kartu, Nasabah nasabah, string jenis_kartu)
         {
             this.Id = id;
@@ -31,5 +33,45 @@ namespace ISA_BANK.DB_CLASS
         public string Nomor_kartu { get => nomor_kartu; set => nomor_kartu = value; }
         public Nasabah Nasabah { get => nasabah; set => nasabah = value; }
         public string Jenis_kartu { get => jenis_kartu; set => jenis_kartu = value; }
+
+
+
+        #region method
+        public static List<Rekening> BacaData(string kriteria, string nilaiKriteria)
+        {
+            string sql = "";
+
+            if (kriteria == "")
+            {
+                sql = "select * from rekenings";
+            }
+            else
+            {
+                sql = "select * from rekenings where " + kriteria + " like '%" + nilaiKriteria + "%'";
+            }
+
+            MySqlDataReader hasil = Koneksi.JalankanPerintahQuery(sql);
+
+            List<Rekening> listRekening = new List<Rekening>();
+            while (hasil.Read() == true)
+            {
+                Rekening r = new Rekening();
+                Nasabah n = new Nasabah();
+
+                //n.Nama = hasil.GetValue(1).ToString();
+                r.Nomor = hasil.GetValue(1).ToString();
+                r.Jumlah_saldo = int.Parse(hasil.GetValue(2).ToString());
+                r.Nomor_kartu = hasil.GetValue(3).ToString();
+                n.Id = int.Parse(hasil.GetValue(4).ToString());
+                r.Jenis_kartu = hasil.GetValue(5).ToString();
+
+                listRekening.Add(r);
+            }
+            return listRekening;
+        }
+
+
+
+        #endregion
     }
 }

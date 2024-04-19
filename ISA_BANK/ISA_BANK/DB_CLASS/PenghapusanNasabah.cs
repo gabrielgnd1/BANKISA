@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace ISA_BANK.DB_CLASS
 {
-    public class PenghapusanRekening
+    public class PenghapusanNasabah
     {
         private Manajer manajer;
         private Rekening rekening;
         private DateTime deletedAt;
 
-        public PenghapusanRekening(Manajer manajer, Rekening rekening, DateTime deletedAt)
+        public PenghapusanNasabah(Manajer manajer, Rekening rekening, DateTime deletedAt)
         {
             this.Manajer = manajer;
             this.Rekening = rekening;

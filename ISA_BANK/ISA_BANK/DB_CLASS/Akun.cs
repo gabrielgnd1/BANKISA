@@ -12,6 +12,8 @@ namespace ISA_BANK.DB_CLASS
         private string username;
         private string password;
 
+        public Akun() { }
+
         public Akun(int id, string username, string password)
         {
             this.Id = id;
@@ -22,5 +24,9 @@ namespace ISA_BANK.DB_CLASS
         public int Id { get => id; set => id = value; }
         public string Username { get => username; set => username = value; }
         public string Password { get => password; set => password = value; }
+
+        #region Methods
+
+        #endregion
     }
 }
