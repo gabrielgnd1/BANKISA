@@ -23,7 +23,7 @@ namespace ISA_BANK
             if (txtUsername.Text == "Input Your Username")
             {
                 txtUsername.Text = "";
-                txtUsername.ForeColor = Color.Silver;
+                txtUsername.ForeColor = Color.Black;
             }
         }
 
@@ -34,6 +34,10 @@ namespace ISA_BANK
                 txtUsername.Text = "Input Your Username";
                 txtUsername.ForeColor = Color.Silver;
             }
+            else
+            {
+                MessageBox.Show("Username can't be empty");
+            }
         }
 
         private void txtPassword_Enter(object sender, EventArgs e)
@@ -41,7 +45,7 @@ namespace ISA_BANK
             if (txtPassword.Text == "Input Your Password")
             {
                 txtPassword.Text = "";
-                txtPassword.ForeColor = Color.Silver;
+                txtPassword.ForeColor = Color.Black;
             }
         }
 
@@ -64,6 +68,45 @@ namespace ISA_BANK
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            if (ValidateChildren(ValidationConstraints.Enabled))
+            {
+                MessageBox.Show (txtUsername.Text, "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            //if (string.IsNullOrEmpty(txtUsername.Text.Trim()))
+            //{
+            //    errorProviderUsername.SetError(txtUsername, "Username is required");
+            //    return;
+            //}
+            //else if (string.IsNullOrEmpty(txtPassword.Text.Trim()))
+            //{
+            //    errorProviderPassword.SetError(txtPassword, "Password is required");
+            //    return;
+            //}
+            //else
+            //{
+            //    errorProviderUsername.SetError(txtUsername, string.Empty);
+            //    errorProviderPassword.SetError(txtPassword, string.Empty);
+            //}
+        }
+
+        private void txtUsername_Validating(object sender, CancelEventArgs e)
+        {
+            if (string.IsNullOrEmpty(txtUsername.Text.Trim()))
+            {
+                e.Cancel = true;
+                txtUsername.Focus();
+                errorProviderUsername.SetError(txtUsername, "Username is required");
+            }
+            else
+            {
+                e.Cancel = true;
+                errorProviderUsername.SetError(txtUsername, null);
+            }
+
         }
     }
 }

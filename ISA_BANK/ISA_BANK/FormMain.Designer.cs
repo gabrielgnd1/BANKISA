@@ -32,7 +32,7 @@
             this.customerServiceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.createNewAccountToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.updateAccountToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.accountDetailsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.DisplayAccountToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tellerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.depositToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.withdrawalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -40,12 +40,12 @@
             this.transferToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.transactionHistoryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.managerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.deleteAccountToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.displayAccToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panelMain = new System.Windows.Forms.Panel();
             this.panelTime = new System.Windows.Forms.Panel();
             this.labelDate = new System.Windows.Forms.Label();
             this.labelClock = new System.Windows.Forms.Label();
-            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.panelTime.SuspendLayout();
             this.SuspendLayout();
@@ -70,9 +70,9 @@
             this.customerServiceToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.createNewAccountToolStripMenuItem,
             this.updateAccountToolStripMenuItem,
-            this.accountDetailsToolStripMenuItem});
+            this.DisplayAccountToolStripMenuItem});
             this.customerServiceToolStripMenuItem.Name = "customerServiceToolStripMenuItem";
-            this.customerServiceToolStripMenuItem.Size = new System.Drawing.Size(137, 26);
+            this.customerServiceToolStripMenuItem.Size = new System.Drawing.Size(137, 24);
             this.customerServiceToolStripMenuItem.Text = "Customer Service";
             // 
             // createNewAccountToolStripMenuItem
@@ -87,12 +87,14 @@
             this.updateAccountToolStripMenuItem.Name = "updateAccountToolStripMenuItem";
             this.updateAccountToolStripMenuItem.Size = new System.Drawing.Size(227, 26);
             this.updateAccountToolStripMenuItem.Text = "Update Account";
+            this.updateAccountToolStripMenuItem.Click += new System.EventHandler(this.updateAccountToolStripMenuItem_Click);
             // 
-            // accountDetailsToolStripMenuItem
+            // DisplayAccountToolStripMenuItem
             // 
-            this.accountDetailsToolStripMenuItem.Name = "accountDetailsToolStripMenuItem";
-            this.accountDetailsToolStripMenuItem.Size = new System.Drawing.Size(227, 26);
-            this.accountDetailsToolStripMenuItem.Text = "Account Details";
+            this.DisplayAccountToolStripMenuItem.Name = "DisplayAccountToolStripMenuItem";
+            this.DisplayAccountToolStripMenuItem.Size = new System.Drawing.Size(227, 26);
+            this.DisplayAccountToolStripMenuItem.Text = "Display Account";
+            this.DisplayAccountToolStripMenuItem.Click += new System.EventHandler(this.DisplayAccountToolStripMenuItem_Click);
             // 
             // tellerToolStripMenuItem
             // 
@@ -100,7 +102,7 @@
             this.depositToolStripMenuItem,
             this.withdrawalToolStripMenuItem});
             this.tellerToolStripMenuItem.Name = "tellerToolStripMenuItem";
-            this.tellerToolStripMenuItem.Size = new System.Drawing.Size(59, 26);
+            this.tellerToolStripMenuItem.Size = new System.Drawing.Size(59, 24);
             this.tellerToolStripMenuItem.Text = "Teller";
             // 
             // depositToolStripMenuItem
@@ -121,7 +123,7 @@
             this.transferToolStripMenuItem,
             this.transactionHistoryToolStripMenuItem});
             this.nasabahToolStripMenuItem.Name = "nasabahToolStripMenuItem";
-            this.nasabahToolStripMenuItem.Size = new System.Drawing.Size(81, 26);
+            this.nasabahToolStripMenuItem.Size = new System.Drawing.Size(81, 24);
             this.nasabahToolStripMenuItem.Text = "Nasabah";
             // 
             // transferToolStripMenuItem
@@ -139,16 +141,23 @@
             // managerToolStripMenuItem
             // 
             this.managerToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.deleteAccountToolStripMenuItem});
+            this.displayAccToolStripMenuItem});
             this.managerToolStripMenuItem.Name = "managerToolStripMenuItem";
-            this.managerToolStripMenuItem.Size = new System.Drawing.Size(82, 26);
+            this.managerToolStripMenuItem.Size = new System.Drawing.Size(82, 24);
             this.managerToolStripMenuItem.Text = "Manager";
             // 
-            // deleteAccountToolStripMenuItem
+            // displayAccToolStripMenuItem
             // 
-            this.deleteAccountToolStripMenuItem.Name = "deleteAccountToolStripMenuItem";
-            this.deleteAccountToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.deleteAccountToolStripMenuItem.Text = "Delete Account";
+            this.displayAccToolStripMenuItem.Name = "displayAccToolStripMenuItem";
+            this.displayAccToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.displayAccToolStripMenuItem.Text = "Display Account";
+            // 
+            // exitToolStripMenuItem
+            // 
+            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(47, 24);
+            this.exitToolStripMenuItem.Text = "Exit";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
             // panelMain
             // 
@@ -194,13 +203,6 @@
             this.labelClock.TabIndex = 3;
             this.labelClock.Text = "time";
             // 
-            // exitToolStripMenuItem
-            // 
-            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(47, 24);
-            this.exitToolStripMenuItem.Text = "Exit";
-            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
-            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -231,7 +233,7 @@
         private System.Windows.Forms.ToolStripMenuItem customerServiceToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem createNewAccountToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem updateAccountToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem accountDetailsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem DisplayAccountToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem tellerToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem nasabahToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem managerToolStripMenuItem;
@@ -241,7 +243,7 @@
         private System.Windows.Forms.Label labelClock;
         private System.Windows.Forms.ToolStripMenuItem transferToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem transactionHistoryToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem deleteAccountToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem displayAccToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem depositToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem withdrawalToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;

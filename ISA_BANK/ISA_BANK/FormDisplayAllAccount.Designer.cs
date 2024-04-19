@@ -1,6 +1,6 @@
 ﻿namespace ISA_BANK
 {
-    partial class FormAllAccount
+    partial class FormDisplayAllAccount
     {
         /// <summary>
         /// Required designer variable.
