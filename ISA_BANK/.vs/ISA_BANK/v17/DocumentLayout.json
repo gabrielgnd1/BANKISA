@@ -3,55 +3,119 @@
   "WorkspaceRootPath": "D:\\ISA\\BANKISA\\ISA_BANK\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C8BBCE66-51DC-44CD-91B1-5091BAFD8AA4}|ISA_BANK\\ISA_BANK.csproj|d:\\isa\\bankisa\\isa_bank\\isa_bank\\ireng.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{C8BBCE66-51DC-44CD-91B1-5091BAFD8AA4}|ISA_BANK\\ISA_BANK.csproj|solutionrelative:isa_bank\\ireng.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{C8BBCE66-51DC-44CD-91B1-5091BAFD8AA4}|ISA_BANK\\ISA_BANK.csproj|d:\\isa\\bankisa\\isa_bank\\isa_bank\\db_class\\penambahannasabah.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C8BBCE66-51DC-44CD-91B1-5091BAFD8AA4}|ISA_BANK\\ISA_BANK.csproj|solutionrelative:isa_bank\\db_class\\penambahannasabah.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C8BBCE66-51DC-44CD-91B1-5091BAFD8AA4}|ISA_BANK\\ISA_BANK.csproj|D:\\ISA\\BANKISA\\ISA_BANK\\isa_bank\\ireng.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C8BBCE66-51DC-44CD-91B1-5091BAFD8AA4}|ISA_BANK\\ISA_BANK.csproj|solutionrelative:isa_bank\\ireng.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C8BBCE66-51DC-44CD-91B1-5091BAFD8AA4}|ISA_BANK\\ISA_BANK.csproj|D:\\ISA\\BANKISA\\ISA_BANK\\isa_bank\\db_class\\transaksi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C8BBCE66-51DC-44CD-91B1-5091BAFD8AA4}|ISA_BANK\\ISA_BANK.csproj|solutionrelative:isa_bank\\db_class\\transaksi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C8BBCE66-51DC-44CD-91B1-5091BAFD8AA4}|ISA_BANK\\ISA_BANK.csproj|D:\\ISA\\BANKISA\\ISA_BANK\\isa_bank\\formcreatenewbankaccount.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C8BBCE66-51DC-44CD-91B1-5091BAFD8AA4}|ISA_BANK\\ISA_BANK.csproj|solutionrelative:isa_bank\\formcreatenewbankaccount.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C8BBCE66-51DC-44CD-91B1-5091BAFD8AA4}|ISA_BANK\\ISA_BANK.csproj|D:\\ISA\\BANKISA\\ISA_BANK\\isa_bank\\formtransactionhistory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C8BBCE66-51DC-44CD-91B1-5091BAFD8AA4}|ISA_BANK\\ISA_BANK.csproj|solutionrelative:isa_bank\\formtransactionhistory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C8BBCE66-51DC-44CD-91B1-5091BAFD8AA4}|ISA_BANK\\ISA_BANK.csproj|D:\\ISA\\BANKISA\\ISA_BANK\\isa_bank\\formcreatenewbankaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{C8BBCE66-51DC-44CD-91B1-5091BAFD8AA4}|ISA_BANK\\ISA_BANK.csproj|solutionrelative:isa_bank\\formcreatenewbankaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{C8BBCE66-51DC-44CD-91B1-5091BAFD8AA4}|ISA_BANK\\ISA_BANK.csproj|d:\\isa\\bankisa\\isa_bank\\isa_bank\\formtransfer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C8BBCE66-51DC-44CD-91B1-5091BAFD8AA4}|ISA_BANK\\ISA_BANK.csproj|solutionrelative:isa_bank\\formtransfer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C8BBCE66-51DC-44CD-91B1-5091BAFD8AA4}|ISA_BANK\\ISA_BANK.csproj|D:\\ISA\\BANKISA\\ISA_BANK\\isa_bank\\formmain.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C8BBCE66-51DC-44CD-91B1-5091BAFD8AA4}|ISA_BANK\\ISA_BANK.csproj|solutionrelative:isa_bank\\formmain.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C8BBCE66-51DC-44CD-91B1-5091BAFD8AA4}|ISA_BANK\\ISA_BANK.csproj|D:\\ISA\\BANKISA\\ISA_BANK\\isa_bank\\formlogin.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C8BBCE66-51DC-44CD-91B1-5091BAFD8AA4}|ISA_BANK\\ISA_BANK.csproj|solutionrelative:isa_bank\\formlogin.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|ISA_BANK||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C8BBCE66-51DC-44CD-91B1-5091BAFD8AA4}|ISA_BANK\\ISA_BANK.csproj|D:\\ISA\\BANKISA\\ISA_BANK\\isa_bank\\mainformlama.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{C8BBCE66-51DC-44CD-91B1-5091BAFD8AA4}|ISA_BANK\\ISA_BANK.csproj|solutionrelative:isa_bank\\mainformlama.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C8BBCE66-51DC-44CD-91B1-5091BAFD8AA4}|ISA_BANK\\ISA_BANK.csproj|D:\\ISA\\BANKISA\\ISA_BANK\\isa_bank\\formregister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{C8BBCE66-51DC-44CD-91B1-5091BAFD8AA4}|ISA_BANK\\ISA_BANK.csproj|solutionrelative:isa_bank\\formregister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C8BBCE66-51DC-44CD-91B1-5091BAFD8AA4}|ISA_BANK\\ISA_BANK.csproj|d:\\isa\\bankisa\\isa_bank\\isa_bank\\nasabah.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C8BBCE66-51DC-44CD-91B1-5091BAFD8AA4}|ISA_BANK\\ISA_BANK.csproj|solutionrelative:isa_bank\\nasabah.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\ISA\\BANKISA\\ISA_BANK\\ISA_BANK\\Class \u002B DB\\Nasabah.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ISA_BANK\\Class \u002B DB\\Nasabah.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C8BBCE66-51DC-44CD-91B1-5091BAFD8AA4}|ISA_BANK\\ISA_BANK.csproj|d:\\isa\\bankisa\\isa_bank\\isa_bank\\formmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C8BBCE66-51DC-44CD-91B1-5091BAFD8AA4}|ISA_BANK\\ISA_BANK.csproj|solutionrelative:isa_bank\\formmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C8BBCE66-51DC-44CD-91B1-5091BAFD8AA4}|ISA_BANK\\ISA_BANK.csproj|D:\\ISA\\BANKISA\\ISA_BANK\\isa_bank\\formlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{C8BBCE66-51DC-44CD-91B1-5091BAFD8AA4}|ISA_BANK\\ISA_BANK.csproj|solutionrelative:isa_bank\\formlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\ISA\\BANKISA\\ISA_BANK\\ISA_BANK\\DBCLASS\\Formicip.Designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ISA_BANK\\DBCLASS\\Formicip.Designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C8BBCE66-51DC-44CD-91B1-5091BAFD8AA4}|ISA_BANK\\ISA_BANK.csproj|d:\\isa\\bankisa\\isa_bank\\isa_bank\\db_class\\manajer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C8BBCE66-51DC-44CD-91B1-5091BAFD8AA4}|ISA_BANK\\ISA_BANK.csproj|solutionrelative:isa_bank\\db_class\\manajer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8BBCE66-51DC-44CD-91B1-5091BAFD8AA4}|ISA_BANK\\ISA_BANK.csproj|D:\\ISA\\BANKISA\\ISA_BANK\\isa_bank\\db_class\\mutasi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C8BBCE66-51DC-44CD-91B1-5091BAFD8AA4}|ISA_BANK\\ISA_BANK.csproj|solutionrelative:isa_bank\\db_class\\mutasi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8BBCE66-51DC-44CD-91B1-5091BAFD8AA4}|ISA_BANK\\ISA_BANK.csproj|D:\\ISA\\BANKISA\\ISA_BANK\\isa_bank\\db_class\\penghapusanrekening.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C8BBCE66-51DC-44CD-91B1-5091BAFD8AA4}|ISA_BANK\\ISA_BANK.csproj|solutionrelative:isa_bank\\db_class\\penghapusanrekening.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8BBCE66-51DC-44CD-91B1-5091BAFD8AA4}|ISA_BANK\\ISA_BANK.csproj|D:\\ISA\\BANKISA\\ISA_BANK\\isa_bank\\db_class\\penambahanrekening.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C8BBCE66-51DC-44CD-91B1-5091BAFD8AA4}|ISA_BANK\\ISA_BANK.csproj|solutionrelative:isa_bank\\db_class\\penambahanrekening.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8BBCE66-51DC-44CD-91B1-5091BAFD8AA4}|ISA_BANK\\ISA_BANK.csproj|D:\\ISA\\BANKISA\\ISA_BANK\\isa_bank\\db_class\\akun.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C8BBCE66-51DC-44CD-91B1-5091BAFD8AA4}|ISA_BANK\\ISA_BANK.csproj|solutionrelative:isa_bank\\db_class\\akun.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8BBCE66-51DC-44CD-91B1-5091BAFD8AA4}|ISA_BANK\\ISA_BANK.csproj|D:\\ISA\\BANKISA\\ISA_BANK\\isa_bank\\db_class\\teller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C8BBCE66-51DC-44CD-91B1-5091BAFD8AA4}|ISA_BANK\\ISA_BANK.csproj|solutionrelative:isa_bank\\db_class\\teller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8BBCE66-51DC-44CD-91B1-5091BAFD8AA4}|ISA_BANK\\ISA_BANK.csproj|D:\\ISA\\BANKISA\\ISA_BANK\\isa_bank\\db_class\\koneksi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C8BBCE66-51DC-44CD-91B1-5091BAFD8AA4}|ISA_BANK\\ISA_BANK.csproj|solutionrelative:isa_bank\\db_class\\koneksi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8BBCE66-51DC-44CD-91B1-5091BAFD8AA4}|ISA_BANK\\ISA_BANK.csproj|D:\\ISA\\BANKISA\\ISA_BANK\\isa_bank\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C8BBCE66-51DC-44CD-91B1-5091BAFD8AA4}|ISA_BANK\\ISA_BANK.csproj|solutionrelative:isa_bank\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8BBCE66-51DC-44CD-91B1-5091BAFD8AA4}|ISA_BANK\\ISA_BANK.csproj|D:\\ISA\\BANKISA\\ISA_BANK\\isa_bank\\formlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C8BBCE66-51DC-44CD-91B1-5091BAFD8AA4}|ISA_BANK\\ISA_BANK.csproj|solutionrelative:isa_bank\\formlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8BBCE66-51DC-44CD-91B1-5091BAFD8AA4}|ISA_BANK\\ISA_BANK.csproj|D:\\ISA\\BANKISA\\ISA_BANK\\isa_bank\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{C8BBCE66-51DC-44CD-91B1-5091BAFD8AA4}|ISA_BANK\\ISA_BANK.csproj|solutionrelative:isa_bank\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8BBCE66-51DC-44CD-91B1-5091BAFD8AA4}|ISA_BANK\\ISA_BANK.csproj|D:\\ISA\\BANKISA\\ISA_BANK\\isa_bank\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{C8BBCE66-51DC-44CD-91B1-5091BAFD8AA4}|ISA_BANK\\ISA_BANK.csproj|solutionrelative:isa_bank\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|ISA_BANK||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8BBCE66-51DC-44CD-91B1-5091BAFD8AA4}|ISA_BANK\\ISA_BANK.csproj|D:\\ISA\\BANKISA\\ISA_BANK\\isa_bank\\properties\\dbsetting.settings||{6D2695F9-5365-4A78-89ED-F205C045BFE6}",
+      "RelativeMoniker": "D:0:0:{C8BBCE66-51DC-44CD-91B1-5091BAFD8AA4}|ISA_BANK\\ISA_BANK.csproj|solutionrelative:isa_bank\\properties\\dbsetting.settings||{6D2695F9-5365-4A78-89ED-F205C045BFE6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8BBCE66-51DC-44CD-91B1-5091BAFD8AA4}|ISA_BANK\\ISA_BANK.csproj|D:\\ISA\\BANKISA\\ISA_BANK\\isa_bank\\db_class\\rekening.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C8BBCE66-51DC-44CD-91B1-5091BAFD8AA4}|ISA_BANK\\ISA_BANK.csproj|solutionrelative:isa_bank\\db_class\\rekening.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8BBCE66-51DC-44CD-91B1-5091BAFD8AA4}|ISA_BANK\\ISA_BANK.csproj|D:\\ISA\\BANKISA\\ISA_BANK\\isa_bank\\formaccountdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C8BBCE66-51DC-44CD-91B1-5091BAFD8AA4}|ISA_BANK\\ISA_BANK.csproj|solutionrelative:isa_bank\\formaccountdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8BBCE66-51DC-44CD-91B1-5091BAFD8AA4}|ISA_BANK\\ISA_BANK.csproj|D:\\ISA\\BANKISA\\ISA_BANK\\isa_bank\\formregister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C8BBCE66-51DC-44CD-91B1-5091BAFD8AA4}|ISA_BANK\\ISA_BANK.csproj|solutionrelative:isa_bank\\formregister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8BBCE66-51DC-44CD-91B1-5091BAFD8AA4}|ISA_BANK\\ISA_BANK.csproj|D:\\ISA\\BANKISA\\ISA_BANK\\isa_bank\\formregister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C8BBCE66-51DC-44CD-91B1-5091BAFD8AA4}|ISA_BANK\\ISA_BANK.csproj|solutionrelative:isa_bank\\formregister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8BBCE66-51DC-44CD-91B1-5091BAFD8AA4}|ISA_BANK\\ISA_BANK.csproj|D:\\ISA\\BANKISA\\ISA_BANK\\isa_bank\\formupdateaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C8BBCE66-51DC-44CD-91B1-5091BAFD8AA4}|ISA_BANK\\ISA_BANK.csproj|solutionrelative:isa_bank\\formupdateaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8BBCE66-51DC-44CD-91B1-5091BAFD8AA4}|ISA_BANK\\ISA_BANK.csproj|D:\\ISA\\BANKISA\\ISA_BANK\\isa_bank\\security\\security.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C8BBCE66-51DC-44CD-91B1-5091BAFD8AA4}|ISA_BANK\\ISA_BANK.csproj|solutionrelative:isa_bank\\security\\security.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8BBCE66-51DC-44CD-91B1-5091BAFD8AA4}|ISA_BANK\\ISA_BANK.csproj|D:\\ISA\\BANKISA\\ISA_BANK\\isa_bank\\mainformlama.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C8BBCE66-51DC-44CD-91B1-5091BAFD8AA4}|ISA_BANK\\ISA_BANK.csproj|solutionrelative:isa_bank\\mainformlama.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8BBCE66-51DC-44CD-91B1-5091BAFD8AA4}|ISA_BANK\\ISA_BANK.csproj|D:\\ISA\\BANKISA\\ISA_BANK\\isa_bank\\db_class\\cabang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C8BBCE66-51DC-44CD-91B1-5091BAFD8AA4}|ISA_BANK\\ISA_BANK.csproj|solutionrelative:isa_bank\\db_class\\cabang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8BBCE66-51DC-44CD-91B1-5091BAFD8AA4}|ISA_BANK\\ISA_BANK.csproj|D:\\ISA\\BANKISA\\ISA_BANK\\isa_bank\\formcreatenewbankaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C8BBCE66-51DC-44CD-91B1-5091BAFD8AA4}|ISA_BANK\\ISA_BANK.csproj|solutionrelative:isa_bank\\formcreatenewbankaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\ISA\\BANKISA\\ISA_BANK\\ISA_BANK\\Class \u002B DB\\Nasabah.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ISA_BANK\\Class \u002B DB\\Nasabah.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\ISA\\BANKISA\\ISA_BANK\\ISA_BANK\\CLASS\\Class2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -68,6 +132,14 @@
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\ISA\\BANKISA\\ISA_BANK\\ISA_BANK\\DBCLASS\\Formicip.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ISA_BANK\\DBCLASS\\Formicip.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\ISA\\BANKISA\\ISA_BANK\\ISA_BANK\\iRENG.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ISA_BANK\\iRENG.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\ISA\\BANKISA\\ISA_BANK\\ISA_BANK\\Nasabah.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ISA_BANK\\Nasabah.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -77,75 +149,333 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "iRENG.cs [Design]",
-              "DocumentMoniker": "D:\\ISA\\BANKISA\\ISA_BANK\\ISA_BANK\\iRENG.cs",
-              "RelativeDocumentMoniker": "ISA_BANK\\iRENG.cs",
-              "ToolTip": "D:\\ISA\\BANKISA\\ISA_BANK\\ISA_BANK\\iRENG.cs [Design]",
-              "RelativeToolTip": "ISA_BANK\\iRENG.cs [Design]",
+              "Title": "PenambahanNasabah.cs",
+              "DocumentMoniker": "D:\\ISA\\BANKISA\\ISA_BANK\\ISA_BANK\\DB_CLASS\\PenambahanNasabah.cs",
+              "RelativeDocumentMoniker": "ISA_BANK\\DB_CLASS\\PenambahanNasabah.cs",
+              "ToolTip": "D:\\ISA\\BANKISA\\ISA_BANK\\ISA_BANK\\DB_CLASS\\PenambahanNasabah.cs",
+              "RelativeToolTip": "ISA_BANK\\DB_CLASS\\PenambahanNasabah.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-15T07:50:47.064Z",
+              "WhenOpened": "2024-04-19T04:35:21.006Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FormTransfer.cs [Design]",
+              "DocumentMoniker": "D:\\ISA\\BANKISA\\ISA_BANK\\ISA_BANK\\FormTransfer.cs",
+              "RelativeDocumentMoniker": "ISA_BANK\\FormTransfer.cs",
+              "ToolTip": "D:\\ISA\\BANKISA\\ISA_BANK\\ISA_BANK\\FormTransfer.cs [Design]",
+              "RelativeToolTip": "ISA_BANK\\FormTransfer.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-19T04:30:47.503Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "FormMain.Designer.cs",
-              "DocumentMoniker": "D:\\ISA\\BANKISA\\ISA_BANK\\ISA_BANK\\FormMain.Designer.cs",
-              "RelativeDocumentMoniker": "ISA_BANK\\FormMain.Designer.cs",
-              "ToolTip": "D:\\ISA\\BANKISA\\ISA_BANK\\ISA_BANK\\FormMain.Designer.cs",
-              "RelativeToolTip": "ISA_BANK\\FormMain.Designer.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Title": "FormMain.cs [Design]",
+              "DocumentMoniker": "D:\\ISA\\BANKISA\\ISA_BANK\\ISA_BANK\\FormMain.cs",
+              "RelativeDocumentMoniker": "ISA_BANK\\FormMain.cs",
+              "ToolTip": "D:\\ISA\\BANKISA\\ISA_BANK\\ISA_BANK\\FormMain.cs [Design]",
+              "RelativeToolTip": "ISA_BANK\\FormMain.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-15T07:48:48.051Z"
+              "WhenOpened": "2024-04-19T04:30:22.497Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "FormCreateNewBankAccount.Designer.cs",
-              "DocumentMoniker": "D:\\ISA\\BANKISA\\ISA_BANK\\ISA_BANK\\FormCreateNewBankAccount.Designer.cs",
-              "RelativeDocumentMoniker": "ISA_BANK\\FormCreateNewBankAccount.Designer.cs",
-              "ToolTip": "D:\\ISA\\BANKISA\\ISA_BANK\\ISA_BANK\\FormCreateNewBankAccount.Designer.cs",
-              "RelativeToolTip": "ISA_BANK\\FormCreateNewBankAccount.Designer.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-15T07:48:31.631Z"
+              "DocumentIndex": 18,
+              "Title": "dbsetting.settings",
+              "DocumentMoniker": "D:\\ISA\\BANKISA\\ISA_BANK\\ISA_BANK\\Properties\\dbsetting.settings",
+              "RelativeDocumentMoniker": "ISA_BANK\\Properties\\dbsetting.settings",
+              "ToolTip": "D:\\ISA\\BANKISA\\ISA_BANK\\ISA_BANK\\Properties\\dbsetting.settings",
+              "RelativeToolTip": "ISA_BANK\\Properties\\dbsetting.settings",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002767|",
+              "WhenOpened": "2024-04-17T06:00:31.238Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "FormLogin.Designer.cs",
-              "DocumentMoniker": "D:\\ISA\\BANKISA\\ISA_BANK\\ISA_BANK\\FormLogin.Designer.cs",
-              "RelativeDocumentMoniker": "ISA_BANK\\FormLogin.Designer.cs",
-              "ToolTip": "D:\\ISA\\BANKISA\\ISA_BANK\\ISA_BANK\\FormLogin.Designer.cs",
-              "RelativeToolTip": "ISA_BANK\\FormLogin.Designer.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "DocumentIndex": 1,
+              "Title": "Transaksi.cs",
+              "DocumentMoniker": "D:\\ISA\\BANKISA\\ISA_BANK\\ISA_BANK\\DB_CLASS\\Transaksi.cs",
+              "RelativeDocumentMoniker": "ISA_BANK\\DB_CLASS\\Transaksi.cs",
+              "ToolTip": "D:\\ISA\\BANKISA\\ISA_BANK\\ISA_BANK\\DB_CLASS\\Transaksi.cs",
+              "RelativeToolTip": "ISA_BANK\\DB_CLASS\\Transaksi.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-15T07:48:44.29Z"
+              "WhenOpened": "2024-04-15T09:14:33.577Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Mutasi.cs",
+              "DocumentMoniker": "D:\\ISA\\BANKISA\\ISA_BANK\\ISA_BANK\\DB_CLASS\\Mutasi.cs",
+              "RelativeDocumentMoniker": "ISA_BANK\\DB_CLASS\\Mutasi.cs",
+              "ToolTip": "D:\\ISA\\BANKISA\\ISA_BANK\\ISA_BANK\\DB_CLASS\\Mutasi.cs",
+              "RelativeToolTip": "ISA_BANK\\DB_CLASS\\Mutasi.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-15T08:59:56.078Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 12,
-              "Title": "Formicip.Designer.cs",
-              "DocumentMoniker": "D:\\ISA\\BANKISA\\ISA_BANK\\ISA_BANK\\DBCLASS\\Formicip.Designer.cs",
-              "RelativeDocumentMoniker": "ISA_BANK\\DBCLASS\\Formicip.Designer.cs",
-              "ToolTip": "D:\\ISA\\BANKISA\\ISA_BANK\\ISA_BANK\\DBCLASS\\Formicip.Designer.cs",
-              "RelativeToolTip": "ISA_BANK\\DBCLASS\\Formicip.Designer.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Title": "Koneksi.cs",
+              "DocumentMoniker": "D:\\ISA\\BANKISA\\ISA_BANK\\ISA_BANK\\DB_CLASS\\Koneksi.cs",
+              "RelativeDocumentMoniker": "ISA_BANK\\DB_CLASS\\Koneksi.cs",
+              "ToolTip": "D:\\ISA\\BANKISA\\ISA_BANK\\ISA_BANK\\DB_CLASS\\Koneksi.cs",
+              "RelativeToolTip": "ISA_BANK\\DB_CLASS\\Koneksi.cs",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAYwCcAAABgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-15T07:46:21.201Z"
+              "WhenOpened": "2024-04-15T09:34:15.909Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
+              "Title": "FormTransactionHistory.cs [Design]",
+              "DocumentMoniker": "D:\\ISA\\BANKISA\\ISA_BANK\\ISA_BANK\\FormTransactionHistory.cs",
+              "RelativeDocumentMoniker": "ISA_BANK\\FormTransactionHistory.cs",
+              "ToolTip": "D:\\ISA\\BANKISA\\ISA_BANK\\ISA_BANK\\FormTransactionHistory.cs [Design]",
+              "RelativeToolTip": "ISA_BANK\\FormTransactionHistory.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-17T05:58:24.471Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "PenambahanRekening.cs",
+              "DocumentMoniker": "D:\\ISA\\BANKISA\\ISA_BANK\\ISA_BANK\\DB_CLASS\\PenambahanRekening.cs",
+              "RelativeDocumentMoniker": "ISA_BANK\\DB_CLASS\\PenambahanRekening.cs",
+              "ToolTip": "D:\\ISA\\BANKISA\\ISA_BANK\\ISA_BANK\\DB_CLASS\\PenambahanRekening.cs",
+              "RelativeToolTip": "ISA_BANK\\DB_CLASS\\PenambahanRekening.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-17T06:05:44.146Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\ISA\\BANKISA\\ISA_BANK\\ISA_BANK\\Program.cs",
+              "RelativeDocumentMoniker": "ISA_BANK\\Program.cs",
+              "ToolTip": "D:\\ISA\\BANKISA\\ISA_BANK\\ISA_BANK\\Program.cs",
+              "RelativeToolTip": "ISA_BANK\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAABBAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-17T06:21:43.257Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Manajer.cs",
+              "DocumentMoniker": "D:\\ISA\\BANKISA\\ISA_BANK\\ISA_BANK\\DB_CLASS\\Manajer.cs",
+              "RelativeDocumentMoniker": "ISA_BANK\\DB_CLASS\\Manajer.cs",
+              "ToolTip": "D:\\ISA\\BANKISA\\ISA_BANK\\ISA_BANK\\DB_CLASS\\Manajer.cs",
+              "RelativeToolTip": "ISA_BANK\\DB_CLASS\\Manajer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-15T08:56:20.367Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "FormLogin.cs [Design]",
+              "DocumentMoniker": "D:\\ISA\\BANKISA\\ISA_BANK\\ISA_BANK\\FormLogin.cs",
+              "RelativeDocumentMoniker": "ISA_BANK\\FormLogin.cs",
+              "ToolTip": "D:\\ISA\\BANKISA\\ISA_BANK\\ISA_BANK\\FormLogin.cs [Design]",
+              "RelativeToolTip": "ISA_BANK\\FormLogin.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-15T06:59:01.915Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "PenghapusanRekening.cs",
+              "DocumentMoniker": "D:\\ISA\\BANKISA\\ISA_BANK\\ISA_BANK\\DB_CLASS\\PenghapusanRekening.cs",
+              "RelativeDocumentMoniker": "ISA_BANK\\DB_CLASS\\PenghapusanRekening.cs",
+              "ToolTip": "D:\\ISA\\BANKISA\\ISA_BANK\\ISA_BANK\\DB_CLASS\\PenghapusanRekening.cs",
+              "RelativeToolTip": "ISA_BANK\\DB_CLASS\\PenghapusanRekening.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-17T06:35:31.283Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Teller.cs",
+              "DocumentMoniker": "D:\\ISA\\BANKISA\\ISA_BANK\\ISA_BANK\\DB_CLASS\\Teller.cs",
+              "RelativeDocumentMoniker": "ISA_BANK\\DB_CLASS\\Teller.cs",
+              "ToolTip": "D:\\ISA\\BANKISA\\ISA_BANK\\ISA_BANK\\DB_CLASS\\Teller.cs",
+              "RelativeToolTip": "ISA_BANK\\DB_CLASS\\Teller.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-15T08:54:42.266Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Akun.cs",
+              "DocumentMoniker": "D:\\ISA\\BANKISA\\ISA_BANK\\ISA_BANK\\DB_CLASS\\Akun.cs",
+              "RelativeDocumentMoniker": "ISA_BANK\\DB_CLASS\\Akun.cs",
+              "ToolTip": "D:\\ISA\\BANKISA\\ISA_BANK\\ISA_BANK\\DB_CLASS\\Akun.cs",
+              "RelativeToolTip": "ISA_BANK\\DB_CLASS\\Akun.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-15T08:53:57.155Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "packages.config",
+              "DocumentMoniker": "D:\\ISA\\BANKISA\\ISA_BANK\\ISA_BANK\\packages.config",
+              "RelativeDocumentMoniker": "ISA_BANK\\packages.config",
+              "ToolTip": "D:\\ISA\\BANKISA\\ISA_BANK\\ISA_BANK\\packages.config",
+              "RelativeToolTip": "ISA_BANK\\packages.config",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-04-17T06:17:26.628Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "App.config",
+              "DocumentMoniker": "D:\\ISA\\BANKISA\\ISA_BANK\\ISA_BANK\\App.config",
+              "RelativeDocumentMoniker": "ISA_BANK\\App.config",
+              "ToolTip": "D:\\ISA\\BANKISA\\ISA_BANK\\ISA_BANK\\App.config",
+              "RelativeToolTip": "ISA_BANK\\App.config",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-04-17T06:17:41.382Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "FormLogin.cs",
+              "DocumentMoniker": "D:\\ISA\\BANKISA\\ISA_BANK\\ISA_BANK\\FormLogin.cs",
+              "RelativeDocumentMoniker": "ISA_BANK\\FormLogin.cs",
+              "ToolTip": "D:\\ISA\\BANKISA\\ISA_BANK\\ISA_BANK\\FormLogin.cs",
+              "RelativeToolTip": "ISA_BANK\\FormLogin.cs",
+              "ViewState": "AQIAACoAAAAAAAAAAAAWwD8AAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-17T06:19:13.184Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ISA_BANK",
+              "DocumentMoniker": "D:\\ISA\\BANKISA\\ISA_BANK\\ISA_BANK\\ISA_BANK.csproj",
+              "RelativeDocumentMoniker": "ISA_BANK\\ISA_BANK.csproj",
+              "ToolTip": "D:\\ISA\\BANKISA\\ISA_BANK\\ISA_BANK\\ISA_BANK.csproj",
+              "RelativeToolTip": "ISA_BANK\\ISA_BANK.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-04-15T07:44:35.184Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "FormAccountDetails.cs [Design]",
+              "DocumentMoniker": "D:\\ISA\\BANKISA\\ISA_BANK\\ISA_BANK\\FormAccountDetails.cs",
+              "RelativeDocumentMoniker": "ISA_BANK\\FormAccountDetails.cs",
+              "ToolTip": "D:\\ISA\\BANKISA\\ISA_BANK\\ISA_BANK\\FormAccountDetails.cs [Design]",
+              "RelativeToolTip": "ISA_BANK\\FormAccountDetails.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-17T05:58:34.871Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Rekening.cs",
+              "DocumentMoniker": "D:\\ISA\\BANKISA\\ISA_BANK\\ISA_BANK\\DB_CLASS\\Rekening.cs",
+              "RelativeDocumentMoniker": "ISA_BANK\\DB_CLASS\\Rekening.cs",
+              "ToolTip": "D:\\ISA\\BANKISA\\ISA_BANK\\ISA_BANK\\DB_CLASS\\Rekening.cs",
+              "RelativeToolTip": "ISA_BANK\\DB_CLASS\\Rekening.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-15T08:53:26.516Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Security.cs",
+              "DocumentMoniker": "D:\\ISA\\BANKISA\\ISA_BANK\\ISA_BANK\\Security\\Security.cs",
+              "RelativeDocumentMoniker": "ISA_BANK\\Security\\Security.cs",
+              "ToolTip": "D:\\ISA\\BANKISA\\ISA_BANK\\ISA_BANK\\Security\\Security.cs",
+              "RelativeToolTip": "ISA_BANK\\Security\\Security.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAB0AAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-15T09:31:01.302Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "FormRegister.cs",
+              "DocumentMoniker": "D:\\ISA\\BANKISA\\ISA_BANK\\ISA_BANK\\FormRegister.cs",
+              "RelativeDocumentMoniker": "ISA_BANK\\FormRegister.cs",
+              "ToolTip": "D:\\ISA\\BANKISA\\ISA_BANK\\ISA_BANK\\FormRegister.cs",
+              "RelativeToolTip": "ISA_BANK\\FormRegister.cs",
+              "ViewState": "AQIAAEgAAAAAAAAAAAAMwGAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-15T09:33:06.265Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "FormUpdateAccount.cs [Design]",
+              "DocumentMoniker": "D:\\ISA\\BANKISA\\ISA_BANK\\ISA_BANK\\FormUpdateAccount.cs",
+              "RelativeDocumentMoniker": "ISA_BANK\\FormUpdateAccount.cs",
+              "ToolTip": "D:\\ISA\\BANKISA\\ISA_BANK\\ISA_BANK\\FormUpdateAccount.cs [Design]",
+              "RelativeToolTip": "ISA_BANK\\FormUpdateAccount.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-15T09:12:43.37Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Cabang.cs",
+              "DocumentMoniker": "D:\\ISA\\BANKISA\\ISA_BANK\\ISA_BANK\\DB_CLASS\\Cabang.cs",
+              "RelativeDocumentMoniker": "ISA_BANK\\DB_CLASS\\Cabang.cs",
+              "ToolTip": "D:\\ISA\\BANKISA\\ISA_BANK\\ISA_BANK\\DB_CLASS\\Cabang.cs",
+              "RelativeToolTip": "ISA_BANK\\DB_CLASS\\Cabang.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-15T09:04:51.051Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "FormRegister.cs [Design]",
+              "DocumentMoniker": "D:\\ISA\\BANKISA\\ISA_BANK\\ISA_BANK\\FormRegister.cs",
+              "RelativeDocumentMoniker": "ISA_BANK\\FormRegister.cs",
+              "ToolTip": "D:\\ISA\\BANKISA\\ISA_BANK\\ISA_BANK\\FormRegister.cs [Design]",
+              "RelativeToolTip": "ISA_BANK\\FormRegister.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-15T07:20:48.623Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "MainFormLama.cs [Design]",
+              "DocumentMoniker": "D:\\ISA\\BANKISA\\ISA_BANK\\ISA_BANK\\MainFormLama.cs",
+              "RelativeDocumentMoniker": "ISA_BANK\\MainFormLama.cs",
+              "ToolTip": "D:\\ISA\\BANKISA\\ISA_BANK\\ISA_BANK\\MainFormLama.cs [Design]",
+              "RelativeToolTip": "ISA_BANK\\MainFormLama.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-15T07:20:50.462Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
               "Title": "FormCreateNewBankAccount.cs [Design]",
               "DocumentMoniker": "D:\\ISA\\BANKISA\\ISA_BANK\\ISA_BANK\\FormCreateNewBankAccount.cs",
               "RelativeDocumentMoniker": "ISA_BANK\\FormCreateNewBankAccount.cs",
@@ -156,7 +486,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 33,
               "Title": "iRENG.cs",
               "DocumentMoniker": "D:\\ISA\\BANKISA\\ISA_BANK\\ISA_BANK\\iRENG.cs",
               "RelativeDocumentMoniker": "ISA_BANK\\iRENG.cs",
@@ -168,18 +498,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ISA_BANK",
-              "DocumentMoniker": "D:\\ISA\\BANKISA\\ISA_BANK\\ISA_BANK\\ISA_BANK.csproj",
-              "RelativeDocumentMoniker": "ISA_BANK\\ISA_BANK.csproj",
-              "ToolTip": "D:\\ISA\\BANKISA\\ISA_BANK\\ISA_BANK\\ISA_BANK.csproj",
-              "RelativeToolTip": "ISA_BANK\\ISA_BANK.csproj",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-04-15T07:44:35.184Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 29,
               "Title": "Class2.cs",
               "DocumentMoniker": "D:\\ISA\\BANKISA\\ISA_BANK\\ISA_BANK\\CLASS\\Class2.cs",
               "RelativeDocumentMoniker": "ISA_BANK\\CLASS\\Class2.cs",
@@ -191,7 +510,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 30,
               "Title": "cLASS1.cs",
               "DocumentMoniker": "D:\\ISA\\BANKISA\\ISA_BANK\\ISA_BANK\\CLASS\\cLASS1.cs",
               "RelativeDocumentMoniker": "ISA_BANK\\CLASS\\cLASS1.cs",
@@ -203,7 +522,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 31,
               "Title": "Nasabah.cs",
               "DocumentMoniker": "D:\\ISA\\BANKISA\\ISA_BANK\\ISA_BANK\\DBCLASS\\Nasabah.cs",
               "RelativeDocumentMoniker": "ISA_BANK\\DBCLASS\\Nasabah.cs",
@@ -215,7 +534,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 32,
               "Title": "Formicip.cs",
               "DocumentMoniker": "D:\\ISA\\BANKISA\\ISA_BANK\\ISA_BANK\\DBCLASS\\Formicip.cs",
               "RelativeDocumentMoniker": "ISA_BANK\\DBCLASS\\Formicip.cs",
@@ -227,29 +546,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "MainFormLama.cs [Design]",
-              "DocumentMoniker": "D:\\ISA\\BANKISA\\ISA_BANK\\ISA_BANK\\MainFormLama.cs",
-              "RelativeDocumentMoniker": "ISA_BANK\\MainFormLama.cs",
-              "ToolTip": "D:\\ISA\\BANKISA\\ISA_BANK\\ISA_BANK\\MainFormLama.cs [Design]",
-              "RelativeToolTip": "ISA_BANK\\MainFormLama.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-15T07:20:50.462Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "FormRegister.cs [Design]",
-              "DocumentMoniker": "D:\\ISA\\BANKISA\\ISA_BANK\\ISA_BANK\\FormRegister.cs",
-              "RelativeDocumentMoniker": "ISA_BANK\\FormRegister.cs",
-              "ToolTip": "D:\\ISA\\BANKISA\\ISA_BANK\\ISA_BANK\\FormRegister.cs [Design]",
-              "RelativeToolTip": "ISA_BANK\\FormRegister.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-15T07:20:48.623Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 34,
               "Title": "Nasabah.cs",
               "DocumentMoniker": "D:\\ISA\\BANKISA\\ISA_BANK\\ISA_BANK\\Nasabah.cs",
               "RelativeDocumentMoniker": "ISA_BANK\\Nasabah.cs",
@@ -261,7 +558,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 28,
               "Title": "Nasabah.cs",
               "DocumentMoniker": "D:\\ISA\\BANKISA\\ISA_BANK\\ISA_BANK\\Class \u002B DB\\Nasabah.cs",
               "RelativeDocumentMoniker": "ISA_BANK\\Class \u002B DB\\Nasabah.cs",
@@ -270,17 +567,6 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAC0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-15T07:00:58.907Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "FormLogin.cs [Design]",
-              "DocumentMoniker": "D:\\ISA\\BANKISA\\ISA_BANK\\ISA_BANK\\FormLogin.cs",
-              "RelativeDocumentMoniker": "ISA_BANK\\FormLogin.cs",
-              "ToolTip": "D:\\ISA\\BANKISA\\ISA_BANK\\ISA_BANK\\FormLogin.cs [Design]",
-              "RelativeToolTip": "ISA_BANK\\FormLogin.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-15T06:59:01.915Z"
             }
           ]
         }

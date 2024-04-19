@@ -16,7 +16,7 @@ namespace ISA_BANK
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormTransactionHistory());
+            Application.Run(new FormLogin());
         }
     }
 }
