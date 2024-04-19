@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ISA_BANK.DB_CLASS;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -50,6 +51,18 @@ namespace ISA_BANK
             {
                 txtPassword.Text = "Input Your Password";
                 txtPassword.ForeColor = Color.Silver;
+            }
+        }
+
+        private void FormLogin_Load(object sender, EventArgs e)
+        {
+            try
+            {
+                Koneksi koneksi = new Koneksi();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
             }
         }
     }
