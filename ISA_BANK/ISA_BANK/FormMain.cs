@@ -16,5 +16,19 @@ namespace ISA_BANK
         {
             InitializeComponent();
         }
+
+        private void createNewAccountToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormCreateNewBankAccount newAcc = new FormCreateNewBankAccount();
+            newAcc.TopLevel = false;
+            panelMain.Controls.Add(newAcc);
+            newAcc.BringToFront();
+            newAcc.Show();
+        }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

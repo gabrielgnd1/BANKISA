@@ -376,7 +376,9 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(1001, 812);
+            this.ControlBox = false;
             this.Controls.Add(this.label11);
             this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.lblEmail);
@@ -406,7 +408,6 @@
             this.Controls.Add(this.lblCustName);
             this.Controls.Add(this.lblTransfer);
             this.Name = "FormCreateNewBankAccount";
-            this.Text = "Create New Bank Account";
             this.Load += new System.EventHandler(this.FormCreateNewBankAccount_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
