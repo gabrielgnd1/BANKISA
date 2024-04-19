@@ -145,7 +145,7 @@ namespace ISA_BANK
             this.lblAccNum.Name = "lblAccNum";
             this.lblAccNum.Size = new System.Drawing.Size(211, 31);
             this.lblAccNum.TabIndex = 7;
-            this.lblAccNum.Text = "Account Number";
+            this.lblAccNum.Text = "Card Number";
             // 
             // lblDeposit
             // 

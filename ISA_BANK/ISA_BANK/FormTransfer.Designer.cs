@@ -165,7 +165,7 @@
             this.lblAccNum.Name = "lblAccNum";
             this.lblAccNum.Size = new System.Drawing.Size(244, 36);
             this.lblAccNum.TabIndex = 7;
-            this.lblAccNum.Text = "Account Number";
+            this.lblAccNum.Text = "Card Number";
             // 
             // label1
             // 
@@ -291,7 +291,7 @@
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(244, 36);
             this.label7.TabIndex = 7;
-            this.label7.Text = "Account Number";
+            this.label7.Text = "Card Number";
             // 
             // label8
             // 

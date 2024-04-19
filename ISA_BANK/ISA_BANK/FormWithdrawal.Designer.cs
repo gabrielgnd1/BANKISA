@@ -228,7 +228,7 @@ namespace ISA_BANK
             this.lblWithdrawal.Location = new System.Drawing.Point(26, 20);
             this.lblWithdrawal.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblWithdrawal.Name = "lblWithdrawal";
-            this.lblWithdrawal.Size = new System.Drawing.Size(308, 50);
+            this.lblWithdrawal.Size = new System.Drawing.Size(298, 50);
             this.lblWithdrawal.TabIndex = 49;
             this.lblWithdrawal.Text = "WITHDRAWAL";
             // 
@@ -251,7 +251,7 @@ namespace ISA_BANK
             this.lblCurBalance.Location = new System.Drawing.Point(23, 112);
             this.lblCurBalance.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCurBalance.Name = "lblCurBalance";
-            this.lblCurBalance.Size = new System.Drawing.Size(56, 31);
+            this.lblCurBalance.Size = new System.Drawing.Size(54, 30);
             this.lblCurBalance.TabIndex = 10;
             this.lblCurBalance.Text = "NIK";
             // 
@@ -260,7 +260,7 @@ namespace ISA_BANK
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(234, 58);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(20, 31);
+            this.label2.Size = new System.Drawing.Size(19, 30);
             this.label2.TabIndex = 9;
             this.label2.Text = ":";
             // 
@@ -289,7 +289,7 @@ namespace ISA_BANK
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(234, 112);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(20, 31);
+            this.label3.Size = new System.Drawing.Size(19, 30);
             this.label3.TabIndex = 12;
             this.label3.Text = ":";
             // 
@@ -302,9 +302,9 @@ namespace ISA_BANK
             this.lblAccNum.Location = new System.Drawing.Point(23, 58);
             this.lblAccNum.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblAccNum.Name = "lblAccNum";
-            this.lblAccNum.Size = new System.Drawing.Size(211, 31);
+            this.lblAccNum.Size = new System.Drawing.Size(204, 30);
             this.lblAccNum.TabIndex = 7;
-            this.lblAccNum.Text = "Account Number";
+            this.lblAccNum.Text = "Card Number";
             // 
             // gbFrom
             // 
@@ -328,7 +328,7 @@ namespace ISA_BANK
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.ClientSize = new System.Drawing.Size(787, 598);
+            this.ClientSize = new System.Drawing.Size(787, 612);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.lblWithdrawal);
             this.Controls.Add(this.gbFrom);

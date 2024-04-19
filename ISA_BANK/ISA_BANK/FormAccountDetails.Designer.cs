@@ -76,7 +76,7 @@
             this.lblTransfer.Location = new System.Drawing.Point(29, 51);
             this.lblTransfer.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTransfer.Name = "lblTransfer";
-            this.lblTransfer.Size = new System.Drawing.Size(393, 50);
+            this.lblTransfer.Size = new System.Drawing.Size(379, 50);
             this.lblTransfer.TabIndex = 43;
             this.lblTransfer.Text = "ACCOUNT DETAILS";
             // 
@@ -112,7 +112,7 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(234, 112);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(20, 31);
+            this.label3.Size = new System.Drawing.Size(19, 30);
             this.label3.TabIndex = 12;
             this.label3.Text = ":";
             // 
@@ -135,7 +135,7 @@
             this.lblCurBalance.Location = new System.Drawing.Point(23, 112);
             this.lblCurBalance.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCurBalance.Name = "lblCurBalance";
-            this.lblCurBalance.Size = new System.Drawing.Size(56, 31);
+            this.lblCurBalance.Size = new System.Drawing.Size(54, 30);
             this.lblCurBalance.TabIndex = 10;
             this.lblCurBalance.Text = "NIK";
             // 
@@ -144,7 +144,7 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(234, 58);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(20, 31);
+            this.label2.Size = new System.Drawing.Size(19, 30);
             this.label2.TabIndex = 9;
             this.label2.Text = ":";
             // 
@@ -167,9 +167,9 @@
             this.lblAccNum.Location = new System.Drawing.Point(23, 58);
             this.lblAccNum.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblAccNum.Name = "lblAccNum";
-            this.lblAccNum.Size = new System.Drawing.Size(211, 31);
+            this.lblAccNum.Size = new System.Drawing.Size(204, 30);
             this.lblAccNum.TabIndex = 7;
-            this.lblAccNum.Text = "Account Number";
+            this.lblAccNum.Text = "Card Number";
             // 
             // panel1
             // 
