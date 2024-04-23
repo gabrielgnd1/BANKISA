@@ -28,27 +28,27 @@ namespace ISA_BANK.DB_CLASS
 
             if (kriteria == "")
             {
-                sql = "select * from cabang";
+                sql = "select * from cabangs";
             }
             else
             {
-                sql = "select * from cabang where " + kriteria + " like '%" + nilaiKriteria + "%'";
+                sql = "select * from cabangs where " + kriteria + " like '%" + nilaiKriteria + "%'";
             }
 
             MySqlDataReader hasil = Koneksi.JalankanPerintahQuery(sql);
 
-            List<Cabang> listCabang = new List<Cabang>();
+            List<Cabang> listHasil = new List<Cabang>();
             while (hasil.Read() == true)
             {
                 Cabang c = new Cabang();
 
                 c.Nama = hasil.GetValue(1).ToString();
-                c.Id = int.Parse(hasil.GetValue(4).ToString());
+                
            
 
-                listCabang.Add(c);
+                listHasil.Add(c);
             }
-            return listCabang;
+            return listHasil;
         }
     }
 }
