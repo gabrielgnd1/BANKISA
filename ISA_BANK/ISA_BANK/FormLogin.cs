@@ -23,7 +23,7 @@ namespace ISA_BANK
             if (txtUsername.Text == "Input Your Username")
             {
                 txtUsername.Text = "";
-                txtUsername.ForeColor = Color.Silver;
+                txtUsername.ForeColor = Color.Black;
             }
         }
 
@@ -33,6 +33,7 @@ namespace ISA_BANK
             {
                 txtUsername.Text = "Input Your Username";
                 txtUsername.ForeColor = Color.Silver;
+                MessageBox.Show("Input Username first");
             }
         }
 
@@ -41,7 +42,7 @@ namespace ISA_BANK
             if (txtPassword.Text == "Input Your Password")
             {
                 txtPassword.Text = "";
-                txtPassword.ForeColor = Color.Silver;
+                txtPassword.ForeColor = Color.Black;
             }
         }
 
@@ -51,6 +52,7 @@ namespace ISA_BANK
             {
                 txtPassword.Text = "Input Your Password";
                 txtPassword.ForeColor = Color.Silver;
+                MessageBox.Show("Input Password first");
             }
         }
 
@@ -65,5 +67,25 @@ namespace ISA_BANK
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            string uid = txtUsername.Text;
+            string pwd = txtPassword.Text;
+            FormMain frm = (FormMain)this.Owner;
+            Akun userLogin = Akun.CekLogin(uid, pwd);
+            frm.userLogin = Pegawai.CekLogin(uid, pwd);
+            if (userLogin is null)
+            {
+                Application.Exit();
+            }
+            else
+            {
+
+                frm.Visible = true;
+                this.Close();
+            }
+        }
+
     }
 }

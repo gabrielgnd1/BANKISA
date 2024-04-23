@@ -23,7 +23,6 @@ C:\Users\user\Documents\GitHub\BANKISA\ISA_BANK\ISA_BANK\obj\Debug\ISA_BANK.Form
 C:\Users\user\Documents\GitHub\BANKISA\ISA_BANK\ISA_BANK\obj\Debug\ISA_BANK.FormLogin.resources
 C:\Users\user\Documents\GitHub\BANKISA\ISA_BANK\ISA_BANK\obj\Debug\ISA_BANK.FormMain.resources
 C:\Users\user\Documents\GitHub\BANKISA\ISA_BANK\ISA_BANK\obj\Debug\ISA_BANK.FormRegister.resources
-C:\Users\user\Documents\GitHub\BANKISA\ISA_BANK\ISA_BANK\obj\Debug\ISA_BANK.FormTes.resources
 C:\Users\user\Documents\GitHub\BANKISA\ISA_BANK\ISA_BANK\obj\Debug\ISA_BANK.FormTransactionHistory.resources
 C:\Users\user\Documents\GitHub\BANKISA\ISA_BANK\ISA_BANK\obj\Debug\ISA_BANK.FormTransfer.resources
 C:\Users\user\Documents\GitHub\BANKISA\ISA_BANK\ISA_BANK\obj\Debug\ISA_BANK.FormUpdateAccount.resources
@@ -33,56 +32,37 @@ C:\Users\user\Documents\GitHub\BANKISA\ISA_BANK\ISA_BANK\obj\Debug\ISA_BANK.cspr
 C:\Users\user\Documents\GitHub\BANKISA\ISA_BANK\ISA_BANK\obj\Debug\ISA_BANK.csproj.CoreCompileInputs.cache
 C:\Users\user\Documents\GitHub\BANKISA\ISA_BANK\ISA_BANK\obj\Debug\ISA_BANK.exe
 C:\Users\user\Documents\GitHub\BANKISA\ISA_BANK\ISA_BANK\obj\Debug\ISA_BANK.pdb
-D:\Michelle (nitip)\KULIAH\SEMESTER 4\ISA\BANKISA\ISA_BANK\ISA_BANK\bin\Debug\ISA_BANK.exe.config
-D:\Michelle (nitip)\KULIAH\SEMESTER 4\ISA\BANKISA\ISA_BANK\ISA_BANK\bin\Debug\ISA_BANK.exe
-D:\Michelle (nitip)\KULIAH\SEMESTER 4\ISA\BANKISA\ISA_BANK\ISA_BANK\bin\Debug\ISA_BANK.pdb
-D:\Michelle (nitip)\KULIAH\SEMESTER 4\ISA\BANKISA\ISA_BANK\ISA_BANK\bin\Debug\BouncyCastle.Cryptography.dll
-D:\Michelle (nitip)\KULIAH\SEMESTER 4\ISA\BANKISA\ISA_BANK\ISA_BANK\bin\Debug\Google.Protobuf.dll
-D:\Michelle (nitip)\KULIAH\SEMESTER 4\ISA\BANKISA\ISA_BANK\ISA_BANK\bin\Debug\K4os.Compression.LZ4.dll
-D:\Michelle (nitip)\KULIAH\SEMESTER 4\ISA\BANKISA\ISA_BANK\ISA_BANK\bin\Debug\K4os.Compression.LZ4.Streams.dll
-D:\Michelle (nitip)\KULIAH\SEMESTER 4\ISA\BANKISA\ISA_BANK\ISA_BANK\bin\Debug\K4os.Hash.xxHash.dll
-D:\Michelle (nitip)\KULIAH\SEMESTER 4\ISA\BANKISA\ISA_BANK\ISA_BANK\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
-D:\Michelle (nitip)\KULIAH\SEMESTER 4\ISA\BANKISA\ISA_BANK\ISA_BANK\bin\Debug\MySql.Data.dll
-D:\Michelle (nitip)\KULIAH\SEMESTER 4\ISA\BANKISA\ISA_BANK\ISA_BANK\bin\Debug\System.Buffers.dll
-D:\Michelle (nitip)\KULIAH\SEMESTER 4\ISA\BANKISA\ISA_BANK\ISA_BANK\bin\Debug\System.Configuration.ConfigurationManager.dll
-D:\Michelle (nitip)\KULIAH\SEMESTER 4\ISA\BANKISA\ISA_BANK\ISA_BANK\bin\Debug\System.Diagnostics.DiagnosticSource.dll
-D:\Michelle (nitip)\KULIAH\SEMESTER 4\ISA\BANKISA\ISA_BANK\ISA_BANK\bin\Debug\System.IO.Pipelines.dll
-D:\Michelle (nitip)\KULIAH\SEMESTER 4\ISA\BANKISA\ISA_BANK\ISA_BANK\bin\Debug\System.Memory.dll
-D:\Michelle (nitip)\KULIAH\SEMESTER 4\ISA\BANKISA\ISA_BANK\ISA_BANK\bin\Debug\System.Numerics.Vectors.dll
-D:\Michelle (nitip)\KULIAH\SEMESTER 4\ISA\BANKISA\ISA_BANK\ISA_BANK\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
-D:\Michelle (nitip)\KULIAH\SEMESTER 4\ISA\BANKISA\ISA_BANK\ISA_BANK\bin\Debug\System.Threading.Tasks.Extensions.dll
-D:\Michelle (nitip)\KULIAH\SEMESTER 4\ISA\BANKISA\ISA_BANK\ISA_BANK\bin\Debug\ZstdSharp.dll
-D:\Michelle (nitip)\KULIAH\SEMESTER 4\ISA\BANKISA\ISA_BANK\ISA_BANK\bin\Debug\BouncyCastle.Cryptography.xml
-D:\Michelle (nitip)\KULIAH\SEMESTER 4\ISA\BANKISA\ISA_BANK\ISA_BANK\bin\Debug\Google.Protobuf.pdb
-D:\Michelle (nitip)\KULIAH\SEMESTER 4\ISA\BANKISA\ISA_BANK\ISA_BANK\bin\Debug\Google.Protobuf.xml
-D:\Michelle (nitip)\KULIAH\SEMESTER 4\ISA\BANKISA\ISA_BANK\ISA_BANK\bin\Debug\K4os.Compression.LZ4.xml
-D:\Michelle (nitip)\KULIAH\SEMESTER 4\ISA\BANKISA\ISA_BANK\ISA_BANK\bin\Debug\K4os.Compression.LZ4.Streams.xml
-D:\Michelle (nitip)\KULIAH\SEMESTER 4\ISA\BANKISA\ISA_BANK\ISA_BANK\bin\Debug\K4os.Hash.xxHash.xml
-D:\Michelle (nitip)\KULIAH\SEMESTER 4\ISA\BANKISA\ISA_BANK\ISA_BANK\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
-D:\Michelle (nitip)\KULIAH\SEMESTER 4\ISA\BANKISA\ISA_BANK\ISA_BANK\bin\Debug\MySql.Data.xml
-D:\Michelle (nitip)\KULIAH\SEMESTER 4\ISA\BANKISA\ISA_BANK\ISA_BANK\bin\Debug\System.Buffers.xml
-D:\Michelle (nitip)\KULIAH\SEMESTER 4\ISA\BANKISA\ISA_BANK\ISA_BANK\bin\Debug\System.Diagnostics.DiagnosticSource.xml
-D:\Michelle (nitip)\KULIAH\SEMESTER 4\ISA\BANKISA\ISA_BANK\ISA_BANK\bin\Debug\System.IO.Pipelines.xml
-D:\Michelle (nitip)\KULIAH\SEMESTER 4\ISA\BANKISA\ISA_BANK\ISA_BANK\bin\Debug\System.Memory.xml
-D:\Michelle (nitip)\KULIAH\SEMESTER 4\ISA\BANKISA\ISA_BANK\ISA_BANK\bin\Debug\System.Numerics.Vectors.xml
-D:\Michelle (nitip)\KULIAH\SEMESTER 4\ISA\BANKISA\ISA_BANK\ISA_BANK\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
-D:\Michelle (nitip)\KULIAH\SEMESTER 4\ISA\BANKISA\ISA_BANK\ISA_BANK\bin\Debug\System.Threading.Tasks.Extensions.xml
-D:\Michelle (nitip)\KULIAH\SEMESTER 4\ISA\BANKISA\ISA_BANK\ISA_BANK\obj\Debug\ISA_BANK.csproj.AssemblyReference.cache
-D:\Michelle (nitip)\KULIAH\SEMESTER 4\ISA\BANKISA\ISA_BANK\ISA_BANK\obj\Debug\ISA_BANK.FormAccountDetails.resources
-D:\Michelle (nitip)\KULIAH\SEMESTER 4\ISA\BANKISA\ISA_BANK\ISA_BANK\obj\Debug\ISA_BANK.FormCreateNewBankAccount.resources
-D:\Michelle (nitip)\KULIAH\SEMESTER 4\ISA\BANKISA\ISA_BANK\ISA_BANK\obj\Debug\ISA_BANK.FormAllAccount.resources
-D:\Michelle (nitip)\KULIAH\SEMESTER 4\ISA\BANKISA\ISA_BANK\ISA_BANK\obj\Debug\ISA_BANK.FormDeposit.resources
-D:\Michelle (nitip)\KULIAH\SEMESTER 4\ISA\BANKISA\ISA_BANK\ISA_BANK\obj\Debug\ISA_BANK.FormLogin.resources
-D:\Michelle (nitip)\KULIAH\SEMESTER 4\ISA\BANKISA\ISA_BANK\ISA_BANK\obj\Debug\ISA_BANK.FormMain.resources
-D:\Michelle (nitip)\KULIAH\SEMESTER 4\ISA\BANKISA\ISA_BANK\ISA_BANK\obj\Debug\ISA_BANK.FormRegister.resources
-D:\Michelle (nitip)\KULIAH\SEMESTER 4\ISA\BANKISA\ISA_BANK\ISA_BANK\obj\Debug\ISA_BANK.FormTransactionHistory.resources
-D:\Michelle (nitip)\KULIAH\SEMESTER 4\ISA\BANKISA\ISA_BANK\ISA_BANK\obj\Debug\ISA_BANK.FormTransfer.resources
-D:\Michelle (nitip)\KULIAH\SEMESTER 4\ISA\BANKISA\ISA_BANK\ISA_BANK\obj\Debug\ISA_BANK.FormUpdateAccount.resources
-D:\Michelle (nitip)\KULIAH\SEMESTER 4\ISA\BANKISA\ISA_BANK\ISA_BANK\obj\Debug\ISA_BANK.FormWithdrawal.resources
-D:\Michelle (nitip)\KULIAH\SEMESTER 4\ISA\BANKISA\ISA_BANK\ISA_BANK\obj\Debug\ISA_BANK.MainFormLama.resources
-D:\Michelle (nitip)\KULIAH\SEMESTER 4\ISA\BANKISA\ISA_BANK\ISA_BANK\obj\Debug\ISA_BANK.Properties.Resources.resources
-D:\Michelle (nitip)\KULIAH\SEMESTER 4\ISA\BANKISA\ISA_BANK\ISA_BANK\obj\Debug\ISA_BANK.csproj.GenerateResource.cache
-D:\Michelle (nitip)\KULIAH\SEMESTER 4\ISA\BANKISA\ISA_BANK\ISA_BANK\obj\Debug\ISA_BANK.csproj.CoreCompileInputs.cache
-D:\Michelle (nitip)\KULIAH\SEMESTER 4\ISA\BANKISA\ISA_BANK\ISA_BANK\obj\Debug\ISA_BANK.csproj.CopyComplete
-D:\Michelle (nitip)\KULIAH\SEMESTER 4\ISA\BANKISA\ISA_BANK\ISA_BANK\obj\Debug\ISA_BANK.exe
-D:\Michelle (nitip)\KULIAH\SEMESTER 4\ISA\BANKISA\ISA_BANK\ISA_BANK\obj\Debug\ISA_BANK.pdb
+C:\Users\user\Documents\GitHub\BANKISA\ISA_BANK\ISA_BANK\bin\Debug\BouncyCastle.Cryptography.dll
+C:\Users\user\Documents\GitHub\BANKISA\ISA_BANK\ISA_BANK\bin\Debug\Google.Protobuf.dll
+C:\Users\user\Documents\GitHub\BANKISA\ISA_BANK\ISA_BANK\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\user\Documents\GitHub\BANKISA\ISA_BANK\ISA_BANK\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\user\Documents\GitHub\BANKISA\ISA_BANK\ISA_BANK\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\user\Documents\GitHub\BANKISA\ISA_BANK\ISA_BANK\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\user\Documents\GitHub\BANKISA\ISA_BANK\ISA_BANK\bin\Debug\MySql.Data.dll
+C:\Users\user\Documents\GitHub\BANKISA\ISA_BANK\ISA_BANK\bin\Debug\System.Buffers.dll
+C:\Users\user\Documents\GitHub\BANKISA\ISA_BANK\ISA_BANK\bin\Debug\System.Configuration.ConfigurationManager.dll
+C:\Users\user\Documents\GitHub\BANKISA\ISA_BANK\ISA_BANK\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\user\Documents\GitHub\BANKISA\ISA_BANK\ISA_BANK\bin\Debug\System.IO.Pipelines.dll
+C:\Users\user\Documents\GitHub\BANKISA\ISA_BANK\ISA_BANK\bin\Debug\System.Memory.dll
+C:\Users\user\Documents\GitHub\BANKISA\ISA_BANK\ISA_BANK\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\user\Documents\GitHub\BANKISA\ISA_BANK\ISA_BANK\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\user\Documents\GitHub\BANKISA\ISA_BANK\ISA_BANK\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\user\Documents\GitHub\BANKISA\ISA_BANK\ISA_BANK\bin\Debug\ZstdSharp.dll
+C:\Users\user\Documents\GitHub\BANKISA\ISA_BANK\ISA_BANK\bin\Debug\BouncyCastle.Cryptography.xml
+C:\Users\user\Documents\GitHub\BANKISA\ISA_BANK\ISA_BANK\bin\Debug\Google.Protobuf.pdb
+C:\Users\user\Documents\GitHub\BANKISA\ISA_BANK\ISA_BANK\bin\Debug\Google.Protobuf.xml
+C:\Users\user\Documents\GitHub\BANKISA\ISA_BANK\ISA_BANK\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\user\Documents\GitHub\BANKISA\ISA_BANK\ISA_BANK\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\user\Documents\GitHub\BANKISA\ISA_BANK\ISA_BANK\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\user\Documents\GitHub\BANKISA\ISA_BANK\ISA_BANK\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\user\Documents\GitHub\BANKISA\ISA_BANK\ISA_BANK\bin\Debug\MySql.Data.xml
+C:\Users\user\Documents\GitHub\BANKISA\ISA_BANK\ISA_BANK\bin\Debug\System.Buffers.xml
+C:\Users\user\Documents\GitHub\BANKISA\ISA_BANK\ISA_BANK\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\user\Documents\GitHub\BANKISA\ISA_BANK\ISA_BANK\bin\Debug\System.IO.Pipelines.xml
+C:\Users\user\Documents\GitHub\BANKISA\ISA_BANK\ISA_BANK\bin\Debug\System.Memory.xml
+C:\Users\user\Documents\GitHub\BANKISA\ISA_BANK\ISA_BANK\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\user\Documents\GitHub\BANKISA\ISA_BANK\ISA_BANK\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\user\Documents\GitHub\BANKISA\ISA_BANK\ISA_BANK\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\user\Documents\GitHub\BANKISA\ISA_BANK\ISA_BANK\obj\Debug\ISA_BANK.FormDisplayAllAccount.resources
+C:\Users\user\Documents\GitHub\BANKISA\ISA_BANK\ISA_BANK\obj\Debug\ISA_BANK.FormWithdrawal.resources
+C:\Users\user\Documents\GitHub\BANKISA\ISA_BANK\ISA_BANK\obj\Debug\ISA_BANK.csproj.CopyComplete

@@ -17,8 +17,6 @@ namespace ISA_BANK.DB_CLASS
         private string no_telepon;
         private string gender;
 
-        public Nasabah() { }
-
         public Nasabah(int id, string nama, DateTime ttl, Akun akun, string nik, string no_telepon, string gender)
         {
             this.Id = id;
@@ -30,6 +28,17 @@ namespace ISA_BANK.DB_CLASS
             this.Gender = gender;
         }
 
+        public Nasabah()
+        {
+            Id = 0;
+            Nama = "";
+            Ttl = DateTime.Now;
+            Akun = new Akun();
+            Nik = "";
+            No_telepon = "";
+            Gender = "";
+        }
+
         public int Id { get => id; set => id = value; }
         public string Nama { get => nama; set => nama = value; }
         public DateTime Ttl { get => ttl; set => ttl = value; }
@@ -38,39 +47,32 @@ namespace ISA_BANK.DB_CLASS
         public string No_telepon { get => no_telepon; set => no_telepon = value; }
         public string Gender { get => gender; set => gender = value; }
 
-        #region Methods
-        public static List<Nasabah> BacaData(string kriteria, string nilaiKriteria)
+        public static Nasabah CekLogin(string uid, string pwd)
         {
-            string sql = "";
+            Nasabah n = new Nasabah();
 
-            if (kriteria == "")
-            {
-                sql = "select * from nasabah";
-            }
-            else
-            {
-                sql = "select * from nasabah where " + kriteria + " like '%" + nilaiKriteria + "%'";
-            }
+            string perintah = "SELECT id, nama, cabangs_id, akuns_id FROM manajers";
 
-            MySqlDataReader hasil = Koneksi.JalankanPerintahQuery(sql);
+            MySqlDataReader hasil = Koneksi.JalankanPerintahQuery(perintah); //eksekusi perintah diatas
 
-            List<Nasabah> listNasabah = new List<Nasabah>();
-            while (hasil.Read() == true)
+            // selama masih ada data yang dibaca di data reader
+            if (hasil.Read() == true)
             {
-                Nasabah n = new Nasabah();
+                Nasabah tampung = new Nasabah(); //tampung ke sebuah kategori
+                tampung.Id = int.Parse(hasil.GetValue(0).ToString());
+                tampung.Nama = hasil.GetValue(1).ToString();
+                tampung.Tt
+
                 Akun a = new Akun();
-                
-                n.Nama = hasil.GetValue(1).ToString();
-                n.Ttl = DateTime.Parse(hasil.GetValue(2).ToString());
-                a.Id = int.Parse(hasil.GetValue(3).ToString());
-                n.Nik = hasil.GetValue(4).ToString();
-                n.No_telepon = hasil.GetValue(5).ToString();
-                n.Gender = hasil.GetValue(6).ToString();
+                a.Id = int.Parse(hasil.GetValue(4).ToString());
+                a.Username = hasil.GetValue(5).ToString();
+                a.Password = hasil.GetValue(6).ToString();
 
-                listNasabah.Add(n);
+                tampung.Akun = a;
+                return tampung;
             }
-            return listNasabah;
+
+            else return null;
         }
-        #endregion
     }
 }

@@ -70,7 +70,24 @@ namespace ISA_BANK.DB_CLASS
             return listRekening;
         }
 
+        public static void HapusData(string KodeHapus)
+        {   //susun perintah query
+            string perintah = "delete from rekenings where id='" + KodeHapus + "';";
 
+            Koneksi.JalankanPerintahDML(perintah);
+        }
+
+        public static void TambahData(Rekening obj)
+        {
+            string sql = "INSERT INTO rekenings(nomor, jumlah_saldo, nomor_kartu, nasabahs_id, jenis_kartu) " +
+                "VALUES(" +
+                "'" + obj.Nomor + "'," +
+                "'" + obj.Jumlah_saldo + "'," +
+                "'" + obj.Nomor_kartu + "'," +
+                "'" + obj.Nasabah.Id + "'," +
+                "'" + obj.Jenis_kartu + "');";
+            Koneksi.JalankanPerintahDML(sql);
+        }
 
         #endregion
     }

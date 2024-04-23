@@ -19,6 +19,12 @@ namespace ISA_BANK.DB_CLASS
         }
         public Cabang() { }
 
+        public Cabang()
+        {
+            Id = 0;
+            Nama = "";
+        }
+
         public int Id { get => id; set => id = value; }
         public string Nama { get => nama; set => nama = value; }
 

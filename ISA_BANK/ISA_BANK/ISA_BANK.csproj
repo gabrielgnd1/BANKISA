@@ -107,7 +107,6 @@
     <Compile Include="DB_CLASS\Nasabah.cs" />
     <Compile Include="DB_CLASS\PenambahanNasabah.cs" />
     <Compile Include="DB_CLASS\PenambahanRekening.cs" />
-    <Compile Include="DB_CLASS\PenghapusanNasabah.cs" />
     <Compile Include="DB_CLASS\PenghapusanRekening.cs" />
     <Compile Include="DB_CLASS\Rekening.cs" />
     <Compile Include="DB_CLASS\Teller.cs" />
@@ -118,11 +117,29 @@
     <Compile Include="FormAccountDetails.Designer.cs">
       <DependentUpon>FormAccountDetails.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormAddRekening.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAddRekening.Designer.cs">
+      <DependentUpon>FormAddRekening.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormCreateNewBankAccount.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormCreateNewBankAccount.Designer.cs">
       <DependentUpon>FormCreateNewBankAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDisplayAllAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDisplayAllAccount.Designer.cs">
+      <DependentUpon>FormDisplayAllAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDeposit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDeposit.Designer.cs">
+      <DependentUpon>FormDeposit.cs</DependentUpon>
     </Compile>
     <Compile Include="FormLogin.cs">
       <SubType>Form</SubType>
@@ -160,6 +177,12 @@
     <Compile Include="FormUpdateAccount.Designer.cs">
       <DependentUpon>FormUpdateAccount.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormWithdrawal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormWithdrawal.Designer.cs">
+      <DependentUpon>FormWithdrawal.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainFormLama.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -173,8 +196,17 @@
     <EmbeddedResource Include="FormAccountDetails.resx">
       <DependentUpon>FormAccountDetails.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormAddRekening.resx">
+      <DependentUpon>FormAddRekening.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormCreateNewBankAccount.resx">
       <DependentUpon>FormCreateNewBankAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDisplayAllAccount.resx">
+      <DependentUpon>FormDisplayAllAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDeposit.resx">
+      <DependentUpon>FormDeposit.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
@@ -193,6 +225,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormUpdateAccount.resx">
       <DependentUpon>FormUpdateAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormWithdrawal.resx">
+      <DependentUpon>FormWithdrawal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainFormLama.resx">
       <DependentUpon>MainFormLama.cs</DependentUpon>
