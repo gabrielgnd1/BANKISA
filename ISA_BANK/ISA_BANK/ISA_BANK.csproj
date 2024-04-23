@@ -98,18 +98,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DB_CLASS\Akun.cs" />
     <Compile Include="DB_CLASS\Cabang.cs" />
-    <Compile Include="DB_CLASS\CS.cs" />
+    <Compile Include="DB_CLASS\Karyawan.cs" />
     <Compile Include="DB_CLASS\Koneksi.cs" />
-    <Compile Include="DB_CLASS\Manajer.cs" />
-    <Compile Include="DB_CLASS\Mutasi.cs" />
     <Compile Include="DB_CLASS\Nasabah.cs" />
-    <Compile Include="DB_CLASS\PenambahanNasabah.cs" />
-    <Compile Include="DB_CLASS\PenambahanRekening.cs" />
-    <Compile Include="DB_CLASS\PenghapusanRekening.cs" />
     <Compile Include="DB_CLASS\Rekening.cs" />
-    <Compile Include="DB_CLASS\Teller.cs" />
     <Compile Include="DB_CLASS\Transaksi.cs" />
     <Compile Include="FormAccountDetails.cs">
       <SubType>Form</SubType>

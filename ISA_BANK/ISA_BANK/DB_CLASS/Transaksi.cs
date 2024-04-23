@@ -13,7 +13,7 @@ namespace ISA_BANK.DB_CLASS
         private DateTime tanggal;
         private int jumlah;
         private string keterangan;
-        private Teller teller;
+        private Karyawan karyawan;
         private Rekening rekening;
 
         public Transaksi()
@@ -21,13 +21,13 @@ namespace ISA_BANK.DB_CLASS
 
         }
 
-        public Transaksi(int id, DateTime tanggal, int jumlah, string keterangan, Teller teller, Rekening rekening)
+        public Transaksi(int id, DateTime tanggal, int jumlah, string keterangan, Karyawan karyawan, Rekening rekening)
         {
             this.Id = id;
             this.Tanggal = tanggal;
             this.Jumlah = jumlah;
             this.Keterangan = keterangan;
-            this.Teller = teller;
+            this.Karyawan = karyawan;
             this.Rekening = rekening;
         }
 
@@ -35,7 +35,7 @@ namespace ISA_BANK.DB_CLASS
         public DateTime Tanggal { get => tanggal; set => tanggal = value; }
         public int Jumlah { get => jumlah; set => jumlah = value; }
         public string Keterangan { get => keterangan; set => keterangan = value; }
-        public Teller Teller { get => teller; set => teller = value; }
+        public Karyawan Karyawan { get => karyawan; set => karyawan = value; }
         public Rekening Rekening { get => rekening; set => rekening = value; }
 
         #region Methods
@@ -59,17 +59,71 @@ namespace ISA_BANK.DB_CLASS
             {
                 Rekening r = new Rekening();
                 Transaksi t = new Transaksi();
-                Teller tl = new Teller();
+                Karyawan k = new Karyawan();
 
-                
+
                 t.Tanggal = DateTime.Parse(hasil.GetValue(1).ToString());
                 t.Jumlah = int.Parse(hasil.GetValue(2).ToString());
-                t.Keterangan = hasil.GetValue(3).ToString();    
-                tl.Id = int.Parse(hasil.GetValue(4).ToString());
+                t.Keterangan = hasil.GetValue(3).ToString();
+                k.Id = int.Parse(hasil.GetValue(4).ToString());
                 r.Id = int.Parse(hasil.GetValue(5).ToString());
                 listHasil.Add(t);
             }
             return listHasil;
-            #endregion
+            
         }
+
+        public static Boolean HapusData(int id)
+        {
+            string sql = "delete from transaksis where id='" + id + "'";
+
+            int JumlahDitambahkan = Koneksi.JalankanPerintahDML(sql);
+            Boolean Status;
+            if (JumlahDitambahkan == 0)
+            {
+                Status = false;
+            }
+            else
+            {
+                Status = true;
+            }
+            return Status;
+        }
+
+        public static Boolean UbahData(Transaksi t)
+        {
+            string sql = "update transaksis set tanggal='" + t.Tanggal + "',jumlah='" + t.Jumlah + "',keterangan='" + t.Keterangan +
+                "',rekenings_id" + t.Rekening.Id + "',karyawans_id='" + t.Karyawan.Id +  "' where id='" + t.Id + "'";
+
+            int jumlahDiubah = Koneksi.JalankanPerintahDML(sql);
+            Boolean Status;
+            if (jumlahDiubah == 0)
+            {
+                Status = false;
+            }
+            else
+            {
+                Status = true;
+            }
+            return Status;
+        }
+
+        public static Boolean TambahData(Transaksi t)
+        {
+            string sql = "insert into transaksis(tanggal, jumlah, keterangan, rekeings_id, karyawans_id) values('" +
+                t.Tanggal + "','" + t.Jumlah + "','" + t.Keterangan + "','" + t.Rekening.Id + "','" + t.Karyawan.Id  + "')";
+            int jumlah = Koneksi.JalankanPerintahDML(sql);
+
+            if (jumlah == 0)
+            {
+                return false;
+            }
+            else
+            {
+                return true;
+            }
+
+        }
+        #endregion
+    }
 }

@@ -70,22 +70,62 @@ namespace ISA_BANK
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            string uid = txtUsername.Text;
-            string pwd = txtPassword.Text;
-            FormMain frm = (FormMain)this.Owner;
-            Akun userLogin = Akun.CekLogin(uid, pwd);
-            frm.userLogin = Pegawai.CekLogin(uid, pwd);
-            if (userLogin is null)
+            try
             {
-                Application.Exit();
-            }
-            else
-            {
+                Koneksi koneksi = new Koneksi();
 
-                frm.Visible = true;
-                this.Close();
+                Nasabah n = Nasabah.CekLogin(txtUsername.Text, txtPassword.Text);
+
+                if (n != null)
+                {
+                    FormMain frm = (FormMain)this.Owner;
+                    frm.nasabah = n;
+
+                    MessageBox.Show("Selamat Datang di Bank ISA.", "Login Berhasil");
+                    
+
+                    Nasabah nasabah = Nasabah.BacaDataPerNasabah(txtUsername.Text);
+                    
+
+                    this.DialogResult = DialogResult.OK;
+                    this.Close();
+                }
+                else if (n == null)
+                {
+                    Karyawan k = Karyawan.CekLogin(txtUsername.Text, txtPassword.Text);
+                    if (k != null)
+                    {
+                        FormMain frm = (FormMain)this.Owner;
+                        frm.karyawan = k;
+                        MessageBox.Show("Selamat Datang di Bank ISA.", "Login Berhasil");
+                        
+                        frm.SetHakAkses();
+
+                        this.DialogResult = DialogResult.OK;
+                        this.Close();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Username tidak ditemukan atau password salah");
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Username tidak ditemukan atau password salah");
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Koneksi gagal. Pesan Kesalahan : " + ex.Message, "Kesalahan");
             }
         }
 
+        private void label3_Click(object sender, EventArgs e)
+        {
+            FormRegister frm = new FormRegister();
+            frm.Owner = this;
+            frm.ShowDialog();   
+        }
     }
 }

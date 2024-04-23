@@ -17,6 +17,7 @@ namespace ISA_BANK.DB_CLASS
         private string jenis_kartu;
 
         public Rekening() { }
+
         public Rekening(int id, string nomor, int jumlah_saldo, string nomor_kartu, Nasabah nasabah, string jenis_kartu)
         {
             this.Id = id;

@@ -91,14 +91,41 @@ namespace ISA_BANK
 
         private void btnRegister_Click(object sender, EventArgs e)
         {
+            
+        }
+
+        private void btnRegister_Click_1(object sender, EventArgs e)
+        {
             try
             {
-                Koneksi koneksi = new Koneksi();
+                string gender;
+                if (rdoMale.Checked)
+                {
+                    gender = "L";
+                }
+                else
+                {
+                    gender = "P";
+                }
+                Nasabah n = new Nasabah();
+                n.Nama = txtFullname.Text;
+                n.No_telepon = textBoxNoTelp.Text;
+                n.Gender = gender;
+                n.Ttl = ttlPicker.Value;
+                n.Username = txtUsername.Text;
+                n.Password = txtPassword.Text;
 
-
+                Nasabah.TambahData(n);
+                MessageBox.Show("Data Telah Tersimpan.", "Informasi");
             }
-            catch { 
+
+
+            catch (Exception x)
+            {
+                MessageBox.Show("Gagal Register : " + x.Message);
             }
         }
     }
 }
+
+
