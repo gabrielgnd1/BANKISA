@@ -23,7 +23,7 @@ namespace ISA_BANK
             if (txtFullname.Text == "Input Your Fullname")
             {
                 txtFullname.Text = "";
-                txtFullname.ForeColor = Color.Silver;
+                txtFullname.ForeColor = Color.Black;
             }
         }
 
@@ -35,12 +35,29 @@ namespace ISA_BANK
                 txtFullname.ForeColor = Color.Silver;
             }
         }
+
+        private void txtNIK_Enter(object sender, EventArgs e)
+        {
+            if (txtNIK.Text == "Input Your NIK")
+            {
+                txtNIK.Text = "";
+                txtNIK.ForeColor = Color.Black;
+            }
+        }
+        private void txtNIK_Leave(object sender, EventArgs e)
+        {
+            if (txtNIK.Text == "")
+            {
+                txtNIK.Text = "Input Your NIK";
+                txtNIK.ForeColor = Color.Silver;
+            }
+        }
         private void txtUsername_Enter(object sender, EventArgs e)
         {
             if (txtUsername.Text == "Input Your Username")
             {
                 txtUsername.Text = "";
-                txtUsername.ForeColor = Color.Silver;
+                txtUsername.ForeColor = Color.Black;
             }
         }
 
@@ -52,13 +69,12 @@ namespace ISA_BANK
                 txtUsername.ForeColor = Color.Silver;
             }
         }
-
         private void txtPassword_Enter(object sender, EventArgs e)
         {
             if (txtPassword.Text == "Input Your Password")
             {
                 txtPassword.Text = "";
-                txtPassword.ForeColor = Color.Silver;
+                txtPassword.ForeColor = Color.Black;
             }
         }
 
@@ -71,29 +87,23 @@ namespace ISA_BANK
             }
         }
 
-        private void txtCardNum_Enter(object sender, EventArgs e)
+        private void txtNoTelp_Enter(object sender, EventArgs e)
         {
-            if (txtPassword.Text == "Input Your Card Number")
+            if (txtNoTelp.Text == "Input Your Phone Number")
             {
-                txtPassword.Text = "";
-                txtPassword.ForeColor = Color.Silver;
+                txtNoTelp.Text = "";
+                txtNoTelp.ForeColor = Color.Black;
             }
         }
 
-        private void txtCardNum_Leave(object sender, EventArgs e)
+        private void txtNoTelp_Leave(object sender, EventArgs e)
         {
-            if (txtPassword.Text == "")
+            if (txtNoTelp.Text == "")
             {
-                txtPassword.Text = "Input Your Card Number";
-                txtPassword.ForeColor = Color.Silver;
+                txtNoTelp.Text = "Input Your Phone Number";
+                txtNoTelp.ForeColor = Color.Silver;
             }
         }
-
-        private void btnRegister_Click(object sender, EventArgs e)
-        {
-            
-        }
-
         private void btnRegister_Click_1(object sender, EventArgs e)
         {
             try
@@ -108,11 +118,11 @@ namespace ISA_BANK
                     gender = "P";
                 }
                 Nasabah n = new Nasabah();
-                n.Nama = txtFullname.Text;
-                n.No_telepon = textBoxNoTelp.Text;
+                n.Nama = txtUsername.Text;
+                n.No_telepon = txtNoTelp.Text;
                 n.Gender = gender;
                 n.Ttl = ttlPicker.Value;
-                n.Username = txtUsername.Text;
+                n.Username = txtFullname.Text;
                 n.Password = txtPassword.Text;
 
                 Nasabah.TambahData(n);
@@ -125,6 +135,13 @@ namespace ISA_BANK
                 MessageBox.Show("Gagal Register : " + x.Message);
             }
         }
+
+        private void FormRegister_Load(object sender, EventArgs e)
+        {
+            txtUsername.Focus();
+        }
+
+        
     }
 }
 

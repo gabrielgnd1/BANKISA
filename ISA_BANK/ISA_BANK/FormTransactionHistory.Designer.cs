@@ -51,7 +51,7 @@
             this.lblTransfer.Location = new System.Drawing.Point(32, 53);
             this.lblTransfer.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTransfer.Name = "lblTransfer";
-            this.lblTransfer.Size = new System.Drawing.Size(479, 50);
+            this.lblTransfer.Size = new System.Drawing.Size(497, 50);
             this.lblTransfer.TabIndex = 10;
             this.lblTransfer.Text = "TRANSACTION HISTORY";
             // 
@@ -171,8 +171,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.BackColor = System.Drawing.Color.Beige;
             this.ClientSize = new System.Drawing.Size(644, 942);
+            this.ControlBox = false;
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnSend);
             this.Controls.Add(this.dateTimePickerUntil);
@@ -184,6 +185,7 @@
             this.Controls.Add(this.txtCardNumber);
             this.Controls.Add(this.lblTrfAmmount);
             this.Controls.Add(this.lblTransfer);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormTransactionHistory";
             this.Text = "Transaction History";
             this.ResumeLayout(false);

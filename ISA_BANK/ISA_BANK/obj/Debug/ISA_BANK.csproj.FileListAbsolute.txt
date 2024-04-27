@@ -120,3 +120,5 @@ D:\ISA\BANKISA\ISA_BANK\ISA_BANK\obj\Debug\ISA_BANK.csproj.CoreCompileInputs.cac
 D:\ISA\BANKISA\ISA_BANK\ISA_BANK\obj\Debug\ISA_BANK.csproj.Up2Date
 D:\ISA\BANKISA\ISA_BANK\ISA_BANK\obj\Debug\ISA_BANK.exe
 D:\ISA\BANKISA\ISA_BANK\ISA_BANK\obj\Debug\ISA_BANK.pdb
+C:\Users\user\Documents\GitHub\BANKISA\ISA_BANK\ISA_BANK\obj\Debug\ISA_BANK.FormAddRekening.resources
+C:\Users\user\Documents\GitHub\BANKISA\ISA_BANK\ISA_BANK\obj\Debug\ISA_BANK.FormInfoAcc.resources

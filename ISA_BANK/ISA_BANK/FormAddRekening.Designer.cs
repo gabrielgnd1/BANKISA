@@ -510,8 +510,9 @@ namespace ISA_BANK
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.BackColor = System.Drawing.Color.Beige;
             this.ClientSize = new System.Drawing.Size(980, 611);
+            this.ControlBox = false;
             this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.textBoxCardNum);
             this.Controls.Add(this.label13);
@@ -525,6 +526,7 @@ namespace ISA_BANK
             this.Controls.Add(this.lblCurBalance);
             this.Controls.Add(this.lblAddRek);
             this.ForeColor = System.Drawing.SystemColors.Control;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormAddRekening";
             this.Text = "FormAddRekening";
             this.panel1.ResumeLayout(false);
