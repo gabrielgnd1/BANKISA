@@ -73,32 +73,34 @@ namespace ISA_BANK
             try
             {
                 Koneksi koneksi = new Koneksi();
+                string username = txtUsername.Text;
+                string password = txtPassword.Text;
+                FormMain frm = (FormMain)this.Owner;
+                frm.n = Nasabah.CekLogin(username, password);
 
-                Nasabah n = Nasabah.CekLogin(txtUsername.Text, txtPassword.Text);
-
-                if (n != null)
+                if (frm.n != null)
                 {
-                    FormMain frm = (FormMain)this.Owner;
-                    frm.nasabah = n;
+                    //frm.nasabah = n;
 
                     MessageBox.Show("Selamat Datang di Bank ISA.", "Login Berhasil");
-                    
+
 
                     Nasabah nasabah = Nasabah.BacaDataPerNasabah(txtUsername.Text);
-                    
+
 
                     this.DialogResult = DialogResult.OK;
                     this.Close();
                 }
-                else if (n == null)
+
+                else if (frm.n == null)
                 {
                     Karyawan k = Karyawan.CekLogin(txtUsername.Text, txtPassword.Text);
                     if (k != null)
                     {
-                        FormMain frm = (FormMain)this.Owner;
+                        
                         frm.karyawan = k;
                         MessageBox.Show("Selamat Datang di Bank ISA.", "Login Berhasil");
-                        
+
                         frm.SetHakAkses();
 
                         this.DialogResult = DialogResult.OK;
@@ -109,9 +111,11 @@ namespace ISA_BANK
                         MessageBox.Show("Username tidak ditemukan atau password salah");
                     }
                 }
+
+                
                 else
                 {
-                    MessageBox.Show("Username tidak ditemukan atau password salah");
+                    MessageBox.Show("Username tidak ditemukan");
                 }
 
             }

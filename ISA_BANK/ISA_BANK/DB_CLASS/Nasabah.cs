@@ -57,7 +57,7 @@ namespace ISA_BANK.DB_CLASS
         {
             string sql = "";
 
-            sql = "select * from nasabahs where Username='" + username + "' AND Password = SHA2('" + password + "', 512)";
+            sql = "select n.* from nasabahs n where username='" + username + "' AND password = SHA2('" + password + "', 512)";
 
             MySqlDataReader hasil = Koneksi.JalankanPerintahQuery(sql);//ksekusi perintah diatass
 
@@ -141,7 +141,7 @@ namespace ISA_BANK.DB_CLASS
             return listNasabah;
         }
 
-        public static Boolean TambahData(Nasabah n)
+        public static void TambahData(Nasabah n)
         {
             //string sql = "insert into nasabahs(nama, ttl, nik, no_telepon, gender, username, password) values('" +
             //    n.Nama.Replace("'", "\\") + "','" + n.Ttl + "','" + n.Nik + "','" + n.No_telepon + "','" + n.Gender + "','" +
@@ -155,16 +155,7 @@ namespace ISA_BANK.DB_CLASS
              n.Username + "', SHA2('" +
              n.Password + "', 512));";
 
-            int jumlah = Koneksi.JalankanPerintahDML(sql);
-
-            if (jumlah == 0)
-            {
-                return false;
-            }
-            else
-            {
-                return true;
-            }
+            Koneksi.JalankanPerintahDML(sql);
 
         }
 

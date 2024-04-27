@@ -15,6 +15,7 @@ namespace ISA_BANK
     {
         public Nasabah nasabah;
         public Karyawan karyawan;
+        public Nasabah n;
 
         public FormMain()
         {
