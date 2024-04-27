@@ -106,23 +106,25 @@ namespace ISA_BANK
         }
         private void btnRegister_Click_1(object sender, EventArgs e)
         {
+            Nasabah n = new Nasabah();
             try
             {
-                string gender;
+
+
                 if (rdoMale.Checked)
                 {
-                    gender = "L";
+                    n.Gender = rdoMale.Text;
                 }
                 else
                 {
-                    gender = "P";
+                    n.Gender = rdoFemale.Text;
                 }
-                Nasabah n = new Nasabah();
-                n.Nama = txtUsername.Text;
-                n.No_telepon = txtNoTelp.Text;
-                n.Gender = gender;
+                //Nasabah n = new Nasabah();
+                n.Nama = txtFullname.Text;
                 n.Ttl = ttlPicker.Value;
-                n.Username = txtFullname.Text;
+                n.Nik = txtNIK.Text;
+                n.No_telepon = txtNoTelp.Text;
+                n.Username = txtUsername.Text;
                 n.Password = txtPassword.Text;
 
                 Nasabah.TambahData(n);

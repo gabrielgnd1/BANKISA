@@ -18,8 +18,6 @@ namespace ISA_BANK.DB_CLASS
         private string username;
         private string password;
 
-        
-
         public Nasabah()
         {
             Id = 0;
@@ -55,9 +53,8 @@ namespace ISA_BANK.DB_CLASS
 
         public static Nasabah CekLogin(string username, string password)
         {
-            string sql = "";
-
-            sql = "select n.* from nasabahs n where username='" + username + "' AND password = SHA2('" + password + "', 512)";
+            string sql = ""; 
+            sql = "select * from nasabahs where username='" + username + "' AND password = SHA2('" + password + "', 512)";
 
             MySqlDataReader hasil = Koneksi.JalankanPerintahQuery(sql);//ksekusi perintah diatass
 
@@ -74,8 +71,6 @@ namespace ISA_BANK.DB_CLASS
                 tampung.Username = hasil.GetValue(6).ToString();
                 tampung.Password = hasil.GetValue(7).ToString();             
                 return tampung;
-
-               
             }
 
             else return null;
@@ -146,14 +141,14 @@ namespace ISA_BANK.DB_CLASS
             //string sql = "insert into nasabahs(nama, ttl, nik, no_telepon, gender, username, password) values('" +
             //    n.Nama.Replace("'", "\\") + "','" + n.Ttl + "','" + n.Nik + "','" + n.No_telepon + "','" + n.Gender + "','" +
             //    n.Username + "','" + ", sha2('" + n.Password + "', 512),'" + "')";
-            string sql = "INSERT INTO nasabahs (nama, ttl, nik, no_telepon, gender, username, password) VALUES ('" +
-             n.Nama.Replace("'", "\\'") + "','" +
-             n.Ttl + "','" +
+            string sql = "INSERT INTO nasabahs" + "(nama, ttl, nik, no_telepon, gender, username, password) VALUES ('" +
+             n.Nama + "','" +
+             n.Ttl.ToString("yyyy-MM-dd") + "','" +
              n.Nik + "','" +
              n.No_telepon + "','" +
              n.Gender + "','" +
-             n.Username + "', SHA2('" +
-             n.Password + "', 512));";
+             n.Username + "', SHA2('" + 
+             n.Password + "',512));";
 
             Koneksi.JalankanPerintahDML(sql);
 
