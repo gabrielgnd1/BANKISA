@@ -23,6 +23,7 @@ namespace ISA_BANK
 
         private void createNewAccountToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            panelMain.Controls.Clear();
             FormCreateNewBankAccount newAcc = new FormCreateNewBankAccount();
             newAcc.TopLevel = false;
             panelMain.Controls.Add(newAcc);
@@ -30,13 +31,9 @@ namespace ISA_BANK
             newAcc.Show();
         }
 
-        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
         private void updateAccountToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            panelMain.Controls.Clear();
             FormUpdateAccount updateAcc = new FormUpdateAccount();
             updateAcc.TopLevel = false;
             panelMain.Controls.Add(updateAcc);
@@ -44,8 +41,9 @@ namespace ISA_BANK
             updateAcc.Show();
         }
 
-        private void DisplayAccountToolStripMenuItem_Click(object sender, EventArgs e)
+        private void DisplayAllAccountToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            panelMain.Controls.Clear();
             FormDisplayAllAccount displayAcc = new FormDisplayAllAccount();
             displayAcc.TopLevel = false;
             panelMain.Controls.Add(displayAcc);
@@ -53,6 +51,59 @@ namespace ISA_BANK
             displayAcc.Show();
         }
 
+        private void depositToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            panelMain.Controls.Clear();
+            FormDeposit deposit = new FormDeposit();
+            deposit.TopLevel = false;
+            panelMain.Controls.Add(deposit);
+            deposit.BringToFront();
+            deposit.Show();
+        }
+
+        private void withdrawalToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            panelMain.Controls.Clear();
+            FormWithdrawal withdrawal = new FormWithdrawal();
+            withdrawal.TopLevel = false;
+            panelMain.Controls.Add(withdrawal);
+            withdrawal.BringToFront();
+            withdrawal.Show();
+        }
+
+        private void transferToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            panelMain.Controls.Clear();
+            FormTransfer transfer = new FormTransfer();
+            transfer.TopLevel = false;
+            panelMain.Controls.Add(transfer);
+            transfer.BringToFront();
+            transfer.Show();
+        }
+
+        private void transactionHistoryToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            panelMain.Controls.Clear();
+            FormTransactionHistory history = new FormTransactionHistory();
+            history.TopLevel = false;
+            panelMain.Controls.Add(history);
+            history.BringToFront();
+            history.Show();
+        }
+
+        private void displayAccToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            panelMain.Controls.Clear();
+            FormDisplayAllAccount displayAcc = new FormDisplayAllAccount();
+            displayAcc.TopLevel = false;
+            panelMain.Controls.Add(displayAcc);
+            displayAcc.BringToFront();
+            displayAcc.Show();
+        }
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
         private void FormMain_Load(object sender, EventArgs e)
         {
 
@@ -76,7 +127,7 @@ namespace ISA_BANK
                 {
                     withdrawalToolStripMenuItem.Visible = true;
                     depositToolStripMenuItem.Visible = true;
- 
+
                 }
                 else if (karyawan.Roles == "CS")
                 {
@@ -88,5 +139,16 @@ namespace ISA_BANK
 
             }
         }
+
+        private void infoAccountToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            panelMain.Controls.Clear();
+            FormInfoAcc infoacc = new FormInfoAcc();
+            infoacc.TopLevel = false;
+            panelMain.Controls.Add(infoacc);
+            infoacc.BringToFront();
+            infoacc.Show();
+        }
     }
+
 }

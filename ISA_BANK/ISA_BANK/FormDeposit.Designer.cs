@@ -39,6 +39,10 @@ namespace ISA_BANK
             this.lblAccNum = new System.Windows.Forms.Label();
             this.lblDeposit = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnAdd = new System.Windows.Forms.Button();
+            this.txtDeposit = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.lbldepositamount = new System.Windows.Forms.Label();
             this.curBalance = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.nikNum = new System.Windows.Forms.Label();
@@ -48,10 +52,6 @@ namespace ISA_BANK
             this.lblNik = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.lblCustName = new System.Windows.Forms.Label();
-            this.lbldepositamount = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.txtDeposit = new System.Windows.Forms.TextBox();
-            this.btnAdd = new System.Windows.Forms.Button();
             this.gbFrom.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -66,7 +66,7 @@ namespace ISA_BANK
             this.gbFrom.Controls.Add(this.txtAccNum);
             this.gbFrom.Controls.Add(this.lblAccNum);
             this.gbFrom.Font = new System.Drawing.Font("Microsoft YaHei", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gbFrom.Location = new System.Drawing.Point(22, 104);
+            this.gbFrom.Location = new System.Drawing.Point(56, 105);
             this.gbFrom.Name = "gbFrom";
             this.gbFrom.Size = new System.Drawing.Size(723, 224);
             this.gbFrom.TabIndex = 45;
@@ -143,7 +143,7 @@ namespace ISA_BANK
             this.lblAccNum.Location = new System.Drawing.Point(23, 58);
             this.lblAccNum.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblAccNum.Name = "lblAccNum";
-            this.lblAccNum.Size = new System.Drawing.Size(211, 31);
+            this.lblAccNum.Size = new System.Drawing.Size(169, 31);
             this.lblAccNum.TabIndex = 7;
             this.lblAccNum.Text = "Card Number";
             // 
@@ -154,7 +154,7 @@ namespace ISA_BANK
             this.lblDeposit.CausesValidation = false;
             this.lblDeposit.Font = new System.Drawing.Font("Microsoft YaHei", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDeposit.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblDeposit.Location = new System.Drawing.Point(13, 24);
+            this.lblDeposit.Location = new System.Drawing.Point(47, 25);
             this.lblDeposit.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblDeposit.Name = "lblDeposit";
             this.lblDeposit.Size = new System.Drawing.Size(190, 50);
@@ -176,10 +176,53 @@ namespace ISA_BANK
             this.panel1.Controls.Add(this.lblNik);
             this.panel1.Controls.Add(this.label12);
             this.panel1.Controls.Add(this.lblCustName);
-            this.panel1.Location = new System.Drawing.Point(22, 350);
+            this.panel1.Location = new System.Drawing.Point(56, 351);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(723, 239);
             this.panel1.TabIndex = 47;
+            // 
+            // btnAdd
+            // 
+            this.btnAdd.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdd.Location = new System.Drawing.Point(548, 170);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(157, 37);
+            this.btnAdd.TabIndex = 14;
+            this.btnAdd.Text = "Add Deposit";
+            this.btnAdd.UseVisualStyleBackColor = true;
+            // 
+            // txtDeposit
+            // 
+            this.txtDeposit.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDeposit.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.txtDeposit.Location = new System.Drawing.Point(239, 172);
+            this.txtDeposit.Margin = new System.Windows.Forms.Padding(4);
+            this.txtDeposit.Name = "txtDeposit";
+            this.txtDeposit.Size = new System.Drawing.Size(302, 34);
+            this.txtDeposit.TabIndex = 14;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(209, 174);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(19, 29);
+            this.label4.TabIndex = 77;
+            this.label4.Text = ":";
+            // 
+            // lbldepositamount
+            // 
+            this.lbldepositamount.AutoSize = true;
+            this.lbldepositamount.BackColor = System.Drawing.Color.Transparent;
+            this.lbldepositamount.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbldepositamount.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lbldepositamount.Location = new System.Drawing.Point(32, 174);
+            this.lbldepositamount.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbldepositamount.Name = "lbldepositamount";
+            this.lbldepositamount.Size = new System.Drawing.Size(168, 27);
+            this.lbldepositamount.TabIndex = 76;
+            this.lbldepositamount.Text = "Deposit Amount";
             // 
             // curBalance
             // 
@@ -195,7 +238,7 @@ namespace ISA_BANK
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(199, 120);
+            this.label11.Location = new System.Drawing.Point(209, 121);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(19, 29);
             this.label11.TabIndex = 71;
@@ -225,7 +268,7 @@ namespace ISA_BANK
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(199, 68);
+            this.label10.Location = new System.Drawing.Point(209, 69);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(19, 29);
             this.label10.TabIndex = 61;
@@ -261,7 +304,7 @@ namespace ISA_BANK
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(199, 21);
+            this.label12.Location = new System.Drawing.Point(209, 22);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(19, 29);
             this.label12.TabIndex = 46;
@@ -280,59 +323,19 @@ namespace ISA_BANK
             this.lblCustName.TabIndex = 45;
             this.lblCustName.Text = "Customer Name";
             // 
-            // lbldepositamount
-            // 
-            this.lbldepositamount.AutoSize = true;
-            this.lbldepositamount.BackColor = System.Drawing.Color.Transparent;
-            this.lbldepositamount.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbldepositamount.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lbldepositamount.Location = new System.Drawing.Point(32, 174);
-            this.lbldepositamount.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lbldepositamount.Name = "lbldepositamount";
-            this.lbldepositamount.Size = new System.Drawing.Size(168, 27);
-            this.lbldepositamount.TabIndex = 76;
-            this.lbldepositamount.Text = "Deposit Amount";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(199, 173);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(19, 29);
-            this.label4.TabIndex = 77;
-            this.label4.Text = ":";
-            // 
-            // txtDeposit
-            // 
-            this.txtDeposit.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDeposit.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.txtDeposit.Location = new System.Drawing.Point(239, 172);
-            this.txtDeposit.Margin = new System.Windows.Forms.Padding(4);
-            this.txtDeposit.Name = "txtDeposit";
-            this.txtDeposit.Size = new System.Drawing.Size(302, 34);
-            this.txtDeposit.TabIndex = 14;
-            // 
-            // btnAdd
-            // 
-            this.btnAdd.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdd.Location = new System.Drawing.Point(548, 170);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(157, 37);
-            this.btnAdd.TabIndex = 14;
-            this.btnAdd.Text = "Add Deposit";
-            this.btnAdd.UseVisualStyleBackColor = true;
-            // 
             // FormDeposit
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.ClientSize = new System.Drawing.Size(782, 616);
+            this.BackColor = System.Drawing.Color.Beige;
+            this.ClientSize = new System.Drawing.Size(854, 616);
+            this.ControlBox = false;
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.lblDeposit);
             this.Controls.Add(this.gbFrom);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormDeposit";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormDeposit";
             this.gbFrom.ResumeLayout(false);
             this.gbFrom.PerformLayout();
