@@ -98,6 +98,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DB_CLASS\AES.cs" />
     <Compile Include="DB_CLASS\Cabang.cs" />
     <Compile Include="DB_CLASS\Karyawan.cs" />
     <Compile Include="DB_CLASS\Koneksi.cs" />

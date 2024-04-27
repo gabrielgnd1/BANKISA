@@ -67,7 +67,7 @@ namespace ISA_BANK
                 MessageBox.Show(ex.Message);
             }
         }
-
+        
         private void btnLogin_Click(object sender, EventArgs e)
         {
             try
@@ -76,9 +76,9 @@ namespace ISA_BANK
                 string username = txtUsername.Text;
                 string password = txtPassword.Text;
                 FormMain frm = (FormMain)this.Owner;
-                frm.n = Nasabah.CekLogin(username, password);
+                Nasabah.CekLogin(username,password);
 
-                if (frm.n != null)
+                if (Nasabah.CekLogin(username, password) != null)
                 {
                     //frm.nasabah = n;
 
@@ -90,9 +90,18 @@ namespace ISA_BANK
 
                     this.DialogResult = DialogResult.OK;
                     this.Close();
+
+                    // Open FormMain
+                    FormMain main = new FormMain();
+                    main.Owner = this;
+                     // Set the logged-in Nasabah in FormMain
+                    this.Hide(); // Hide the login form
+                    main.ShowDialog(); // Show FormMain
+
+                    this.Close(); // Close the login form when FormMain is closed
                 }
 
-                else if (frm.n == null)
+                else if (Nasabah.CekLogin(username, password) == null)
                 {
                     Karyawan k = Karyawan.CekLogin(txtUsername.Text, txtPassword.Text);
                     if (k != null)
@@ -129,7 +138,11 @@ namespace ISA_BANK
         {
             FormRegister frm = new FormRegister();
             frm.Owner = this;
-            frm.ShowDialog();   
+            frm.ShowDialog();
+
+            //FormMain main = new FormMain();
+            //main.Owner = this;
+            //main.ShowDialog();
         }
     }
 }

@@ -78,7 +78,7 @@ namespace ISA_BANK.DB_CLASS
 
         public static Nasabah BacaDataPerNasabah(string username)
         {
-            string sql = "select * from nasbaahs where username = '" + username + "'";
+            string sql = "select * from nasabahs where username = '" + username + "'";
 
             MySqlDataReader hasil = Koneksi.JalankanPerintahQuery(sql);
 

@@ -5,10 +5,9 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 
-
-namespace ISA_BANK.Security
+namespace ISA_BANK.DB_CLASS
 {
-    public class Security
+    public class AES
     {
         //buat encrypt data
         public static string Encrypt(string text)
@@ -42,6 +41,5 @@ namespace ISA_BANK.Security
 
             return aes;
         }
-
     }
 }

@@ -5,9 +5,12 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ISA_BANK.Security;
+
 
 namespace ISA_BANK
 {
@@ -109,15 +112,16 @@ namespace ISA_BANK
             Nasabah n = new Nasabah();
             try
             {
-
-
+                
+                string gender;
+                  
                 if (rdoMale.Checked)
                 {
-                    n.Gender = rdoMale.Text;
+                    gender = "Male";
                 }
                 else
                 {
-                    n.Gender = rdoFemale.Text;
+                    gender = "Female";
                 }
                 //Nasabah n = new Nasabah();
                 n.Nama = txtFullname.Text;
@@ -126,6 +130,8 @@ namespace ISA_BANK
                 n.No_telepon = txtNoTelp.Text;
                 n.Username = txtUsername.Text;
                 n.Password = txtPassword.Text;
+                n.Gender = gender;
+                
 
                 Nasabah.TambahData(n);
                 MessageBox.Show("Data Telah Tersimpan.", "Informasi");
