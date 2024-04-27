@@ -202,5 +202,34 @@ namespace ISA_BANK.DB_CLASS
             }
             return Status;
         }
+
+        public static Nasabah BacaId(string namaAttribute, string initialData)
+        {
+            {
+                string sql = "select * from nasabahs where " + namaAttribute + " Like '%" + initialData + "%'";
+                MySqlDataReader hasil = Koneksi.JalankanPerintahQuery(sql);
+                if (hasil.Read() == true)
+                {
+                    Nasabah tampung = new Nasabah();
+
+                    tampung.Id = int.Parse(hasil.GetValue(0).ToString());
+                    tampung.Nama = hasil.GetValue(1).ToString();
+                    tampung.Ttl = DateTime.Parse(hasil.GetValue(2).ToString());
+                    tampung.Nik = hasil.GetValue(3).ToString();
+                    tampung.No_telepon = hasil.GetValue(4).ToString();
+                    tampung.Gender = hasil.GetValue(5).ToString();
+                    tampung.Username = hasil.GetValue(6).ToString();
+                    tampung.Password = hasil.GetValue(7).ToString();
+
+                    return tampung;
+
+
+                }
+                else
+                {
+                    return null; ;
+                }
+            }
+        }
     }
 }

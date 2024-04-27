@@ -104,6 +104,7 @@
     <Compile Include="DB_CLASS\Nasabah.cs" />
     <Compile Include="DB_CLASS\Rekening.cs" />
     <Compile Include="DB_CLASS\Transaksi.cs" />
+    <Compile Include="DB_CLASS\TransaksiRekening.cs" />
     <Compile Include="FormAccountDetails.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -15,6 +15,7 @@ namespace ISA_BANK.DB_CLASS
         private string keterangan;
         private Karyawan karyawan;
         private Rekening rekening;
+        
 
         public Transaksi()
         {
@@ -29,6 +30,7 @@ namespace ISA_BANK.DB_CLASS
             this.Keterangan = keterangan;
             this.Karyawan = karyawan;
             this.Rekening = rekening;
+            
         }
 
         public int Id { get => id; set => id = value; }
@@ -37,6 +39,7 @@ namespace ISA_BANK.DB_CLASS
         public string Keterangan { get => keterangan; set => keterangan = value; }
         public Karyawan Karyawan { get => karyawan; set => karyawan = value; }
         public Rekening Rekening { get => rekening; set => rekening = value; }
+  
 
         #region Methods
         public static List<Transaksi> BacaData(string kriteria, string nilaiKriteria)
@@ -61,12 +64,16 @@ namespace ISA_BANK.DB_CLASS
                 Transaksi t = new Transaksi();
                 Karyawan k = new Karyawan();
 
+                Rekening rek = Rekening.BacaId("id", hasil.GetString(5));
+                Karyawan kar = Karyawan.BacaId("id", hasil.GetString(4));
+
 
                 t.Tanggal = DateTime.Parse(hasil.GetValue(1).ToString());
                 t.Jumlah = int.Parse(hasil.GetValue(2).ToString());
                 t.Keterangan = hasil.GetValue(3).ToString();
-                k.Id = int.Parse(hasil.GetValue(4).ToString());
-                r.Id = int.Parse(hasil.GetValue(5).ToString());
+                t.Karyawan = kar;
+                t.Rekening = rek;
+             
                 listHasil.Add(t);
             }
             return listHasil;
@@ -123,6 +130,35 @@ namespace ISA_BANK.DB_CLASS
                 return true;
             }
 
+        }
+
+        public static Transaksi BacaId(string namaAttribute, string initialData)
+        {
+            {
+                string sql = "select * from films where " + namaAttribute + " Like '%" + initialData + "%'";
+                MySqlDataReader hasil = Koneksi.JalankanPerintahQuery(sql);
+                if (hasil.Read() == true)
+                {
+                    Karyawan k = Karyawan.BacaId("id", hasil.GetValue(4).ToString());
+                    
+                    Transaksi t = new Transaksi();
+
+                    t.Id = int.Parse(hasil.GetValue(0).ToString());
+                    t.Tanggal = DateTime.Parse(hasil.GetValue(1).ToString());
+                    t.Jumlah = int.Parse(hasil.GetValue(2).ToString());
+                    t.Keterangan = hasil.GetValue(3).ToString();
+                    t.Karyawan = k;
+
+
+
+
+                    return t;
+                }
+                else
+                {
+                    return null; ;
+                }
+            }
         }
         #endregion
     }

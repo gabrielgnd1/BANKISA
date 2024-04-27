@@ -60,11 +60,11 @@ namespace ISA_BANK.DB_CLASS
                 Nasabah n = new Nasabah();
 
                 //n.Nama = hasil.GetValue(1).ToString();
-                r.Nomor = hasil.GetValue(1).ToString();
-                r.Jumlah_saldo = int.Parse(hasil.GetValue(2).ToString());
-                r.Nomor_kartu = hasil.GetValue(3).ToString();
-                n.Id = int.Parse(hasil.GetValue(4).ToString());
-                r.Jenis_kartu = hasil.GetValue(5).ToString();
+                r.Nomor = hasil.GetValue(0).ToString();
+                r.Jumlah_saldo = int.Parse(hasil.GetValue(1).ToString());
+                r.Nomor_kartu = hasil.GetValue(2).ToString();
+                n.Id = int.Parse(hasil.GetValue(3).ToString());
+                r.Jenis_kartu = hasil.GetValue(4).ToString();
 
                 listRekening.Add(r);
             }
@@ -90,6 +90,29 @@ namespace ISA_BANK.DB_CLASS
             Koneksi.JalankanPerintahDML(sql);
         }
 
+        public static Rekening BacaId(string namaAttribute, string initialData)
+        {
+            {
+                string sql = "select * from rekenings where " + namaAttribute + " Like '%" + initialData + "%'";
+                MySqlDataReader hasil = Koneksi.JalankanPerintahQuery(sql);
+                if (hasil.Read() == true)
+                {
+                    Rekening r = new Rekening();
+                    Nasabah n = Nasabah.BacaId("id", hasil.GetString(3));
+
+                    r.Nomor = hasil.GetValue(0).ToString();
+                    r.Jumlah_saldo = int.Parse(hasil.GetValue(1).ToString());
+                    r.Nomor_kartu = hasil.GetValue(2).ToString();
+                    r.Jenis_kartu = hasil.GetValue(4).ToString();
+
+                    return r;
+                }
+                else
+                {
+                    return null; ;
+                }
+            }
+        }
         #endregion
     }
 }

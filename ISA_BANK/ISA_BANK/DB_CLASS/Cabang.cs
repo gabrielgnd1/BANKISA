@@ -52,5 +52,26 @@ namespace ISA_BANK.DB_CLASS
             }
             return listHasil;
         }
+
+        public static Cabang BacaId(string namaAttribute, string initialData)
+        {
+            {
+                string sql = "select * from films where " + namaAttribute + " Like '%" + initialData + "%'";
+                MySqlDataReader hasil = Koneksi.JalankanPerintahQuery(sql);
+                if (hasil.Read() == true)
+                {
+                    Cabang c = new Cabang();
+               
+                    c.Id = int.Parse((hasil.GetValue(0).ToString()));
+                    c.Nama = hasil.GetString(1);
+
+                    return c;
+                }
+                else
+                {
+                    return null; ;
+                }
+            }
+        }
     }
 }

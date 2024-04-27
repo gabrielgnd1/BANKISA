@@ -119,6 +119,39 @@ namespace ISA_BANK.DB_CLASS
             }
             return listKaryawan;
         }
+
+        public static Karyawan BacaId(string namaAttribute, string initialData)
+        {
+            {
+                string sql = "select * from films where " + namaAttribute + " Like '%" + initialData + "%'";
+                MySqlDataReader hasil = Koneksi.JalankanPerintahQuery(sql);
+                if (hasil.Read() == true)
+                {
+
+                    Karyawan k = new Karyawan();
+                    Cabang c = Cabang.BacaId("id", hasil.GetString(5));
+
+
+                    k.Id = int.Parse(hasil.GetValue(0).ToString());
+                    k.Nama = hasil.GetValue(1).ToString();
+                    k.Roles = hasil.GetValue(2).ToString();
+                    k.Email = hasil.GetValue(3).ToString();
+                    k.NoTelp = hasil.GetValue(4).ToString();
+                    k.Cabang = c;
+                    k.TglLahir = DateTime.Parse(hasil.GetValue(6).ToString());
+                    k.Gender = hasil.GetValue(7).ToString();
+                    k.Username = hasil.GetValue(8).ToString();
+                    k.Password = hasil.GetValue(9).ToString();
+                 
+
+                    return k;
+                }
+                else
+                {
+                    return null; ;
+                }
+            }
+        }
         #endregion
     }
 }
