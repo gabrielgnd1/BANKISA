@@ -171,6 +171,10 @@ namespace ISA_BANK.DB_CLASS
              k.Password + "',512));";
 
             Koneksi.JalankanPerintahDML(sql);
+            //get string sql query
+
+
+     
 
         }
         #endregion

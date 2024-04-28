@@ -114,23 +114,29 @@ namespace ISA_BANK
             {
                 
                 string gender;
+                string enPw = AES.Encrypt(txtPassword.Text);
+                string enNIK = AES.Encrypt(txtNIK.Text);
                   
                 if (rdoMale.Checked)
                 {
-                    gender = "Male";
+                    n.Gender = "Pria";
+                }
+                else if(rdoFemale.Checked)
+                {
+                    n.Gender = "Wanita";
                 }
                 else
                 {
-                    gender = "Female";
+                    MessageBox.Show("Pilih Jenis Kelamin", "Peringatan");
                 }
                 //Nasabah n = new Nasabah();
                 n.Nama = txtFullname.Text;
                 n.Ttl = ttlPicker.Value;
-                n.Nik = txtNIK.Text;
+                n.Nik = enNIK;
                 n.No_telepon = txtNoTelp.Text;
                 n.Username = txtUsername.Text;
-                n.Password = txtPassword.Text;
-                n.Gender = gender;
+                n.Password = enPw;
+                
                 
 
                 Nasabah.TambahData(n);

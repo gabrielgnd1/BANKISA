@@ -78,7 +78,7 @@ namespace ISA_BANK
                 FormMain frm = (FormMain)this.Owner;
                 Nasabah.CekLogin(username,password);
 
-                if (Nasabah.CekLogin(username, password) != null)
+                if (Nasabah.CekLogin(username, AES.Encrypt(password)) != null)
                 {
                     //frm.nasabah = n;
 
