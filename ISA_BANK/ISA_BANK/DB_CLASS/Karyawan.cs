@@ -152,6 +152,27 @@ namespace ISA_BANK.DB_CLASS
                 }
             }
         }
+
+        public static void TambahData(Karyawan k)
+        {
+            //string sql = "insert into nasabahs(nama, ttl, nik, no_telepon, gender, username, password) values('" +
+            //    n.Nama.Replace("'", "\\") + "','" + n.Ttl + "','" + n.Nik + "','" + n.No_telepon + "','" + n.Gender + "','" +
+            //    n.Username + "','" + ", sha2('" + n.Password + "', 512),'" + "')";
+            string sql = "INSERT INTO nasabahs" + "(id, nama, roles, email, noTelp, cabang, tglLahir, gender, username, password) VALUES ('" +
+             k.Id + "','" +
+             k.Nama + "','" +
+             k.Roles + "','" +
+             k.Email + "','" +
+             k.NoTelp + "','" +
+             k.Cabang + "','" +
+             k.tglLahir.ToString("yyyy-MM-dd") + "','" +
+             k.Gender + "','" +
+             k.Username + "', SHA2('" +
+             k.Password + "',512));";
+
+            Koneksi.JalankanPerintahDML(sql);
+
+        }
         #endregion
     }
 }

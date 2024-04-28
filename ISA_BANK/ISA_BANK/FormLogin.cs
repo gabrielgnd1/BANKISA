@@ -89,16 +89,11 @@ namespace ISA_BANK
 
 
                     this.DialogResult = DialogResult.OK;
-                    this.Close();
+                    this.Hide();
 
-                    // Open FormMain
-                    FormMain main = new FormMain();
-                    main.Owner = this;
-                     // Set the logged-in Nasabah in FormMain
-                    this.Hide(); // Hide the login form
-                    main.ShowDialog(); // Show FormMain
-
-                    this.Close(); // Close the login form when FormMain is closed
+                    FormMain mainfrm = new FormMain();
+                    mainfrm.Owner = this;
+                    mainfrm.ShowDialog();
                 }
 
                 else if (Nasabah.CekLogin(username, password) == null)

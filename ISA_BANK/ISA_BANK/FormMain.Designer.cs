@@ -39,16 +39,17 @@
             this.nasabahToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.transferToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.transactionHistoryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.infoAccountToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.managerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.displayAccToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panelMain = new System.Windows.Forms.Panel();
-            this.infoAccountToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
             // 
+            this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.customerServiceToolStripMenuItem,
@@ -58,7 +59,8 @@
             this.exitToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1617, 28);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(9, 3, 0, 3);
+            this.menuStrip1.Size = new System.Drawing.Size(2426, 44);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -69,27 +71,27 @@
             this.updateAccountToolStripMenuItem,
             this.DisplayAccountToolStripMenuItem});
             this.customerServiceToolStripMenuItem.Name = "customerServiceToolStripMenuItem";
-            this.customerServiceToolStripMenuItem.Size = new System.Drawing.Size(137, 24);
+            this.customerServiceToolStripMenuItem.Size = new System.Drawing.Size(220, 38);
             this.customerServiceToolStripMenuItem.Text = "Customer Service";
             // 
             // createNewAccountToolStripMenuItem
             // 
             this.createNewAccountToolStripMenuItem.Name = "createNewAccountToolStripMenuItem";
-            this.createNewAccountToolStripMenuItem.Size = new System.Drawing.Size(227, 26);
+            this.createNewAccountToolStripMenuItem.Size = new System.Drawing.Size(365, 44);
             this.createNewAccountToolStripMenuItem.Text = "Create New Account";
             this.createNewAccountToolStripMenuItem.Click += new System.EventHandler(this.createNewAccountToolStripMenuItem_Click);
             // 
             // updateAccountToolStripMenuItem
             // 
             this.updateAccountToolStripMenuItem.Name = "updateAccountToolStripMenuItem";
-            this.updateAccountToolStripMenuItem.Size = new System.Drawing.Size(227, 26);
+            this.updateAccountToolStripMenuItem.Size = new System.Drawing.Size(365, 44);
             this.updateAccountToolStripMenuItem.Text = "Update Account";
             this.updateAccountToolStripMenuItem.Click += new System.EventHandler(this.updateAccountToolStripMenuItem_Click);
             // 
             // DisplayAccountToolStripMenuItem
             // 
             this.DisplayAccountToolStripMenuItem.Name = "DisplayAccountToolStripMenuItem";
-            this.DisplayAccountToolStripMenuItem.Size = new System.Drawing.Size(227, 26);
+            this.DisplayAccountToolStripMenuItem.Size = new System.Drawing.Size(365, 44);
             this.DisplayAccountToolStripMenuItem.Text = "Display Account";
             this.DisplayAccountToolStripMenuItem.Click += new System.EventHandler(this.DisplayAllAccountToolStripMenuItem_Click);
             // 
@@ -99,20 +101,20 @@
             this.depositToolStripMenuItem,
             this.withdrawalToolStripMenuItem});
             this.tellerToolStripMenuItem.Name = "tellerToolStripMenuItem";
-            this.tellerToolStripMenuItem.Size = new System.Drawing.Size(59, 24);
+            this.tellerToolStripMenuItem.Size = new System.Drawing.Size(91, 38);
             this.tellerToolStripMenuItem.Text = "Teller";
             // 
             // depositToolStripMenuItem
             // 
             this.depositToolStripMenuItem.Name = "depositToolStripMenuItem";
-            this.depositToolStripMenuItem.Size = new System.Drawing.Size(168, 26);
+            this.depositToolStripMenuItem.Size = new System.Drawing.Size(266, 44);
             this.depositToolStripMenuItem.Text = "Deposit";
             this.depositToolStripMenuItem.Click += new System.EventHandler(this.depositToolStripMenuItem_Click);
             // 
             // withdrawalToolStripMenuItem
             // 
             this.withdrawalToolStripMenuItem.Name = "withdrawalToolStripMenuItem";
-            this.withdrawalToolStripMenuItem.Size = new System.Drawing.Size(168, 26);
+            this.withdrawalToolStripMenuItem.Size = new System.Drawing.Size(266, 44);
             this.withdrawalToolStripMenuItem.Text = "Withdrawal";
             this.withdrawalToolStripMenuItem.Click += new System.EventHandler(this.withdrawalToolStripMenuItem_Click);
             // 
@@ -123,73 +125,75 @@
             this.transactionHistoryToolStripMenuItem,
             this.infoAccountToolStripMenuItem});
             this.nasabahToolStripMenuItem.Name = "nasabahToolStripMenuItem";
-            this.nasabahToolStripMenuItem.Size = new System.Drawing.Size(81, 24);
+            this.nasabahToolStripMenuItem.Size = new System.Drawing.Size(126, 38);
             this.nasabahToolStripMenuItem.Text = "Nasabah";
             // 
             // transferToolStripMenuItem
             // 
             this.transferToolStripMenuItem.Name = "transferToolStripMenuItem";
-            this.transferToolStripMenuItem.Size = new System.Drawing.Size(218, 26);
+            this.transferToolStripMenuItem.Size = new System.Drawing.Size(359, 44);
             this.transferToolStripMenuItem.Text = "Transfer";
             this.transferToolStripMenuItem.Click += new System.EventHandler(this.transferToolStripMenuItem_Click);
             // 
             // transactionHistoryToolStripMenuItem
             // 
             this.transactionHistoryToolStripMenuItem.Name = "transactionHistoryToolStripMenuItem";
-            this.transactionHistoryToolStripMenuItem.Size = new System.Drawing.Size(218, 26);
+            this.transactionHistoryToolStripMenuItem.Size = new System.Drawing.Size(359, 44);
             this.transactionHistoryToolStripMenuItem.Text = "Transaction History";
             this.transactionHistoryToolStripMenuItem.Click += new System.EventHandler(this.transactionHistoryToolStripMenuItem_Click);
+            // 
+            // infoAccountToolStripMenuItem
+            // 
+            this.infoAccountToolStripMenuItem.Name = "infoAccountToolStripMenuItem";
+            this.infoAccountToolStripMenuItem.Size = new System.Drawing.Size(359, 44);
+            this.infoAccountToolStripMenuItem.Text = "Info Account";
+            this.infoAccountToolStripMenuItem.Click += new System.EventHandler(this.infoAccountToolStripMenuItem_Click);
             // 
             // managerToolStripMenuItem
             // 
             this.managerToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.displayAccToolStripMenuItem});
             this.managerToolStripMenuItem.Name = "managerToolStripMenuItem";
-            this.managerToolStripMenuItem.Size = new System.Drawing.Size(82, 24);
+            this.managerToolStripMenuItem.Size = new System.Drawing.Size(129, 38);
             this.managerToolStripMenuItem.Text = "Manager";
             // 
             // displayAccToolStripMenuItem
             // 
             this.displayAccToolStripMenuItem.Name = "displayAccToolStripMenuItem";
-            this.displayAccToolStripMenuItem.Size = new System.Drawing.Size(221, 26);
+            this.displayAccToolStripMenuItem.Size = new System.Drawing.Size(359, 44);
             this.displayAccToolStripMenuItem.Text = "Display All Account";
             this.displayAccToolStripMenuItem.Click += new System.EventHandler(this.displayAccToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(47, 24);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(71, 38);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
             // panelMain
             // 
-            this.panelMain.Location = new System.Drawing.Point(486, 89);
+            this.panelMain.Location = new System.Drawing.Point(729, 139);
+            this.panelMain.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panelMain.Name = "panelMain";
-            this.panelMain.Size = new System.Drawing.Size(1131, 971);
+            this.panelMain.Size = new System.Drawing.Size(1696, 1517);
             this.panelMain.TabIndex = 1;
-            // 
-            // infoAccountToolStripMenuItem
-            // 
-            this.infoAccountToolStripMenuItem.Name = "infoAccountToolStripMenuItem";
-            this.infoAccountToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.infoAccountToolStripMenuItem.Text = "Info Account";
-            this.infoAccountToolStripMenuItem.Click += new System.EventHandler(this.infoAccountToolStripMenuItem_Click);
             // 
             // FormMain
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.SkyBlue;
-            this.ClientSize = new System.Drawing.Size(1617, 675);
+            this.ClientSize = new System.Drawing.Size(2426, 1055);
             this.ControlBox = false;
             this.Controls.Add(this.panelMain);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "FormMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Main";
+            this.Text = "Bank ISA";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.FormMain_Load);
             this.menuStrip1.ResumeLayout(false);
