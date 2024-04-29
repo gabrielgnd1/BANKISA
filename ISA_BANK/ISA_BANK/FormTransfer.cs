@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ISA_BANK.DB_CLASS;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,16 @@ namespace ISA_BANK
         public FormTransfer()
         {
             InitializeComponent();
+        }
+
+        List<Nasabah> listNasabah = new List<Nasabah>();
+        List<Rekening> listRekening = new List<Rekening>();
+
+        private void FormTransfer_Load(object sender, EventArgs e)
+        {
+            FormMain frm = (FormMain)this.Owner;
+            //lblRekNum1.Text = 
+
         }
     }
 }

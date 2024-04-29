@@ -30,18 +30,18 @@
         {
             this.lblTransfer = new System.Windows.Forms.Label();
             this.panelFrom = new System.Windows.Forms.Panel();
-            this.lblFrom = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.lblRekNum = new System.Windows.Forms.Label();
-            this.lblRekNum1 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.lblTo = new System.Windows.Forms.Label();
             this.btnTranfer = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.lblTrfAmmount = new System.Windows.Forms.Label();
+            this.lblTo = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.lblRekNum1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.lblRekNum = new System.Windows.Forms.Label();
+            this.lblFrom = new System.Windows.Forms.Label();
             this.panelFrom.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -78,92 +78,6 @@
             this.panelFrom.Name = "panelFrom";
             this.panelFrom.Size = new System.Drawing.Size(913, 350);
             this.panelFrom.TabIndex = 17;
-            // 
-            // lblFrom
-            // 
-            this.lblFrom.AutoSize = true;
-            this.lblFrom.Font = new System.Drawing.Font("Microsoft YaHei", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFrom.Location = new System.Drawing.Point(24, 29);
-            this.lblFrom.Name = "lblFrom";
-            this.lblFrom.Size = new System.Drawing.Size(73, 31);
-            this.lblFrom.TabIndex = 0;
-            this.lblFrom.Text = "From";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft YaHei", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(260, 60);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(20, 31);
-            this.label2.TabIndex = 12;
-            this.label2.Text = ":";
-            // 
-            // lblRekNum
-            // 
-            this.lblRekNum.AutoSize = true;
-            this.lblRekNum.BackColor = System.Drawing.Color.Transparent;
-            this.lblRekNum.Font = new System.Drawing.Font("Microsoft YaHei", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRekNum.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblRekNum.Location = new System.Drawing.Point(23, 60);
-            this.lblRekNum.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblRekNum.Name = "lblRekNum";
-            this.lblRekNum.Size = new System.Drawing.Size(224, 31);
-            this.lblRekNum.TabIndex = 10;
-            this.lblRekNum.Text = "Rekening Number";
-            // 
-            // lblRekNum1
-            // 
-            this.lblRekNum1.AutoSize = true;
-            this.lblRekNum1.Font = new System.Drawing.Font("Microsoft YaHei", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRekNum1.Location = new System.Drawing.Point(291, 60);
-            this.lblRekNum1.Name = "lblRekNum1";
-            this.lblRekNum1.Size = new System.Drawing.Size(87, 31);
-            this.lblRekNum1.TabIndex = 13;
-            this.lblRekNum1.Text = "no rek";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft YaHei", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(259, 156);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(20, 31);
-            this.label6.TabIndex = 16;
-            this.label6.Text = ":";
-            // 
-            // textBox3
-            // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft YaHei", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.textBox3.Location = new System.Drawing.Point(296, 156);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(549, 38);
-            this.textBox3.TabIndex = 15;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Font = new System.Drawing.Font("Microsoft YaHei", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label7.Location = new System.Drawing.Point(22, 159);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(224, 31);
-            this.label7.TabIndex = 14;
-            this.label7.Text = "Rekening Number";
-            // 
-            // lblTo
-            // 
-            this.lblTo.AutoSize = true;
-            this.lblTo.Font = new System.Drawing.Font("Microsoft YaHei", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTo.Location = new System.Drawing.Point(23, 128);
-            this.lblTo.Name = "lblTo";
-            this.lblTo.Size = new System.Drawing.Size(43, 31);
-            this.lblTo.TabIndex = 17;
-            this.lblTo.Text = "To";
             // 
             // btnTranfer
             // 
@@ -208,6 +122,92 @@
             this.lblTrfAmmount.TabIndex = 19;
             this.lblTrfAmmount.Text = "Transfer Ammount";
             // 
+            // lblTo
+            // 
+            this.lblTo.AutoSize = true;
+            this.lblTo.Font = new System.Drawing.Font("Microsoft YaHei", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTo.Location = new System.Drawing.Point(23, 128);
+            this.lblTo.Name = "lblTo";
+            this.lblTo.Size = new System.Drawing.Size(43, 31);
+            this.lblTo.TabIndex = 17;
+            this.lblTo.Text = "To";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft YaHei", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(259, 156);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(20, 31);
+            this.label6.TabIndex = 16;
+            this.label6.Text = ":";
+            // 
+            // textBox3
+            // 
+            this.textBox3.Font = new System.Drawing.Font("Microsoft YaHei", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.textBox3.Location = new System.Drawing.Point(296, 156);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(549, 38);
+            this.textBox3.TabIndex = 15;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.Transparent;
+            this.label7.Font = new System.Drawing.Font("Microsoft YaHei", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label7.Location = new System.Drawing.Point(22, 159);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(224, 31);
+            this.label7.TabIndex = 14;
+            this.label7.Text = "Rekening Number";
+            // 
+            // lblRekNum1
+            // 
+            this.lblRekNum1.AutoSize = true;
+            this.lblRekNum1.Font = new System.Drawing.Font("Microsoft YaHei", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRekNum1.Location = new System.Drawing.Point(291, 60);
+            this.lblRekNum1.Name = "lblRekNum1";
+            this.lblRekNum1.Size = new System.Drawing.Size(87, 31);
+            this.lblRekNum1.TabIndex = 13;
+            this.lblRekNum1.Text = "no rek";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft YaHei", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(260, 60);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(20, 31);
+            this.label2.TabIndex = 12;
+            this.label2.Text = ":";
+            // 
+            // lblRekNum
+            // 
+            this.lblRekNum.AutoSize = true;
+            this.lblRekNum.BackColor = System.Drawing.Color.Transparent;
+            this.lblRekNum.Font = new System.Drawing.Font("Microsoft YaHei", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRekNum.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblRekNum.Location = new System.Drawing.Point(23, 60);
+            this.lblRekNum.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblRekNum.Name = "lblRekNum";
+            this.lblRekNum.Size = new System.Drawing.Size(224, 31);
+            this.lblRekNum.TabIndex = 10;
+            this.lblRekNum.Text = "Rekening Number";
+            // 
+            // lblFrom
+            // 
+            this.lblFrom.AutoSize = true;
+            this.lblFrom.Font = new System.Drawing.Font("Microsoft YaHei", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFrom.Location = new System.Drawing.Point(24, 29);
+            this.lblFrom.Name = "lblFrom";
+            this.lblFrom.Size = new System.Drawing.Size(73, 31);
+            this.lblFrom.TabIndex = 0;
+            this.lblFrom.Text = "From";
+            // 
             // FormTransfer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -220,6 +220,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormTransfer";
             this.Text = "Transfer";
+            this.Load += new System.EventHandler(this.FormTransfer_Load);
             this.panelFrom.ResumeLayout(false);
             this.panelFrom.PerformLayout();
             this.ResumeLayout(false);

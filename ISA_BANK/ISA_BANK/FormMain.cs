@@ -15,7 +15,7 @@ namespace ISA_BANK
     {
         public Nasabah nasabah;
         public Karyawan karyawan;
-        public Nasabah n;
+        //public Nasabah n;
 
         public FormMain()
         {
@@ -107,37 +107,68 @@ namespace ISA_BANK
         }
         private void FormMain_Load(object sender, EventArgs e)
         {
+            this.IsMdiContainer = true;
+            
 
+            try
+            {
+                Koneksi koneksi = new Koneksi();
+
+                FormLogin frmLogin = new FormLogin();
+                frmLogin.Owner = this;
+                frmLogin.ShowDialog();
+
+                if (frmLogin.ShowDialog() == DialogResult.OK)
+                {
+                    this.Visible = true;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Koneksi Gagal.Pesan Kesalahan : " + ex.Message);
+            }
         }
 
         public void SetHakAkses()
         {
             if (nasabah != null)
             {
-                transferToolStripMenuItem.Visible = true;
-                transactionHistoryToolStripMenuItem.Visible = true;
+                nasabahToolStripMenuItem.Visible = true;
+                //transferToolStripMenuItem.Visible = true;
+                //transactionHistoryToolStripMenuItem.Visible = true;
+                managerToolStripMenuItem.Visible = false;
+                tellerToolStripMenuItem.Visible = false;
+                customerServiceToolStripMenuItem.Visible = false;
             }
             else if (karyawan != null)
             {
                 if (karyawan.Roles == "Manajer")
                 {
-                    displayAccToolStripMenuItem.Visible = true;
-
+                    //displayAccToolStripMenuItem.Visible = true;
+                    managerToolStripMenuItem.Visible = true;
+                    nasabahToolStripMenuItem.Visible = false;
+                    tellerToolStripMenuItem.Visible = false;
+                    customerServiceToolStripMenuItem.Visible = false;
                 }
                 else if (karyawan.Roles == "Teller")
                 {
-                    withdrawalToolStripMenuItem.Visible = true;
-                    depositToolStripMenuItem.Visible = true;
-
+                    //withdrawalToolStripMenuItem.Visible = true;
+                    //depositToolStripMenuItem.Visible = true;
+                    managerToolStripMenuItem.Visible = false;
+                    nasabahToolStripMenuItem.Visible = false;
+                    tellerToolStripMenuItem.Visible = true;
+                    customerServiceToolStripMenuItem.Visible = false;
                 }
                 else if (karyawan.Roles == "CS")
                 {
-                    createNewAccountToolStripMenuItem.Visible = true;
-                    updateAccountToolStripMenuItem.Visible = true;
-                    DisplayAccountToolStripMenuItem.Visible = false;
-
+                    //createNewAccountToolStripMenuItem.Visible = true;
+                    //updateAccountToolStripMenuItem.Visible = true;
+                    //DisplayAccountToolStripMenuItem.Visible = false;
+                    managerToolStripMenuItem.Visible = false;
+                    nasabahToolStripMenuItem.Visible = false;
+                    tellerToolStripMenuItem.Visible = false;
+                    customerServiceToolStripMenuItem.Visible = true;
                 }
-
             }
         }
 

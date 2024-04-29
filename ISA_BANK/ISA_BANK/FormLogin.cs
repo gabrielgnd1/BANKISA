@@ -75,33 +75,35 @@ namespace ISA_BANK
                 Koneksi koneksi = new Koneksi();
                 string username = txtUsername.Text;
                 string password = txtPassword.Text;
-                FormMain frm = (FormMain)this.Owner;
-                Nasabah.CekLogin(username,password);
+                
+                
+                Nasabah n = Nasabah.CekLogin(username,AES.Encrypt(password));
 
-                if (Nasabah.CekLogin(username, AES.Encrypt(password)) != null)
+                if (n != null)
                 {
-                    //frm.nasabah = n;
+                    FormMain frm = (FormMain)this.Owner;
+                    frm.nasabah = n;
 
                     MessageBox.Show("Selamat Datang di Bank ISA.", "Login Berhasil");
 
 
                     Nasabah nasabah = Nasabah.BacaDataPerNasabah(txtUsername.Text);
 
+                    frm.SetHakAkses();
 
                     this.DialogResult = DialogResult.OK;
                     this.Hide();
-
-                    FormMain mainfrm = new FormMain();
-                    mainfrm.Owner = this;
-                    mainfrm.ShowDialog();
+                    this.Close();
+                    
+                    frm.ShowDialog();
                 }
 
-                else if (Nasabah.CekLogin(username, password) == null)
+                else if (n == null)
                 {
-                    Karyawan k = Karyawan.CekLogin(txtUsername.Text, txtPassword.Text);
+                    Karyawan k = Karyawan.CekLogin(username, AES.Encrypt(password));
                     if (k != null)
                     {
-                        
+                        FormMain frm = (FormMain)this.Owner;
                         frm.karyawan = k;
                         MessageBox.Show("Selamat Datang di Bank ISA.", "Login Berhasil");
 
@@ -139,5 +141,7 @@ namespace ISA_BANK
             //main.Owner = this;
             //main.ShowDialog();
         }
+
+
     }
 }

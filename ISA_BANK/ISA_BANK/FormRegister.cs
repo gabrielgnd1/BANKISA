@@ -112,7 +112,6 @@ namespace ISA_BANK
             Nasabah n = new Nasabah();
             try
             {
-                
                 string gender;
                 string enPw = AES.Encrypt(txtPassword.Text);
                 string enNIK = AES.Encrypt(txtNIK.Text);
@@ -137,10 +136,10 @@ namespace ISA_BANK
                 n.Username = txtUsername.Text;
                 n.Password = enPw;
                 
-                
 
                 Nasabah.TambahData(n);
                 MessageBox.Show("Data Telah Tersimpan.", "Informasi");
+                this.Close();
             }
 
 
