@@ -358,7 +358,7 @@ namespace ISA_BANK
             // 
             // comboBoxRoles
             // 
-            this.comboBoxRoles.Enabled = false;
+            this.comboBoxRoles.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxRoles.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxRoles.FormattingEnabled = true;
             this.comboBoxRoles.Items.AddRange(new object[] {
@@ -372,12 +372,14 @@ namespace ISA_BANK
             // 
             // comboBoxCabang
             // 
+            this.comboBoxCabang.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxCabang.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxCabang.FormattingEnabled = true;
             this.comboBoxCabang.Location = new System.Drawing.Point(382, 701);
             this.comboBoxCabang.Name = "comboBoxCabang";
             this.comboBoxCabang.Size = new System.Drawing.Size(549, 35);
             this.comboBoxCabang.TabIndex = 130;
+            this.comboBoxCabang.SelectedIndexChanged += new System.EventHandler(this.comboBoxCabang_SelectedIndexChanged);
             // 
             // label9
             // 
@@ -451,7 +453,7 @@ namespace ISA_BANK
             this.Controls.Add(this.lblName);
             this.Controls.Add(this.lblKaryawan);
             this.Name = "FormAddKaryawan";
-            this.Text = "FormAddKaryawan";
+            this.Load += new System.EventHandler(this.FormAddKaryawan_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

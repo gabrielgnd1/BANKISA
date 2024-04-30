@@ -22,7 +22,16 @@ namespace ISA_BANK.DB_CLASS
 
         public Karyawan()
         {
-
+            Id = 0;
+            Username = "";
+            Password = "";
+            Nama = "";
+            Roles = "";
+            Email = "";
+            NoTelp = "";
+            TglLahir = DateTime.Now;
+            Gender = "";
+            Cabang = new Cabang();
         }
 
         public Karyawan(int id, string username, string password, string nama, string roles, string email, string noTelp, DateTime tglLahir, string gender, Cabang cabang)
@@ -57,7 +66,8 @@ namespace ISA_BANK.DB_CLASS
         {
             string sql = "";
 
-            sql = "select * from karyawans where Username='" + username + "' AND Password = SHA2('" + password + "', 512)";
+            //sql = "select * from karyawans where Username='" + username + "' AND Password = SHA2('" + password + "', 512)";
+            sql = "select * from karyawans where Username='" + username + "' AND Password = '" + password + "'";
 
             MySqlDataReader hasil = Koneksi.JalankanPerintahQuery(sql);
 
@@ -67,31 +77,31 @@ namespace ISA_BANK.DB_CLASS
                 Karyawan k = new Karyawan();
                 Cabang c = new Cabang();
                 k.Id = int.Parse(hasil.GetValue(0).ToString());
-                k.Nama = hasil.GetValue(1).ToString();
-                k.Roles = hasil.GetValue(2).ToString();
-                k.Email = hasil.GetValue(3).ToString();
-                k.NoTelp = hasil.GetValue(4).ToString();
+                k.Username = hasil.GetValue(1).ToString();
+                k.Password = hasil.GetValue(2).ToString();
+                k.Nama = hasil.GetValue(3).ToString();
+                k.Roles = hasil.GetValue(4).ToString();
+                c.Id = int.Parse((hasil.GetValue(5).ToString()));
+                k.Email = hasil.GetValue(6).ToString();
+                k.NoTelp = hasil.GetValue(7).ToString();
+                k.TglLahir = DateTime.Parse(hasil.GetValue(8).ToString());
+                k.Gender = hasil.GetValue(9).ToString();
                 
-                k.TglLahir = DateTime.Parse(hasil.GetValue(5).ToString());
-                k.Gender = hasil.GetValue(6).ToString();
-                k.Username = hasil.GetValue(7).ToString();
-                k.Password = hasil.GetValue(8).ToString();
-                c.Id = int.Parse((hasil.GetValue(9).ToString()));
                 return k;
             }
             return null;
         }
 
-        public static List<Karyawan> BacaData(string kriteria, string nilaiKriteria)
+        public static List<Karyawan> BacaData(string filter = "", string nilai = "")
         {
             string sql = "";
-            if (kriteria == "") //jika tidak ada kriteria yang diisikan
+            if (filter == "") //jika tidak ada kriteria yang diisikan
             {
                 sql = "select * from karyawans";
             }
             else
             {
-                sql = "select * from karyawans where" + kriteria + " like %" + nilaiKriteria + "%";
+                sql = "select * from karyawans where" + filter + " like %" + nilai + "%";
             }
 
             MySqlDataReader hasil = Koneksi.JalankanPerintahQuery(sql);
@@ -122,13 +132,13 @@ namespace ISA_BANK.DB_CLASS
         public static Karyawan BacaId(string namaAttribute, string initialData)
         {
             {
-                string sql = "select * from films where " + namaAttribute + " Like '%" + initialData + "%'";
+                string sql = "select * from karyawans where " + namaAttribute + " Like '%" + initialData + "%'";
                 MySqlDataReader hasil = Koneksi.JalankanPerintahQuery(sql);
                 if (hasil.Read() == true)
                 {
 
                     Karyawan k = new Karyawan();
-                    Cabang c = Cabang.BacaId("id", hasil.GetString(5));
+                    Cabang c = Cabang.BacaId("Id", hasil.GetString(5));
 
 
                     k.Id = int.Parse(hasil.GetValue(0).ToString());
@@ -157,13 +167,13 @@ namespace ISA_BANK.DB_CLASS
             //string sql = "insert into nasabahs(nama, ttl, nik, no_telepon, gender, username, password) values('" +
             //    n.Nama.Replace("'", "\\") + "','" + n.Ttl + "','" + n.Nik + "','" + n.No_telepon + "','" + n.Gender + "','" +
             //    n.Username + "','" + ", sha2('" + n.Password + "', 512),'" + "')";
-            string sql = "INSERT INTO karyawans" + "(id, nama, roles, email, noTelp, cabang, tglLahir, gender, username, password) VALUES ('" +
+            string sql = "INSERT INTO karyawans" + "(id, nama, roles, email, no_telepon, cabangs_id, tanggal_lahir, gender, username, password) VALUES ('" +
              k.Id + "','" +
              k.Nama + "','" +
              k.Roles + "','" +
              k.Email + "','" +
              k.NoTelp + "','" +
-             k.Cabang + "','" +
+             k.Cabang.Id + "','" +
              k.tglLahir.ToString("yyyy-MM-dd") + "','" +
              k.Gender + "','" +
              k.Username + "', SHA2('" +

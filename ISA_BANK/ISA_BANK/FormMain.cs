@@ -22,14 +22,14 @@ namespace ISA_BANK
             InitializeComponent();
         }
 
-        private void createNewAccountToolStripMenuItem_Click(object sender, EventArgs e)
+        private void addNewRekToolStripMenuItem_Click(object sender, EventArgs e)
         {
             panelMain.Controls.Clear();
-            FormCreateNewBankAccount newAcc = new FormCreateNewBankAccount();
-            newAcc.TopLevel = false;
-            panelMain.Controls.Add(newAcc);
-            newAcc.BringToFront();
-            newAcc.Show();
+            FormAddRekening addRek = new FormAddRekening();
+            addRek.TopLevel = false;
+            panelMain.Controls.Add(addRek);
+            addRek.BringToFront();
+            addRek.Show();
         }
 
         private void updateAccountToolStripMenuItem_Click(object sender, EventArgs e)

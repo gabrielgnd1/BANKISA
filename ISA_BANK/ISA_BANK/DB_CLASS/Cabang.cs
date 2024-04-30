@@ -17,24 +17,26 @@ namespace ISA_BANK.DB_CLASS
             this.Id = id;
             this.Nama = nama;
         }
-        public Cabang() { }
+        public Cabang() {
+            Id = 0;
+            Nama = "";
+        }
 
-        
 
         public int Id { get => id; set => id = value; }
         public string Nama { get => nama; set => nama = value; }
 
-        public static List<Cabang> BacaData(string kriteria, string nilaiKriteria)
+        public static List<Cabang> BacaData(string filter = "", string nilai = "")
         {
             string sql = "";
 
-            if (kriteria == "")
+            if (filter == "")
             {
                 sql = "select * from cabangs";
             }
             else
             {
-                sql = "select * from cabangs where " + kriteria + " like '%" + nilaiKriteria + "%'";
+                sql = "select * from cabangs where " + filter + " like '%" + nilai + "%'";
             }
 
             MySqlDataReader hasil = Koneksi.JalankanPerintahQuery(sql);
@@ -43,11 +45,9 @@ namespace ISA_BANK.DB_CLASS
             while (hasil.Read() == true)
             {
                 Cabang c = new Cabang();
-
+                c.Id = int.Parse((hasil.GetValue(0).ToString()));
                 c.Nama = hasil.GetValue(1).ToString();
                 
-           
-
                 listHasil.Add(c);
             }
             return listHasil;
@@ -56,7 +56,7 @@ namespace ISA_BANK.DB_CLASS
         public static Cabang BacaId(string namaAttribute, string initialData)
         {
             {
-                string sql = "select * from films where " + namaAttribute + " Like '%" + initialData + "%'";
+                string sql = "select * from karyawans where " + namaAttribute + " Like '%" + initialData + "%'";
                 MySqlDataReader hasil = Koneksi.JalankanPerintahQuery(sql);
                 if (hasil.Read() == true)
                 {

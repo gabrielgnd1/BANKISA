@@ -35,33 +35,35 @@ namespace ISA_BANK
             this.label3 = new System.Windows.Forms.Label();
             this.cboNik = new System.Windows.Forms.ComboBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label8 = new System.Windows.Forms.Label();
-            this.lblCustName = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.lblNik = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
+            this.phoneNum = new System.Windows.Forms.Label();
+            this.gender = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.dateBirth = new System.Windows.Forms.Label();
+            this.nikNum = new System.Windows.Forms.Label();
+            this.custName = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.lblPhone = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.lblTtl = new System.Windows.Forms.Label();
+            this.lblNik = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.lblCustName = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.btnAdd = new System.Windows.Forms.Button();
             this.txtDeposit = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.cboJenisKartu = new System.Windows.Forms.ComboBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.lblPhone = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.custName = new System.Windows.Forms.Label();
-            this.nikNum = new System.Windows.Forms.Label();
-            this.dateBirth = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.gender = new System.Windows.Forms.Label();
-            this.phoneNum = new System.Windows.Forms.Label();
             this.lblRekNum = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txtAccNum = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.txtCardNum = new System.Windows.Forms.TextBox();
+            this.buttonCari = new System.Windows.Forms.Button();
+            this.textBoxCari = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -118,12 +120,12 @@ namespace ISA_BANK
             // 
             // cboNik
             // 
-            this.cboNik.Enabled = false;
+            this.cboNik.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboNik.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboNik.FormattingEnabled = true;
             this.cboNik.Location = new System.Drawing.Point(305, 115);
             this.cboNik.Name = "cboNik";
-            this.cboNik.Size = new System.Drawing.Size(388, 35);
+            this.cboNik.Size = new System.Drawing.Size(339, 35);
             this.cboNik.TabIndex = 53;
             this.cboNik.SelectedIndexChanged += new System.EventHandler(this.cboNik_SelectedIndexChanged);
             // 
@@ -149,42 +151,143 @@ namespace ISA_BANK
             this.panel1.Size = new System.Drawing.Size(898, 202);
             this.panel1.TabIndex = 54;
             // 
-            // label8
+            // phoneNum
             // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.Font = new System.Drawing.Font("Microsoft YaHei", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label8.Location = new System.Drawing.Point(43, 602);
-            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(138, 31);
-            this.label8.TabIndex = 72;
-            this.label8.Text = "Jenis Kartu";
+            this.phoneNum.AutoSize = true;
+            this.phoneNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.phoneNum.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.phoneNum.Location = new System.Drawing.Point(721, 96);
+            this.phoneNum.Name = "phoneNum";
+            this.phoneNum.Size = new System.Drawing.Size(43, 25);
+            this.phoneNum.TabIndex = 73;
+            this.phoneNum.Text = "telp";
             // 
-            // lblCustName
+            // gender
             // 
-            this.lblCustName.AutoSize = true;
-            this.lblCustName.BackColor = System.Drawing.Color.Transparent;
-            this.lblCustName.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCustName.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblCustName.Location = new System.Drawing.Point(31, 44);
-            this.lblCustName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblCustName.Name = "lblCustName";
-            this.lblCustName.Size = new System.Drawing.Size(167, 27);
-            this.lblCustName.TabIndex = 45;
-            this.lblCustName.Text = "Customer Name";
+            this.gender.AutoSize = true;
+            this.gender.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gender.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.gender.Location = new System.Drawing.Point(721, 46);
+            this.gender.Name = "gender";
+            this.gender.Size = new System.Drawing.Size(73, 25);
+            this.gender.TabIndex = 72;
+            this.gender.Text = "gender";
             // 
-            // label12
+            // label7
             // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label12.Location = new System.Drawing.Point(199, 42);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(19, 29);
-            this.label12.TabIndex = 46;
-            this.label12.Text = ":";
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label7.Location = new System.Drawing.Point(687, 92);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(19, 29);
+            this.label7.TabIndex = 69;
+            this.label7.Text = ":";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label6.Location = new System.Drawing.Point(687, 47);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(19, 29);
+            this.label6.TabIndex = 68;
+            this.label6.Text = ":";
+            // 
+            // dateBirth
+            // 
+            this.dateBirth.AutoSize = true;
+            this.dateBirth.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateBirth.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.dateBirth.Location = new System.Drawing.Point(234, 146);
+            this.dateBirth.Name = "dateBirth";
+            this.dateBirth.Size = new System.Drawing.Size(45, 25);
+            this.dateBirth.TabIndex = 67;
+            this.dateBirth.Text = "dob";
+            // 
+            // nikNum
+            // 
+            this.nikNum.AutoSize = true;
+            this.nikNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nikNum.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.nikNum.Location = new System.Drawing.Point(234, 93);
+            this.nikNum.Name = "nikNum";
+            this.nikNum.Size = new System.Drawing.Size(45, 25);
+            this.nikNum.TabIndex = 65;
+            this.nikNum.Text = "NIK";
+            // 
+            // custName
+            // 
+            this.custName.AutoSize = true;
+            this.custName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.custName.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.custName.Location = new System.Drawing.Point(234, 46);
+            this.custName.Name = "custName";
+            this.custName.Size = new System.Drawing.Size(61, 25);
+            this.custName.TabIndex = 64;
+            this.custName.Text = "nama";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label5.Location = new System.Drawing.Point(199, 142);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(19, 29);
+            this.label5.TabIndex = 63;
+            this.label5.Text = ":";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label10.Location = new System.Drawing.Point(199, 89);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(19, 29);
+            this.label10.TabIndex = 61;
+            this.label10.Text = ":";
+            // 
+            // lblPhone
+            // 
+            this.lblPhone.AutoSize = true;
+            this.lblPhone.BackColor = System.Drawing.Color.Transparent;
+            this.lblPhone.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPhone.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblPhone.Location = new System.Drawing.Point(527, 92);
+            this.lblPhone.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblPhone.Name = "lblPhone";
+            this.lblPhone.Size = new System.Drawing.Size(153, 27);
+            this.lblPhone.TabIndex = 53;
+            this.lblPhone.Text = "Phone number";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label4.Location = new System.Drawing.Point(527, 47);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(82, 27);
+            this.label4.TabIndex = 51;
+            this.label4.Text = "Gender";
+            // 
+            // lblTtl
+            // 
+            this.lblTtl.AutoSize = true;
+            this.lblTtl.BackColor = System.Drawing.Color.Transparent;
+            this.lblTtl.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTtl.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblTtl.Location = new System.Drawing.Point(31, 144);
+            this.lblTtl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblTtl.Name = "lblTtl";
+            this.lblTtl.Size = new System.Drawing.Size(133, 27);
+            this.lblTtl.TabIndex = 49;
+            this.lblTtl.Text = "Date of Birth";
             // 
             // lblNik
             // 
@@ -199,6 +302,43 @@ namespace ISA_BANK
             this.lblNik.TabIndex = 47;
             this.lblNik.Text = "NIK";
             // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label12.Location = new System.Drawing.Point(199, 42);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(19, 29);
+            this.label12.TabIndex = 46;
+            this.label12.Text = ":";
+            // 
+            // lblCustName
+            // 
+            this.lblCustName.AutoSize = true;
+            this.lblCustName.BackColor = System.Drawing.Color.Transparent;
+            this.lblCustName.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCustName.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblCustName.Location = new System.Drawing.Point(31, 44);
+            this.lblCustName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblCustName.Name = "lblCustName";
+            this.lblCustName.Size = new System.Drawing.Size(167, 27);
+            this.lblCustName.TabIndex = 45;
+            this.lblCustName.Text = "Customer Name";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.Transparent;
+            this.label8.Font = new System.Drawing.Font("Microsoft YaHei", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label8.Location = new System.Drawing.Point(43, 602);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(138, 31);
+            this.label8.TabIndex = 72;
+            this.label8.Text = "Jenis Kartu";
+            // 
             // label11
             // 
             this.label11.AutoSize = true;
@@ -209,19 +349,6 @@ namespace ISA_BANK
             this.label11.Size = new System.Drawing.Size(19, 29);
             this.label11.TabIndex = 71;
             this.label11.Text = ":";
-            // 
-            // lblTtl
-            // 
-            this.lblTtl.AutoSize = true;
-            this.lblTtl.BackColor = System.Drawing.Color.Transparent;
-            this.lblTtl.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTtl.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblTtl.Location = new System.Drawing.Point(31, 144);
-            this.lblTtl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblTtl.Name = "lblTtl";
-            this.lblTtl.Size = new System.Drawing.Size(133, 27);
-            this.lblTtl.TabIndex = 49;
-            this.lblTtl.Text = "Date of Birth";
             // 
             // label14
             // 
@@ -271,7 +398,7 @@ namespace ISA_BANK
             // 
             // cboJenisKartu
             // 
-            this.cboJenisKartu.Enabled = false;
+            this.cboJenisKartu.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboJenisKartu.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboJenisKartu.FormattingEnabled = true;
             this.cboJenisKartu.Items.AddRange(new object[] {
@@ -283,131 +410,6 @@ namespace ISA_BANK
             this.cboJenisKartu.Name = "cboJenisKartu";
             this.cboJenisKartu.Size = new System.Drawing.Size(433, 35);
             this.cboJenisKartu.TabIndex = 74;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label4.Location = new System.Drawing.Point(527, 47);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(82, 27);
-            this.label4.TabIndex = 51;
-            this.label4.Text = "Gender";
-            // 
-            // lblPhone
-            // 
-            this.lblPhone.AutoSize = true;
-            this.lblPhone.BackColor = System.Drawing.Color.Transparent;
-            this.lblPhone.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPhone.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblPhone.Location = new System.Drawing.Point(527, 92);
-            this.lblPhone.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblPhone.Name = "lblPhone";
-            this.lblPhone.Size = new System.Drawing.Size(153, 27);
-            this.lblPhone.TabIndex = 53;
-            this.lblPhone.Text = "Phone number";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label10.Location = new System.Drawing.Point(199, 89);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(19, 29);
-            this.label10.TabIndex = 61;
-            this.label10.Text = ":";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label5.Location = new System.Drawing.Point(199, 142);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(19, 29);
-            this.label5.TabIndex = 63;
-            this.label5.Text = ":";
-            // 
-            // custName
-            // 
-            this.custName.AutoSize = true;
-            this.custName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.custName.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.custName.Location = new System.Drawing.Point(234, 46);
-            this.custName.Name = "custName";
-            this.custName.Size = new System.Drawing.Size(61, 25);
-            this.custName.TabIndex = 64;
-            this.custName.Text = "nama";
-            // 
-            // nikNum
-            // 
-            this.nikNum.AutoSize = true;
-            this.nikNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nikNum.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.nikNum.Location = new System.Drawing.Point(234, 93);
-            this.nikNum.Name = "nikNum";
-            this.nikNum.Size = new System.Drawing.Size(45, 25);
-            this.nikNum.TabIndex = 65;
-            this.nikNum.Text = "NIK";
-            // 
-            // dateBirth
-            // 
-            this.dateBirth.AutoSize = true;
-            this.dateBirth.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateBirth.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.dateBirth.Location = new System.Drawing.Point(234, 146);
-            this.dateBirth.Name = "dateBirth";
-            this.dateBirth.Size = new System.Drawing.Size(45, 25);
-            this.dateBirth.TabIndex = 67;
-            this.dateBirth.Text = "dob";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label6.Location = new System.Drawing.Point(687, 47);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(19, 29);
-            this.label6.TabIndex = 68;
-            this.label6.Text = ":";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label7.Location = new System.Drawing.Point(687, 92);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(19, 29);
-            this.label7.TabIndex = 69;
-            this.label7.Text = ":";
-            // 
-            // gender
-            // 
-            this.gender.AutoSize = true;
-            this.gender.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gender.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.gender.Location = new System.Drawing.Point(721, 46);
-            this.gender.Name = "gender";
-            this.gender.Size = new System.Drawing.Size(73, 25);
-            this.gender.TabIndex = 72;
-            this.gender.Text = "gender";
-            // 
-            // phoneNum
-            // 
-            this.phoneNum.AutoSize = true;
-            this.phoneNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.phoneNum.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.phoneNum.Location = new System.Drawing.Point(721, 96);
-            this.phoneNum.Name = "phoneNum";
-            this.phoneNum.Size = new System.Drawing.Size(43, 25);
-            this.phoneNum.TabIndex = 73;
-            this.phoneNum.Text = "telp";
             // 
             // lblRekNum
             // 
@@ -464,13 +466,38 @@ namespace ISA_BANK
             this.txtCardNum.Size = new System.Drawing.Size(433, 34);
             this.txtCardNum.TabIndex = 60;
             // 
+            // buttonCari
+            // 
+            this.buttonCari.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.buttonCari.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonCari.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.buttonCari.Location = new System.Drawing.Point(929, 111);
+            this.buttonCari.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonCari.Name = "buttonCari";
+            this.buttonCari.Size = new System.Drawing.Size(88, 43);
+            this.buttonCari.TabIndex = 76;
+            this.buttonCari.Text = "CARI";
+            this.buttonCari.UseVisualStyleBackColor = false;
+            this.buttonCari.Click += new System.EventHandler(this.buttonCari_Click);
+            // 
+            // textBoxCari
+            // 
+            this.textBoxCari.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxCari.Location = new System.Drawing.Point(657, 116);
+            this.textBoxCari.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxCari.Name = "textBoxCari";
+            this.textBoxCari.Size = new System.Drawing.Size(263, 34);
+            this.textBoxCari.TabIndex = 75;
+            // 
             // FormAddRekening
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Beige;
-            this.ClientSize = new System.Drawing.Size(980, 666);
+            this.ClientSize = new System.Drawing.Size(1068, 666);
             this.ControlBox = false;
+            this.Controls.Add(this.buttonCari);
+            this.Controls.Add(this.textBoxCari);
             this.Controls.Add(this.cboJenisKartu);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label8);
@@ -536,5 +563,7 @@ namespace ISA_BANK
         private System.Windows.Forms.TextBox txtAccNum;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.TextBox txtCardNum;
+        private System.Windows.Forms.Button buttonCari;
+        private System.Windows.Forms.TextBox textBoxCari;
     }
 }

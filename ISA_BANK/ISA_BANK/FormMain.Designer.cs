@@ -30,7 +30,7 @@
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.customerServiceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.createNewAccountToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.AddNewRekToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.updateAccountToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.DisplayAccountToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tellerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -42,9 +42,9 @@
             this.infoAccountToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.managerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.displayAccToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.addKaryawanToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panelMain = new System.Windows.Forms.Panel();
-            this.addKaryawanToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -66,31 +66,31 @@
             // customerServiceToolStripMenuItem
             // 
             this.customerServiceToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.createNewAccountToolStripMenuItem,
+            this.AddNewRekToolStripMenuItem,
             this.updateAccountToolStripMenuItem,
             this.DisplayAccountToolStripMenuItem});
             this.customerServiceToolStripMenuItem.Name = "customerServiceToolStripMenuItem";
             this.customerServiceToolStripMenuItem.Size = new System.Drawing.Size(137, 24);
             this.customerServiceToolStripMenuItem.Text = "Customer Service";
             // 
-            // createNewAccountToolStripMenuItem
+            // AddNewRekToolStripMenuItem
             // 
-            this.createNewAccountToolStripMenuItem.Name = "createNewAccountToolStripMenuItem";
-            this.createNewAccountToolStripMenuItem.Size = new System.Drawing.Size(227, 26);
-            this.createNewAccountToolStripMenuItem.Text = "Create New Account";
-            this.createNewAccountToolStripMenuItem.Click += new System.EventHandler(this.createNewAccountToolStripMenuItem_Click);
+            this.AddNewRekToolStripMenuItem.Name = "AddNewRekToolStripMenuItem";
+            this.AddNewRekToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.AddNewRekToolStripMenuItem.Text = "Add New Rekening";
+            this.AddNewRekToolStripMenuItem.Click += new System.EventHandler(this.addNewRekToolStripMenuItem_Click);
             // 
             // updateAccountToolStripMenuItem
             // 
             this.updateAccountToolStripMenuItem.Name = "updateAccountToolStripMenuItem";
-            this.updateAccountToolStripMenuItem.Size = new System.Drawing.Size(227, 26);
+            this.updateAccountToolStripMenuItem.Size = new System.Drawing.Size(234, 26);
             this.updateAccountToolStripMenuItem.Text = "Update Account";
             this.updateAccountToolStripMenuItem.Click += new System.EventHandler(this.updateAccountToolStripMenuItem_Click);
             // 
             // DisplayAccountToolStripMenuItem
             // 
             this.DisplayAccountToolStripMenuItem.Name = "DisplayAccountToolStripMenuItem";
-            this.DisplayAccountToolStripMenuItem.Size = new System.Drawing.Size(227, 26);
+            this.DisplayAccountToolStripMenuItem.Size = new System.Drawing.Size(234, 26);
             this.DisplayAccountToolStripMenuItem.Text = "Display Account";
             this.DisplayAccountToolStripMenuItem.Click += new System.EventHandler(this.DisplayAllAccountToolStripMenuItem_Click);
             // 
@@ -160,9 +160,16 @@
             // displayAccToolStripMenuItem
             // 
             this.displayAccToolStripMenuItem.Name = "displayAccToolStripMenuItem";
-            this.displayAccToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.displayAccToolStripMenuItem.Size = new System.Drawing.Size(221, 26);
             this.displayAccToolStripMenuItem.Text = "Display All Account";
             this.displayAccToolStripMenuItem.Click += new System.EventHandler(this.displayAccToolStripMenuItem_Click);
+            // 
+            // addKaryawanToolStripMenuItem
+            // 
+            this.addKaryawanToolStripMenuItem.Name = "addKaryawanToolStripMenuItem";
+            this.addKaryawanToolStripMenuItem.Size = new System.Drawing.Size(221, 26);
+            this.addKaryawanToolStripMenuItem.Text = "Add Karyawan";
+            this.addKaryawanToolStripMenuItem.Click += new System.EventHandler(this.addKaryawanToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
@@ -178,13 +185,6 @@
             this.panelMain.Name = "panelMain";
             this.panelMain.Size = new System.Drawing.Size(1131, 971);
             this.panelMain.TabIndex = 1;
-            // 
-            // addKaryawanToolStripMenuItem
-            // 
-            this.addKaryawanToolStripMenuItem.Name = "addKaryawanToolStripMenuItem";
-            this.addKaryawanToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.addKaryawanToolStripMenuItem.Text = "Add Karyawan";
-            this.addKaryawanToolStripMenuItem.Click += new System.EventHandler(this.addKaryawanToolStripMenuItem_Click);
             // 
             // FormMain
             // 
@@ -213,7 +213,7 @@
 
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem customerServiceToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem createNewAccountToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem AddNewRekToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem updateAccountToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem DisplayAccountToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem tellerToolStripMenuItem;

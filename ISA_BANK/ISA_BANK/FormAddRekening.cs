@@ -20,12 +20,16 @@ namespace ISA_BANK
 
         FormMain frmMain;
         List<Nasabah> listNasabah = new List<Nasabah>();
+
+        
         private void FormAddRekening_Load(object sender, EventArgs e)
         {
+
             frmMain = (FormMain)this.Owner;
             listNasabah = Nasabah.BacaData("", "");
             cboNik.DataSource = listNasabah;
-            cboNik.DisplayMember = "Nama";
+            cboNik.DisplayMember = ("NIK");
+            cboNik.ValueMember = "Id";
         }
 
         private void cboNik_SelectedIndexChanged(object sender, EventArgs e)
@@ -41,11 +45,39 @@ namespace ISA_BANK
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            Rekening rek = new Rekening();
-            rek.Nomor = txtAccNum.Text;
-            rek.Nomor_kartu = txtCardNum.Text;
-            rek.Jumlah_saldo = int.Parse(txtDeposit.Text);
-            rek.Jenis_kartu = cboJenisKartu.SelectedItem.ToString();
+            try
+            {
+                Rekening rek = new Rekening();
+                Nasabah pilih = (Nasabah)cboNik.SelectedItem;
+
+                rek.Nomor = txtAccNum.Text;
+                rek.Nomor_kartu = txtCardNum.Text;
+                rek.Jumlah_saldo = int.Parse(txtDeposit.Text);
+                rek.Jenis_kartu = cboJenisKartu.SelectedItem.ToString();
+                rek.Nasabah = pilih;
+
+                Rekening.TambahData(rek);
+
+                MessageBox.Show("Tambah data berhasil");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Tambah data gagal. ERROR : " + ex.Message);
+            }
+        }
+
+        private void buttonCari_Click(object sender, EventArgs e)
+        {
+            //string filter;
+            //if (cboNik.SelectedIndex == 0)
+            //    filter = "KodeKategori";
+            //else
+            //    filter = "nama";
+
+            //string nilai = textBoxCari.Text;
+
+            //List<Nasabah> ListData = Kategori.BacaData(filter, nilai);
+            //dataGridViewData.DataSource = ListData;
         }
     }
 }

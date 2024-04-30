@@ -113,6 +113,13 @@ namespace ISA_BANK.DB_CLASS
                 }
             }
         }
+
+        public static void WithdrawalData(Rekening rek, int jumlah_penarikan)
+        {   //susun perintah query
+            string perintah = "UPDATE rekenings SET jumlah_saldo -= " + jumlah_penarikan + " WHERE nomor = " + rek.Nasabah.Id + "";
+
+            Koneksi.JalankanPerintahQuery(perintah); //kirim ke command
+        }
         #endregion
     }
 }

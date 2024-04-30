@@ -77,7 +77,8 @@ namespace ISA_BANK
                 string password = txtPassword.Text;
 
                 Nasabah n = Nasabah.CekLogin(username, AES.Encrypt(password));
-                Karyawan k = Karyawan.CekLogin(username, AES.Encrypt(password));
+                //Karyawan k = Karyawan.CekLogin(username, AES.Encrypt(password));
+                Karyawan k = Karyawan.CekLogin(username, password);
 
                 if (n != null)
                 {
@@ -138,7 +139,6 @@ namespace ISA_BANK
             FormRegister frm = new FormRegister();
             frm.Owner = this;
             frm.ShowDialog();
-
             //FormMain main = new FormMain();
             //main.Owner = this;
             //main.ShowDialog();

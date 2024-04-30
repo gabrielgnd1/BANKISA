@@ -22,7 +22,7 @@ namespace ISA_BANK
         private void btnAdd_Click(object sender, EventArgs e)
         {
             Karyawan k = new Karyawan();
-            Cabang c = new Cabang();
+            //Cabang c = new Cabang();
             if (rdoMale.Checked)
             {
                 k.Gender = "Pria";
@@ -38,18 +38,39 @@ namespace ISA_BANK
 
             string enPw = AES.Encrypt(txtPassword.Text);
 
-            k.Username = txtUsername.Text;
-            k.Password = enPw;
-            k.Nama = txtName.Text;
-            //k.Roles = comboBoxRoles.;
-            //c.Id = 
-            k.Email = txtEmail.Text;
-            k.NoTelp = textBoxPhoneNum.Text;
-            k.TglLahir = dateTimePickerBirth.Value;
+            Cabang selectedCabang = comboBoxCabang.SelectedItem as Cabang;
+            if (selectedCabang == null)
+            {
+                MessageBox.Show("Pilih Cabang", "Peringatan");
+                return; // Return if branch is not selected
+            }
 
+
+            k.Username = txtUsername.Text;
+                k.Password = enPw;
+                k.Nama = txtName.Text;
+                k.Roles = comboBoxRoles.SelectedItem.ToString();
+                k.Cabang = selectedCabang;
+                k.Email = txtEmail.Text;
+                k.NoTelp = textBoxPhoneNum.Text;
+                k.TglLahir = dateTimePickerBirth.Value;
+            
             Karyawan.TambahData(k);
             MessageBox.Show("Data Telah Tersimpan.", "Informasi");
             this.Close();
+        }
+
+        private void FormAddKaryawan_Load(object sender, EventArgs e)
+        {
+            List<Cabang> ListData = Cabang.BacaData("", "");
+            comboBoxCabang.DataSource = ListData;
+            comboBoxCabang.DisplayMember = "Nama";
+
+        }
+
+        private void comboBoxCabang_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
         }
     }
 }

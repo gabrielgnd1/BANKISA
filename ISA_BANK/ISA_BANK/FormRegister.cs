@@ -131,7 +131,7 @@ namespace ISA_BANK
                 //Nasabah n = new Nasabah();
                 n.Nama = txtFullname.Text;
                 n.Ttl = ttlPicker.Value;
-                n.Nik = enNIK;
+                n.Nik = txtNIK.Text;
                 n.No_telepon = txtNoTelp.Text;
                 n.Username = txtUsername.Text;
                 n.Password = enPw;

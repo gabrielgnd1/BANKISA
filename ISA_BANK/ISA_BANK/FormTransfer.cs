@@ -20,12 +20,27 @@ namespace ISA_BANK
 
         List<Nasabah> listNasabah = new List<Nasabah>();
         List<Rekening> listRekening = new List<Rekening>();
-
+        Rekening r = new Rekening();
         private void FormTransfer_Load(object sender, EventArgs e)
         {
             FormMain frm = (FormMain)this.Owner;
-            //lblRekNum1.Text = 
+            r = Rekening.BacaId("nasabahs_id", frm.nasabah.Id.ToString());
+            lblRekNum1.Text = r.Nomor;
 
+
+        }
+
+        private void btnTranfer_Click(object sender, EventArgs e)
+        {
+            TransaksiRekening tr = new TransaksiRekening();
+            tr.RekeningTujuan = textBoxRekTujuan.Text;
+            TransaksiRekening.TambahData(tr);
+
+            Transaksi t = new Transaksi();
+            t.Jumlah = int.Parse(textBoxJml.Text);
+            t.Keterangan = "Transfer";
+            t.Tanggal = DateTime.Now;
+            Transaksi.TambahData(t);
         }
     }
 }

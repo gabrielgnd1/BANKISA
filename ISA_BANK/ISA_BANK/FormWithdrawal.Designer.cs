@@ -45,7 +45,7 @@ namespace ISA_BANK
             this.lblCustName = new System.Windows.Forms.Label();
             this.lblWithdrawal = new System.Windows.Forms.Label();
             this.txtNik = new System.Windows.Forms.TextBox();
-            this.lblCurBalance = new System.Windows.Forms.Label();
+            this.labelnik = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txtAccNum = new System.Windows.Forms.TextBox();
             this.btnSearch = new System.Windows.Forms.Button();
@@ -59,18 +59,19 @@ namespace ISA_BANK
             // btnWithDrawal
             // 
             this.btnWithDrawal.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnWithDrawal.Location = new System.Drawing.Point(548, 170);
+            this.btnWithDrawal.Location = new System.Drawing.Point(580, 172);
             this.btnWithDrawal.Name = "btnWithDrawal";
             this.btnWithDrawal.Size = new System.Drawing.Size(157, 37);
             this.btnWithDrawal.TabIndex = 14;
             this.btnWithDrawal.Text = "Withdrawal";
             this.btnWithDrawal.UseVisualStyleBackColor = true;
+            this.btnWithDrawal.Click += new System.EventHandler(this.btnWithDrawal_Click);
             // 
             // txtWithAmount
             // 
             this.txtWithAmount.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtWithAmount.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.txtWithAmount.Location = new System.Drawing.Point(239, 172);
+            this.txtWithAmount.Location = new System.Drawing.Point(271, 174);
             this.txtWithAmount.Margin = new System.Windows.Forms.Padding(4);
             this.txtWithAmount.Name = "txtWithAmount";
             this.txtWithAmount.Size = new System.Drawing.Size(302, 34);
@@ -80,7 +81,7 @@ namespace ISA_BANK
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(209, 173);
+            this.label4.Location = new System.Drawing.Point(242, 175);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(19, 29);
             this.label4.TabIndex = 77;
@@ -95,15 +96,15 @@ namespace ISA_BANK
             this.lblWithAmount.Location = new System.Drawing.Point(32, 174);
             this.lblWithAmount.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblWithAmount.Name = "lblWithAmount";
-            this.lblWithAmount.Size = new System.Drawing.Size(168, 27);
+            this.lblWithAmount.Size = new System.Drawing.Size(203, 27);
             this.lblWithAmount.TabIndex = 76;
-            this.lblWithAmount.Text = "Deposit Amount";
+            this.lblWithAmount.Text = "Withdrawal Amount";
             // 
             // curBalance
             // 
             this.curBalance.AutoSize = true;
             this.curBalance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.curBalance.Location = new System.Drawing.Point(234, 124);
+            this.curBalance.Location = new System.Drawing.Point(266, 124);
             this.curBalance.Name = "curBalance";
             this.curBalance.Size = new System.Drawing.Size(108, 25);
             this.curBalance.TabIndex = 75;
@@ -126,14 +127,14 @@ namespace ISA_BANK
             this.panel1.Controls.Add(this.lblCustName);
             this.panel1.Location = new System.Drawing.Point(38, 346);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(734, 239);
+            this.panel1.Size = new System.Drawing.Size(799, 239);
             this.panel1.TabIndex = 50;
             // 
             // label11
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(209, 120);
+            this.label11.Location = new System.Drawing.Point(241, 124);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(19, 29);
             this.label11.TabIndex = 71;
@@ -143,7 +144,7 @@ namespace ISA_BANK
             // 
             this.nikNum.AutoSize = true;
             this.nikNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nikNum.Location = new System.Drawing.Point(234, 72);
+            this.nikNum.Location = new System.Drawing.Point(266, 72);
             this.nikNum.Name = "nikNum";
             this.nikNum.Size = new System.Drawing.Size(45, 25);
             this.nikNum.TabIndex = 65;
@@ -153,7 +154,7 @@ namespace ISA_BANK
             // 
             this.custName.AutoSize = true;
             this.custName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.custName.Location = new System.Drawing.Point(234, 25);
+            this.custName.Location = new System.Drawing.Point(266, 25);
             this.custName.Name = "custName";
             this.custName.Size = new System.Drawing.Size(61, 25);
             this.custName.TabIndex = 64;
@@ -163,7 +164,7 @@ namespace ISA_BANK
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(209, 68);
+            this.label10.Location = new System.Drawing.Point(242, 70);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(19, 29);
             this.label10.TabIndex = 61;
@@ -199,7 +200,7 @@ namespace ISA_BANK
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(209, 21);
+            this.label12.Location = new System.Drawing.Point(241, 21);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(19, 29);
             this.label12.TabIndex = 46;
@@ -242,18 +243,18 @@ namespace ISA_BANK
             this.txtNik.Size = new System.Drawing.Size(433, 34);
             this.txtNik.TabIndex = 11;
             // 
-            // lblCurBalance
+            // labelnik
             // 
-            this.lblCurBalance.AutoSize = true;
-            this.lblCurBalance.BackColor = System.Drawing.Color.Transparent;
-            this.lblCurBalance.Font = new System.Drawing.Font("Microsoft YaHei", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCurBalance.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblCurBalance.Location = new System.Drawing.Point(23, 112);
-            this.lblCurBalance.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblCurBalance.Name = "lblCurBalance";
-            this.lblCurBalance.Size = new System.Drawing.Size(56, 31);
-            this.lblCurBalance.TabIndex = 10;
-            this.lblCurBalance.Text = "NIK";
+            this.labelnik.AutoSize = true;
+            this.labelnik.BackColor = System.Drawing.Color.Transparent;
+            this.labelnik.Font = new System.Drawing.Font("Microsoft YaHei", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelnik.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.labelnik.Location = new System.Drawing.Point(23, 112);
+            this.labelnik.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelnik.Name = "labelnik";
+            this.labelnik.Size = new System.Drawing.Size(56, 31);
+            this.labelnik.TabIndex = 10;
+            this.labelnik.Text = "NIK";
             // 
             // label2
             // 
@@ -283,6 +284,7 @@ namespace ISA_BANK
             this.btnSearch.TabIndex = 13;
             this.btnSearch.Text = "Search";
             this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // label3
             // 
@@ -311,14 +313,14 @@ namespace ISA_BANK
             this.gbFrom.Controls.Add(this.btnSearch);
             this.gbFrom.Controls.Add(this.label3);
             this.gbFrom.Controls.Add(this.txtNik);
-            this.gbFrom.Controls.Add(this.lblCurBalance);
+            this.gbFrom.Controls.Add(this.labelnik);
             this.gbFrom.Controls.Add(this.label2);
             this.gbFrom.Controls.Add(this.txtAccNum);
             this.gbFrom.Controls.Add(this.lblAccNum);
             this.gbFrom.Font = new System.Drawing.Font("Microsoft YaHei", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gbFrom.Location = new System.Drawing.Point(49, 100);
             this.gbFrom.Name = "gbFrom";
-            this.gbFrom.Size = new System.Drawing.Size(723, 224);
+            this.gbFrom.Size = new System.Drawing.Size(788, 224);
             this.gbFrom.TabIndex = 48;
             this.gbFrom.TabStop = false;
             this.gbFrom.Text = "Search Account";
@@ -328,7 +330,7 @@ namespace ISA_BANK
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Beige;
-            this.ClientSize = new System.Drawing.Size(824, 612);
+            this.ClientSize = new System.Drawing.Size(920, 612);
             this.ControlBox = false;
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.lblWithdrawal);
@@ -363,7 +365,7 @@ namespace ISA_BANK
         private System.Windows.Forms.Label lblCustName;
         private System.Windows.Forms.Label lblWithdrawal;
         private System.Windows.Forms.TextBox txtNik;
-        private System.Windows.Forms.Label lblCurBalance;
+        private System.Windows.Forms.Label labelnik;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtAccNum;
         private System.Windows.Forms.Button btnSearch;

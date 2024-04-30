@@ -59,15 +59,30 @@ namespace ISA_BANK.DB_CLASS
                 tr.IdRekening = r;
                 tr.RekeningTujuan = hasil.GetString(2);
 
-               listHasil.Add(tr);
+                listHasil.Add(tr);
             }
             return listHasil;
 
         }
 
+        public static Boolean TambahData(TransaksiRekening t)
+        {
+            string sql = "insert into transaksi_rekening(rekenings_id, transaksis_id, rekeningtujuan_id) values('" +
+                t.IdRekening + "','" + t.IdTransaksi + "','" + t.RekeningTujuan + "')";
+            int jumlah = Koneksi.JalankanPerintahDML(sql);
+
+            if (jumlah == 0)
+            {
+                return false;
+            }
+            else
+            {
+                return true;
+            }
 
 
 
-        #endregion
+            #endregion
+        }
     }
 }

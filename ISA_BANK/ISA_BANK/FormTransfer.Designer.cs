@@ -32,11 +32,11 @@
             this.panelFrom = new System.Windows.Forms.Panel();
             this.btnTranfer = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textBoxJml = new System.Windows.Forms.TextBox();
             this.lblTrfAmmount = new System.Windows.Forms.Label();
             this.lblTo = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBoxRekTujuan = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.lblRekNum1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -64,11 +64,11 @@
             this.panelFrom.BackColor = System.Drawing.Color.Lavender;
             this.panelFrom.Controls.Add(this.btnTranfer);
             this.panelFrom.Controls.Add(this.label10);
-            this.panelFrom.Controls.Add(this.textBox5);
+            this.panelFrom.Controls.Add(this.textBoxJml);
             this.panelFrom.Controls.Add(this.lblTrfAmmount);
             this.panelFrom.Controls.Add(this.lblTo);
             this.panelFrom.Controls.Add(this.label6);
-            this.panelFrom.Controls.Add(this.textBox3);
+            this.panelFrom.Controls.Add(this.textBoxRekTujuan);
             this.panelFrom.Controls.Add(this.label7);
             this.panelFrom.Controls.Add(this.lblRekNum1);
             this.panelFrom.Controls.Add(this.label2);
@@ -99,15 +99,15 @@
             this.label10.TabIndex = 21;
             this.label10.Text = ":";
             // 
-            // textBox5
+            // textBoxJml
             // 
-            this.textBox5.Font = new System.Drawing.Font("Microsoft YaHei", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.textBox5.Location = new System.Drawing.Point(296, 202);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(549, 38);
-            this.textBox5.TabIndex = 20;
+            this.textBoxJml.Font = new System.Drawing.Font("Microsoft YaHei", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxJml.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.textBoxJml.Location = new System.Drawing.Point(296, 202);
+            this.textBoxJml.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxJml.Name = "textBoxJml";
+            this.textBoxJml.Size = new System.Drawing.Size(549, 38);
+            this.textBoxJml.TabIndex = 20;
             // 
             // lblTrfAmmount
             // 
@@ -142,15 +142,15 @@
             this.label6.TabIndex = 16;
             this.label6.Text = ":";
             // 
-            // textBox3
+            // textBoxRekTujuan
             // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft YaHei", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.textBox3.Location = new System.Drawing.Point(296, 156);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(549, 38);
-            this.textBox3.TabIndex = 15;
+            this.textBoxRekTujuan.Font = new System.Drawing.Font("Microsoft YaHei", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxRekTujuan.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.textBoxRekTujuan.Location = new System.Drawing.Point(296, 156);
+            this.textBoxRekTujuan.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxRekTujuan.Name = "textBoxRekTujuan";
+            this.textBoxRekTujuan.Size = new System.Drawing.Size(549, 38);
+            this.textBoxRekTujuan.TabIndex = 15;
             // 
             // label7
             // 
@@ -234,11 +234,11 @@
         private System.Windows.Forms.Panel panelFrom;
         private System.Windows.Forms.Button btnTranfer;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox textBoxJml;
         private System.Windows.Forms.Label lblTrfAmmount;
         private System.Windows.Forms.Label lblTo;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBoxRekTujuan;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label lblRekNum1;
         private System.Windows.Forms.Label label2;
