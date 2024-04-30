@@ -107,20 +107,31 @@ namespace ISA_BANK
         }
         private void FormMain_Load(object sender, EventArgs e)
         {
-            this.IsMdiContainer = true;
-            
-
+            //this.IsMdiContainer = true;
             try
             {
                 Koneksi koneksi = new Koneksi();
 
                 FormLogin frmLogin = new FormLogin();
                 frmLogin.Owner = this;
+                this.Visible = false;
                 frmLogin.ShowDialog();
 
-                if (frmLogin.ShowDialog() == DialogResult.OK)
+                if (frmLogin.DialogResult == DialogResult.OK)
                 {
                     this.Visible = true;
+                    if (nasabah != null)
+                    {
+                        MessageBox.Show("Selamat datang " + nasabah.Nama);
+                    }
+                    else if (karyawan != null)
+                    {
+                        MessageBox.Show("Selamat datang " + karyawan.Nama + " sebagai " + karyawan.Roles);
+                    }
+                }
+                else
+                {
+                    Application.Exit();
                 }
             }
             catch (Exception ex)
@@ -180,6 +191,16 @@ namespace ISA_BANK
             panelMain.Controls.Add(infoacc);
             infoacc.BringToFront();
             infoacc.Show();
+        }
+
+        private void addKaryawanToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            panelMain.Controls.Clear();
+            FormAddKaryawan addkar = new FormAddKaryawan();
+            addkar.TopLevel = false;
+            panelMain.Controls.Add(addkar);
+            addkar.BringToFront();
+            addkar.Show();
         }
     }
 

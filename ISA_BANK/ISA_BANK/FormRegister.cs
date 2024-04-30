@@ -112,7 +112,7 @@ namespace ISA_BANK
             Nasabah n = new Nasabah();
             try
             {
-                string gender;
+                //string gender;
                 string enPw = AES.Encrypt(txtPassword.Text);
                 string enNIK = AES.Encrypt(txtNIK.Text);
                   

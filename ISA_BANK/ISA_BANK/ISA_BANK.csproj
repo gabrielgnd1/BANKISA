@@ -112,6 +112,12 @@
     <Compile Include="FormAccountDetails.Designer.cs">
       <DependentUpon>FormAccountDetails.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormAddKaryawan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAddKaryawan.Designer.cs">
+      <DependentUpon>FormAddKaryawan.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormAddRekening.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -196,6 +202,9 @@
     <Compile Include="TESTGIT\test.cs" />
     <EmbeddedResource Include="FormAccountDetails.resx">
       <DependentUpon>FormAccountDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAddKaryawan.resx">
+      <DependentUpon>FormAddKaryawan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormAddRekening.resx">
       <DependentUpon>FormAddRekening.cs</DependentUpon>

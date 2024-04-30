@@ -104,16 +104,15 @@ namespace ISA_BANK.DB_CLASS
                 Karyawan k = new Karyawan();
                 Cabang c = new Cabang();
                 k.Id = int.Parse(hasil.GetValue(0).ToString());
-                k.Nama = hasil.GetValue(1).ToString();
-                k.Roles = hasil.GetValue(2).ToString();
-                k.Email = hasil.GetValue(3).ToString();
-                k.NoTelp = hasil.GetValue(4).ToString();
-
-                k.TglLahir = DateTime.Parse(hasil.GetValue(5).ToString());
-                k.Gender = hasil.GetValue(6).ToString();
-                k.Username = hasil.GetValue(7).ToString();
-                k.Password = hasil.GetValue(8).ToString();
-                c.Id = int.Parse((hasil.GetValue(9).ToString()));
+                k.Username = hasil.GetValue(1).ToString();
+                k.Password = hasil.GetValue(2).ToString();
+                k.Nama = hasil.GetValue(3).ToString();
+                k.Roles = hasil.GetValue(4).ToString();
+                c.Id = int.Parse((hasil.GetValue(5).ToString()));
+                k.Email = hasil.GetValue(6).ToString();
+                k.NoTelp = hasil.GetValue(7).ToString();
+                k.TglLahir = DateTime.Parse(hasil.GetValue(8).ToString());
+                k.Gender = hasil.GetValue(9).ToString();
           
                 listKaryawan.Add(k);
             }
@@ -158,7 +157,7 @@ namespace ISA_BANK.DB_CLASS
             //string sql = "insert into nasabahs(nama, ttl, nik, no_telepon, gender, username, password) values('" +
             //    n.Nama.Replace("'", "\\") + "','" + n.Ttl + "','" + n.Nik + "','" + n.No_telepon + "','" + n.Gender + "','" +
             //    n.Username + "','" + ", sha2('" + n.Password + "', 512),'" + "')";
-            string sql = "INSERT INTO nasabahs" + "(id, nama, roles, email, noTelp, cabang, tglLahir, gender, username, password) VALUES ('" +
+            string sql = "INSERT INTO karyawans" + "(id, nama, roles, email, noTelp, cabang, tglLahir, gender, username, password) VALUES ('" +
              k.Id + "','" +
              k.Nama + "','" +
              k.Roles + "','" +

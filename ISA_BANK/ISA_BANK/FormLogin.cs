@@ -75,17 +75,18 @@ namespace ISA_BANK
                 Koneksi koneksi = new Koneksi();
                 string username = txtUsername.Text;
                 string password = txtPassword.Text;
-                
-                
-                Nasabah n = Nasabah.CekLogin(username,AES.Encrypt(password));
+
+                Nasabah n = Nasabah.CekLogin(username, AES.Encrypt(password));
+                Karyawan k = Karyawan.CekLogin(username, AES.Encrypt(password));
 
                 if (n != null)
                 {
                     FormMain frm = (FormMain)this.Owner;
                     frm.nasabah = n;
 
-                    MessageBox.Show("Selamat Datang di Bank ISA.", "Login Berhasil");
+                    //MessageBox.Show("Selamat Datang di Bank ISA.", "Login Berhasil");
 
+                    //this.Visible = true;
 
                     Nasabah nasabah = Nasabah.BacaDataPerNasabah(txtUsername.Text);
 
@@ -93,37 +94,38 @@ namespace ISA_BANK
 
                     this.DialogResult = DialogResult.OK;
                     this.Hide();
-                    this.Close();
-                    
-                    frm.ShowDialog();
-                }
 
-                else if (n == null)
+                    //frm.ShowDialog();
+                }
+                else if (k != null)
                 {
-                    Karyawan k = Karyawan.CekLogin(username, AES.Encrypt(password));
-                    if (k != null)
-                    {
-                        FormMain frm = (FormMain)this.Owner;
-                        frm.karyawan = k;
-                        MessageBox.Show("Selamat Datang di Bank ISA.", "Login Berhasil");
+                    //Karyawan k = Karyawan.CekLogin(username, AES.Encrypt(password));
+                    //if (k != null)
+                    //{
+                    FormMain frm = (FormMain)this.Owner;
+                    frm.karyawan = k;
+                    MessageBox.Show("Selamat Datang di Bank ISA.", "Login Berhasil");
 
-                        frm.SetHakAkses();
+                    frm.SetHakAkses();
 
-                        this.DialogResult = DialogResult.OK;
-                        this.Close();
-                    }
-                    else
-                    {
-                        MessageBox.Show("Username tidak ditemukan atau password salah");
-                    }
+                    this.DialogResult = DialogResult.OK;
+                    this.Hide();
+                    //}
+                    //else
+                    //{
+                    //    MessageBox.Show("Username tidak ditemukan atau password salah");
+                    //    txtUsername.Text = "";
+                    //    txtPassword.Text = "";
+                    //    txtUsername.Focus();
+                    //}
                 }
-
-                
                 else
                 {
                     MessageBox.Show("Username tidak ditemukan");
+                    txtUsername.Text = "";
+                    txtPassword.Text = "";
+                    txtUsername.Focus();
                 }
-
             }
             catch (Exception ex)
             {

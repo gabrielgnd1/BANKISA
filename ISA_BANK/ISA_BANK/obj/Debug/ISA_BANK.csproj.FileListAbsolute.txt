@@ -178,3 +178,4 @@ C:\Users\INTEL\Documents\COOLYEAH\ISA\New folder\BANKISA\ISA_BANK\ISA_BANK\obj\D
 C:\Users\INTEL\Documents\COOLYEAH\ISA\New folder\BANKISA\ISA_BANK\ISA_BANK\obj\Debug\ISA_BANK.exe
 C:\Users\INTEL\Documents\COOLYEAH\ISA\New folder\BANKISA\ISA_BANK\ISA_BANK\obj\Debug\ISA_BANK.pdb
 D:\ISA\BANKISA\ISA_BANK\ISA_BANK\obj\Debug\ISA_BANK.FormInfoAcc.resources
+C:\Users\user\Documents\GitHub\BANKISA\ISA_BANK\ISA_BANK\obj\Debug\ISA_BANK.FormAddKaryawan.resources
