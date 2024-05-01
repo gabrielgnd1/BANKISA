@@ -27,8 +27,15 @@ namespace ISA_BANK
 
             frmMain = (FormMain)this.Owner;
             listNasabah = Nasabah.BacaData("", "");
+
+            // Decrypt NIK values
+            foreach (var nasabah in listNasabah)
+            {
+                nasabah.Nik = AES.Decrypt(nasabah.Nik);
+            }
+
             cboNik.DataSource = listNasabah;
-            cboNik.DisplayMember = ("NIK");
+            cboNik.DisplayMember = "NIK";
             cboNik.ValueMember = "Id";
         }
 
