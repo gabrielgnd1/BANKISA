@@ -143,8 +143,8 @@ namespace ISA_BANK.DB_CLASS
             //    n.Username + "','" + ", sha2('" + n.Password + "', 512),'" + "')";
             string sql = "INSERT INTO nasabahs" + "(nama, ttl, nik, no_telepon, gender, username, password) VALUES ('" +
              n.Nama + "','" +
-             n.Ttl.ToString("yyyy-MM-dd") + "','" +
-             n.Nik + "','" +
+             n.Ttl.ToString("yyyy-MM-dd") + "', SHA2('" +
+             n.Nik + "',512)','" +
              n.No_telepon + "','" +
              n.Gender + "','" +
              n.Username + "', SHA2('" + 
@@ -173,8 +173,7 @@ namespace ISA_BANK.DB_CLASS
 
         public static Boolean UbahData(Nasabah n)
         {      
-            string sql = "update nasabahs set Nama='" + n.Nama.Replace("'", "\\") + "',ttl='" + n.Ttl + "',nik='" + n.Nik + 
-                "',no_telepon='" + n.No_telepon + "',gender='" + n.Gender + "',username='" + n.Username + "' where id='" + n.Id + "'";
+            string sql = "update nasabahs set Nama='" + n.Nama.Replace("'", "\\") + "',ttl='" + n.Ttl.ToString("yyyy-MM-dd") + "',no_telepon='" + n.No_telepon + "',username='" + n.Username + "' where nik='" + AES.Encrypt(n.nik)  + "'";
 
             int jumlahDiubah = Koneksi.JalankanPerintahDML(sql);
             Boolean Status;

@@ -67,7 +67,7 @@ namespace ISA_BANK
                 //buat objek penampung 
                 Nasabah nas = new Nasabah();
                 nas.Nama = txtCustName.Text;
-                nas.Nik = comboBoxNik.SelectedItem.ToString();
+                nas.Nik = comboBoxNik.Text;
                 nas.Username = txtUsername.Text;
                 nas.No_telepon = textBoxPhoneNum.Text;
                 //nas.Id = nas.Id;

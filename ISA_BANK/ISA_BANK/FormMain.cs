@@ -187,6 +187,7 @@ namespace ISA_BANK
         {
             panelMain.Controls.Clear();
             FormInfoAcc infoacc = new FormInfoAcc();
+            infoacc.CurrentNasabah = nasabah;
             infoacc.TopLevel = false;
             panelMain.Controls.Add(infoacc);
             infoacc.BringToFront();
