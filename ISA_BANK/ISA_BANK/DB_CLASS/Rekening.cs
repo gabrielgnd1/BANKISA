@@ -56,15 +56,17 @@ namespace ISA_BANK.DB_CLASS
             List<Rekening> listRekening = new List<Rekening>();
             while (hasil.Read() == true)
             {
-                Rekening r = new Rekening();
-                Nasabah n = new Nasabah();
+                
 
-                //n.Nama = hasil.GetValue(1).ToString();
-                r.Nomor = hasil.GetValue(0).ToString();
-                r.Jumlah_saldo = int.Parse(hasil.GetValue(1).ToString());
-                r.Nomor_kartu = hasil.GetValue(2).ToString();
-                n.Id = int.Parse(hasil.GetValue(3).ToString());
+                Rekening r = new Rekening();
+                Nasabah n = Nasabah.BacaId("id", hasil.GetString(5));
+
+                r.Id = int.Parse(hasil.GetString(0));
+                r.Nomor = hasil.GetValue(1).ToString();
+                r.Jumlah_saldo = int.Parse(hasil.GetValue(2).ToString());
+                r.Nomor_kartu = hasil.GetValue(3).ToString();
                 r.Jenis_kartu = hasil.GetValue(4).ToString();
+                r.Nasabah = n;
 
                 listRekening.Add(r);
             }
@@ -98,13 +100,14 @@ namespace ISA_BANK.DB_CLASS
                 if (hasil.Read() == true)
                 {
                     Rekening r = new Rekening();
-                    Nasabah n = Nasabah.BacaId("id", hasil.GetString(3));
-
-                    r.Nomor = hasil.GetValue(0).ToString();
-                    r.Jumlah_saldo = int.Parse(hasil.GetValue(1).ToString());
-                    r.Nomor_kartu = hasil.GetValue(2).ToString();
+                    Nasabah n = Nasabah.BacaId("id", hasil.GetInt32(5).ToString());
+                   
+                    r.Id = hasil.GetInt32(0);
+                    r.Nomor = hasil.GetValue(1).ToString();
+                    r.Jumlah_saldo = hasil.GetInt32(2);
+                    r.Nomor_kartu = hasil.GetValue(3).ToString();
                     r.Jenis_kartu = hasil.GetValue(4).ToString();
-
+                    r.Nasabah = n;
                     return r;
                 }
                 else
@@ -116,7 +119,7 @@ namespace ISA_BANK.DB_CLASS
 
         public static void WithdrawalData(Rekening rek, int jumlah_penarikan)
         {   //susun perintah query
-            string perintah = "UPDATE rekenings SET jumlah_saldo -= " + jumlah_penarikan + " WHERE nomor = " + rek.Nasabah.Id + "";
+            string perintah = "UPDATE rekenings SET jumlah_saldo = jumlah_saldo -" + jumlah_penarikan + " WHERE nasabahs_id = " + rek.Nasabah.Id + "";
 
             Koneksi.JalankanPerintahQuery(perintah); //kirim ke command
         }

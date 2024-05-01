@@ -19,57 +19,29 @@ namespace ISA_BANK
             InitializeComponent();
         }
 
-        private void txtAccNum_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtNik_TextChanged(object sender, EventArgs e)
-        {
-
-        }
 
         CultureInfo culture = new CultureInfo("id-ID");
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
             string accNum = txtAccNum.Text;
-            string nik = txtNik.Text;
+            //string nik = txtNik.Text;
 
-            Nasabah nasabah = Nasabah.BacaId("Nik", nik);
+            //Nasabah nasabah = Nasabah.BacaId("Nik", nik);
             Rekening rekening = Rekening.BacaId("nomor", accNum);
 
-            if (nasabah != null && nasabah.Nik == nik)
+            if (rekening != null )
             {
-                custName.Text = nasabah.Nama;
-                nikNum.Text = nasabah.Nik;
+                custName.Text = rekening.Nasabah.Nama;
+                nikNum.Text = rekening.Nasabah.Nik;
                 curBalance.Text = rekening.Jumlah_saldo.ToString("C", culture);
             }
             else
             {
-                MessageBox.Show("No Nasabah tidak ditemukan atau NIK tidak sesuai.");
+                MessageBox.Show("No Nasabah tidak ditemukan");
             }
         }
 
-        private void custName_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void nikNum_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void curBalance_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtWithAmount_TextChanged(object sender, EventArgs e)
-        {
-
-        }
 
         private void btnWithDrawal_Click(object sender, EventArgs e)
         {

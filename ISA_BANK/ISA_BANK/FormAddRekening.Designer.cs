@@ -62,8 +62,6 @@ namespace ISA_BANK
             this.txtAccNum = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.txtCardNum = new System.Windows.Forms.TextBox();
-            this.buttonCari = new System.Windows.Forms.Button();
-            this.textBoxCari = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -74,10 +72,10 @@ namespace ISA_BANK
             this.lblAddRek.CausesValidation = false;
             this.lblAddRek.Font = new System.Drawing.Font("Microsoft YaHei", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAddRek.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblAddRek.Location = new System.Drawing.Point(29, 32);
-            this.lblAddRek.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblAddRek.Location = new System.Drawing.Point(44, 50);
+            this.lblAddRek.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblAddRek.Name = "lblAddRek";
-            this.lblAddRek.Size = new System.Drawing.Size(325, 50);
+            this.lblAddRek.Size = new System.Drawing.Size(511, 80);
             this.lblAddRek.TabIndex = 50;
             this.lblAddRek.Text = "ADD REKENING";
             // 
@@ -87,10 +85,10 @@ namespace ISA_BANK
             this.lblDeposit.BackColor = System.Drawing.Color.Transparent;
             this.lblDeposit.Font = new System.Drawing.Font("Microsoft YaHei", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDeposit.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblDeposit.Location = new System.Drawing.Point(49, 439);
-            this.lblDeposit.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblDeposit.Location = new System.Drawing.Point(74, 686);
+            this.lblDeposit.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblDeposit.Name = "lblDeposit";
-            this.lblDeposit.Size = new System.Drawing.Size(171, 31);
+            this.lblDeposit.Size = new System.Drawing.Size(267, 48);
             this.lblDeposit.TabIndex = 57;
             this.lblDeposit.Text = "Initial Deposit";
             // 
@@ -100,10 +98,10 @@ namespace ISA_BANK
             this.lblCurBalance.BackColor = System.Drawing.Color.Transparent;
             this.lblCurBalance.Font = new System.Drawing.Font("Microsoft YaHei", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCurBalance.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblCurBalance.Location = new System.Drawing.Point(43, 115);
-            this.lblCurBalance.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblCurBalance.Location = new System.Drawing.Point(64, 180);
+            this.lblCurBalance.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblCurBalance.Name = "lblCurBalance";
-            this.lblCurBalance.Size = new System.Drawing.Size(56, 31);
+            this.lblCurBalance.Size = new System.Drawing.Size(84, 48);
             this.lblCurBalance.TabIndex = 51;
             this.lblCurBalance.Text = "NIK";
             // 
@@ -112,9 +110,10 @@ namespace ISA_BANK
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label3.Location = new System.Drawing.Point(254, 115);
+            this.label3.Location = new System.Drawing.Point(381, 180);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(17, 27);
+            this.label3.Size = new System.Drawing.Size(26, 41);
             this.label3.TabIndex = 52;
             this.label3.Text = ":";
             // 
@@ -123,9 +122,10 @@ namespace ISA_BANK
             this.cboNik.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboNik.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboNik.FormattingEnabled = true;
-            this.cboNik.Location = new System.Drawing.Point(305, 115);
+            this.cboNik.Location = new System.Drawing.Point(458, 180);
+            this.cboNik.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.cboNik.Name = "cboNik";
-            this.cboNik.Size = new System.Drawing.Size(339, 35);
+            this.cboNik.Size = new System.Drawing.Size(506, 49);
             this.cboNik.TabIndex = 53;
             this.cboNik.SelectedIndexChanged += new System.EventHandler(this.cboNik_SelectedIndexChanged);
             // 
@@ -146,9 +146,10 @@ namespace ISA_BANK
             this.panel1.Controls.Add(this.lblNik);
             this.panel1.Controls.Add(this.label12);
             this.panel1.Controls.Add(this.lblCustName);
-            this.panel1.Location = new System.Drawing.Point(22, 182);
+            this.panel1.Location = new System.Drawing.Point(33, 284);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(898, 202);
+            this.panel1.Size = new System.Drawing.Size(1347, 316);
             this.panel1.TabIndex = 54;
             // 
             // phoneNum
@@ -156,9 +157,10 @@ namespace ISA_BANK
             this.phoneNum.AutoSize = true;
             this.phoneNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.phoneNum.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.phoneNum.Location = new System.Drawing.Point(721, 96);
+            this.phoneNum.Location = new System.Drawing.Point(1082, 150);
+            this.phoneNum.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.phoneNum.Name = "phoneNum";
-            this.phoneNum.Size = new System.Drawing.Size(43, 25);
+            this.phoneNum.Size = new System.Drawing.Size(68, 37);
             this.phoneNum.TabIndex = 73;
             this.phoneNum.Text = "telp";
             // 
@@ -167,9 +169,10 @@ namespace ISA_BANK
             this.gender.AutoSize = true;
             this.gender.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gender.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.gender.Location = new System.Drawing.Point(721, 46);
+            this.gender.Location = new System.Drawing.Point(1082, 72);
+            this.gender.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.gender.Name = "gender";
-            this.gender.Size = new System.Drawing.Size(73, 25);
+            this.gender.Size = new System.Drawing.Size(116, 37);
             this.gender.TabIndex = 72;
             this.gender.Text = "gender";
             // 
@@ -178,9 +181,10 @@ namespace ISA_BANK
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label7.Location = new System.Drawing.Point(687, 92);
+            this.label7.Location = new System.Drawing.Point(1030, 144);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(19, 29);
+            this.label7.Size = new System.Drawing.Size(28, 42);
             this.label7.TabIndex = 69;
             this.label7.Text = ":";
             // 
@@ -189,9 +193,10 @@ namespace ISA_BANK
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label6.Location = new System.Drawing.Point(687, 47);
+            this.label6.Location = new System.Drawing.Point(1030, 73);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(19, 29);
+            this.label6.Size = new System.Drawing.Size(28, 42);
             this.label6.TabIndex = 68;
             this.label6.Text = ":";
             // 
@@ -200,9 +205,10 @@ namespace ISA_BANK
             this.dateBirth.AutoSize = true;
             this.dateBirth.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateBirth.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.dateBirth.Location = new System.Drawing.Point(234, 146);
+            this.dateBirth.Location = new System.Drawing.Point(351, 228);
+            this.dateBirth.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.dateBirth.Name = "dateBirth";
-            this.dateBirth.Size = new System.Drawing.Size(45, 25);
+            this.dateBirth.Size = new System.Drawing.Size(71, 37);
             this.dateBirth.TabIndex = 67;
             this.dateBirth.Text = "dob";
             // 
@@ -211,9 +217,10 @@ namespace ISA_BANK
             this.nikNum.AutoSize = true;
             this.nikNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nikNum.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.nikNum.Location = new System.Drawing.Point(234, 93);
+            this.nikNum.Location = new System.Drawing.Point(351, 145);
+            this.nikNum.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.nikNum.Name = "nikNum";
-            this.nikNum.Size = new System.Drawing.Size(45, 25);
+            this.nikNum.Size = new System.Drawing.Size(70, 37);
             this.nikNum.TabIndex = 65;
             this.nikNum.Text = "NIK";
             // 
@@ -222,9 +229,10 @@ namespace ISA_BANK
             this.custName.AutoSize = true;
             this.custName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.custName.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.custName.Location = new System.Drawing.Point(234, 46);
+            this.custName.Location = new System.Drawing.Point(351, 72);
+            this.custName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.custName.Name = "custName";
-            this.custName.Size = new System.Drawing.Size(61, 25);
+            this.custName.Size = new System.Drawing.Size(98, 37);
             this.custName.TabIndex = 64;
             this.custName.Text = "nama";
             // 
@@ -233,9 +241,10 @@ namespace ISA_BANK
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label5.Location = new System.Drawing.Point(199, 142);
+            this.label5.Location = new System.Drawing.Point(298, 222);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(19, 29);
+            this.label5.Size = new System.Drawing.Size(28, 42);
             this.label5.TabIndex = 63;
             this.label5.Text = ":";
             // 
@@ -244,9 +253,10 @@ namespace ISA_BANK
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label10.Location = new System.Drawing.Point(199, 89);
+            this.label10.Location = new System.Drawing.Point(298, 139);
+            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(19, 29);
+            this.label10.Size = new System.Drawing.Size(28, 42);
             this.label10.TabIndex = 61;
             this.label10.Text = ":";
             // 
@@ -256,10 +266,10 @@ namespace ISA_BANK
             this.lblPhone.BackColor = System.Drawing.Color.Transparent;
             this.lblPhone.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPhone.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblPhone.Location = new System.Drawing.Point(527, 92);
-            this.lblPhone.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblPhone.Location = new System.Drawing.Point(790, 144);
+            this.lblPhone.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblPhone.Name = "lblPhone";
-            this.lblPhone.Size = new System.Drawing.Size(153, 27);
+            this.lblPhone.Size = new System.Drawing.Size(245, 41);
             this.lblPhone.TabIndex = 53;
             this.lblPhone.Text = "Phone number";
             // 
@@ -269,10 +279,10 @@ namespace ISA_BANK
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label4.Location = new System.Drawing.Point(527, 47);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Location = new System.Drawing.Point(790, 73);
+            this.label4.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(82, 27);
+            this.label4.Size = new System.Drawing.Size(130, 41);
             this.label4.TabIndex = 51;
             this.label4.Text = "Gender";
             // 
@@ -282,10 +292,10 @@ namespace ISA_BANK
             this.lblTtl.BackColor = System.Drawing.Color.Transparent;
             this.lblTtl.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTtl.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblTtl.Location = new System.Drawing.Point(31, 144);
-            this.lblTtl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblTtl.Location = new System.Drawing.Point(46, 225);
+            this.lblTtl.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblTtl.Name = "lblTtl";
-            this.lblTtl.Size = new System.Drawing.Size(133, 27);
+            this.lblTtl.Size = new System.Drawing.Size(212, 41);
             this.lblTtl.TabIndex = 49;
             this.lblTtl.Text = "Date of Birth";
             // 
@@ -295,10 +305,10 @@ namespace ISA_BANK
             this.lblNik.BackColor = System.Drawing.Color.Transparent;
             this.lblNik.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNik.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblNik.Location = new System.Drawing.Point(32, 91);
-            this.lblNik.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblNik.Location = new System.Drawing.Point(48, 142);
+            this.lblNik.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblNik.Name = "lblNik";
-            this.lblNik.Size = new System.Drawing.Size(47, 27);
+            this.lblNik.Size = new System.Drawing.Size(73, 41);
             this.lblNik.TabIndex = 47;
             this.lblNik.Text = "NIK";
             // 
@@ -307,9 +317,10 @@ namespace ISA_BANK
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label12.Location = new System.Drawing.Point(199, 42);
+            this.label12.Location = new System.Drawing.Point(298, 66);
+            this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(19, 29);
+            this.label12.Size = new System.Drawing.Size(28, 42);
             this.label12.TabIndex = 46;
             this.label12.Text = ":";
             // 
@@ -319,10 +330,10 @@ namespace ISA_BANK
             this.lblCustName.BackColor = System.Drawing.Color.Transparent;
             this.lblCustName.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCustName.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblCustName.Location = new System.Drawing.Point(31, 44);
-            this.lblCustName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblCustName.Location = new System.Drawing.Point(46, 69);
+            this.lblCustName.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblCustName.Name = "lblCustName";
-            this.lblCustName.Size = new System.Drawing.Size(167, 27);
+            this.lblCustName.Size = new System.Drawing.Size(267, 41);
             this.lblCustName.TabIndex = 45;
             this.lblCustName.Text = "Customer Name";
             // 
@@ -332,10 +343,10 @@ namespace ISA_BANK
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Microsoft YaHei", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label8.Location = new System.Drawing.Point(43, 602);
-            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label8.Location = new System.Drawing.Point(64, 941);
+            this.label8.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(138, 31);
+            this.label8.Size = new System.Drawing.Size(211, 48);
             this.label8.TabIndex = 72;
             this.label8.Text = "Jenis Kartu";
             // 
@@ -344,9 +355,10 @@ namespace ISA_BANK
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label11.Location = new System.Drawing.Point(272, 439);
+            this.label11.Location = new System.Drawing.Point(408, 686);
+            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(19, 29);
+            this.label11.Size = new System.Drawing.Size(28, 42);
             this.label11.TabIndex = 71;
             this.label11.Text = ":";
             // 
@@ -356,10 +368,10 @@ namespace ISA_BANK
             this.label14.BackColor = System.Drawing.Color.Transparent;
             this.label14.Font = new System.Drawing.Font("Microsoft YaHei", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label14.Location = new System.Drawing.Point(43, 545);
-            this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label14.Location = new System.Drawing.Point(64, 852);
+            this.label14.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(169, 31);
+            this.label14.Size = new System.Drawing.Size(261, 48);
             this.label14.TabIndex = 58;
             this.label14.Text = "Card Number";
             // 
@@ -367,9 +379,10 @@ namespace ISA_BANK
             // 
             this.btnAdd.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdd.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnAdd.Location = new System.Drawing.Point(777, 510);
+            this.btnAdd.Location = new System.Drawing.Point(1166, 797);
+            this.btnAdd.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(143, 64);
+            this.btnAdd.Size = new System.Drawing.Size(214, 100);
             this.btnAdd.TabIndex = 61;
             this.btnAdd.Text = "Add";
             this.btnAdd.UseVisualStyleBackColor = true;
@@ -379,10 +392,10 @@ namespace ISA_BANK
             // 
             this.txtDeposit.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDeposit.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.txtDeposit.Location = new System.Drawing.Point(305, 439);
-            this.txtDeposit.Margin = new System.Windows.Forms.Padding(4);
+            this.txtDeposit.Location = new System.Drawing.Point(458, 686);
+            this.txtDeposit.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.txtDeposit.Name = "txtDeposit";
-            this.txtDeposit.Size = new System.Drawing.Size(433, 34);
+            this.txtDeposit.Size = new System.Drawing.Size(648, 50);
             this.txtDeposit.TabIndex = 62;
             // 
             // label1
@@ -390,9 +403,10 @@ namespace ISA_BANK
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label1.Location = new System.Drawing.Point(275, 604);
+            this.label1.Location = new System.Drawing.Point(412, 944);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(17, 27);
+            this.label1.Size = new System.Drawing.Size(26, 41);
             this.label1.TabIndex = 73;
             this.label1.Text = ":";
             // 
@@ -406,9 +420,10 @@ namespace ISA_BANK
             "Platinum",
             "Gold",
             "Xpresi"});
-            this.cboJenisKartu.Location = new System.Drawing.Point(305, 604);
+            this.cboJenisKartu.Location = new System.Drawing.Point(458, 944);
+            this.cboJenisKartu.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.cboJenisKartu.Name = "cboJenisKartu";
-            this.cboJenisKartu.Size = new System.Drawing.Size(433, 35);
+            this.cboJenisKartu.Size = new System.Drawing.Size(648, 49);
             this.cboJenisKartu.TabIndex = 74;
             // 
             // lblRekNum
@@ -417,10 +432,10 @@ namespace ISA_BANK
             this.lblRekNum.BackColor = System.Drawing.Color.Transparent;
             this.lblRekNum.Font = new System.Drawing.Font("Microsoft YaHei", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblRekNum.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblRekNum.Location = new System.Drawing.Point(43, 488);
-            this.lblRekNum.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblRekNum.Location = new System.Drawing.Point(64, 762);
+            this.lblRekNum.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblRekNum.Name = "lblRekNum";
-            this.lblRekNum.Size = new System.Drawing.Size(224, 31);
+            this.lblRekNum.Size = new System.Drawing.Size(344, 48);
             this.lblRekNum.TabIndex = 55;
             this.lblRekNum.Text = "Rekening Number";
             // 
@@ -429,9 +444,10 @@ namespace ISA_BANK
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label2.Location = new System.Drawing.Point(275, 488);
+            this.label2.Location = new System.Drawing.Point(412, 762);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(17, 27);
+            this.label2.Size = new System.Drawing.Size(26, 41);
             this.label2.TabIndex = 56;
             this.label2.Text = ":";
             // 
@@ -439,10 +455,10 @@ namespace ISA_BANK
             // 
             this.txtAccNum.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtAccNum.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.txtAccNum.Location = new System.Drawing.Point(305, 488);
-            this.txtAccNum.Margin = new System.Windows.Forms.Padding(4);
+            this.txtAccNum.Location = new System.Drawing.Point(458, 762);
+            this.txtAccNum.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.txtAccNum.Name = "txtAccNum";
-            this.txtAccNum.Size = new System.Drawing.Size(433, 34);
+            this.txtAccNum.Size = new System.Drawing.Size(648, 50);
             this.txtAccNum.TabIndex = 57;
             // 
             // label13
@@ -450,9 +466,10 @@ namespace ISA_BANK
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label13.Location = new System.Drawing.Point(275, 547);
+            this.label13.Location = new System.Drawing.Point(412, 855);
+            this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(17, 27);
+            this.label13.Size = new System.Drawing.Size(26, 41);
             this.label13.TabIndex = 59;
             this.label13.Text = ":";
             // 
@@ -460,44 +477,19 @@ namespace ISA_BANK
             // 
             this.txtCardNum.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCardNum.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.txtCardNum.Location = new System.Drawing.Point(305, 545);
-            this.txtCardNum.Margin = new System.Windows.Forms.Padding(4);
+            this.txtCardNum.Location = new System.Drawing.Point(458, 852);
+            this.txtCardNum.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.txtCardNum.Name = "txtCardNum";
-            this.txtCardNum.Size = new System.Drawing.Size(433, 34);
+            this.txtCardNum.Size = new System.Drawing.Size(648, 50);
             this.txtCardNum.TabIndex = 60;
-            // 
-            // buttonCari
-            // 
-            this.buttonCari.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.buttonCari.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonCari.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.buttonCari.Location = new System.Drawing.Point(929, 111);
-            this.buttonCari.Margin = new System.Windows.Forms.Padding(4);
-            this.buttonCari.Name = "buttonCari";
-            this.buttonCari.Size = new System.Drawing.Size(88, 43);
-            this.buttonCari.TabIndex = 76;
-            this.buttonCari.Text = "CARI";
-            this.buttonCari.UseVisualStyleBackColor = false;
-            this.buttonCari.Click += new System.EventHandler(this.buttonCari_Click);
-            // 
-            // textBoxCari
-            // 
-            this.textBoxCari.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxCari.Location = new System.Drawing.Point(657, 116);
-            this.textBoxCari.Margin = new System.Windows.Forms.Padding(4);
-            this.textBoxCari.Name = "textBoxCari";
-            this.textBoxCari.Size = new System.Drawing.Size(263, 34);
-            this.textBoxCari.TabIndex = 75;
             // 
             // FormAddRekening
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Beige;
-            this.ClientSize = new System.Drawing.Size(1068, 666);
+            this.ClientSize = new System.Drawing.Size(1602, 1041);
             this.ControlBox = false;
-            this.Controls.Add(this.buttonCari);
-            this.Controls.Add(this.textBoxCari);
             this.Controls.Add(this.cboJenisKartu);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label8);
@@ -518,6 +510,7 @@ namespace ISA_BANK
             this.Controls.Add(this.lblAddRek);
             this.ForeColor = System.Drawing.SystemColors.Control;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "FormAddRekening";
             this.Text = "FormAddRekening";
             this.Load += new System.EventHandler(this.FormAddRekening_Load);
@@ -563,7 +556,5 @@ namespace ISA_BANK
         private System.Windows.Forms.TextBox txtAccNum;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.TextBox txtCardNum;
-        private System.Windows.Forms.Button buttonCari;
-        private System.Windows.Forms.TextBox textBoxCari;
     }
 }

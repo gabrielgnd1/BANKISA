@@ -156,7 +156,7 @@ namespace ISA_BANK.DB_CLASS
 
         public static Boolean HapusData(int id)
         {
-            string sql = "delete from pegawais where id='" + id + "'";
+            string sql = "delete from nasabahs where id='" + id + "'";
 
             int JumlahDitambahkan = Koneksi.JalankanPerintahDML(sql);
             Boolean Status;

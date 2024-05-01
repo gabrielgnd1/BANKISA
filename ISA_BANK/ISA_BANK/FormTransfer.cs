@@ -42,5 +42,10 @@ namespace ISA_BANK
             t.Tanggal = DateTime.Now;
             Transaksi.TambahData(t);
         }
+
+        private void btnTranfer_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

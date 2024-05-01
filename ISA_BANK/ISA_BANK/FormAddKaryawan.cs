@@ -46,7 +46,7 @@ namespace ISA_BANK
             }
 
 
-            k.Username = txtUsername.Text;
+                k.Username = txtUsername.Text;
                 k.Password = enPw;
                 k.Nama = txtName.Text;
                 k.Roles = comboBoxRoles.SelectedItem.ToString();

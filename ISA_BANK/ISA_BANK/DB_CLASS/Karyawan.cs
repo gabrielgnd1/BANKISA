@@ -81,12 +81,12 @@ namespace ISA_BANK.DB_CLASS
                 k.Password = hasil.GetValue(2).ToString();
                 k.Nama = hasil.GetValue(3).ToString();
                 k.Roles = hasil.GetValue(4).ToString();
-                c.Id = int.Parse((hasil.GetValue(5).ToString()));
+                k.Cabang = c;
                 k.Email = hasil.GetValue(6).ToString();
                 k.NoTelp = hasil.GetValue(7).ToString();
                 k.TglLahir = DateTime.Parse(hasil.GetValue(8).ToString());
                 k.Gender = hasil.GetValue(9).ToString();
-                
+
                 return k;
             }
             return null;
