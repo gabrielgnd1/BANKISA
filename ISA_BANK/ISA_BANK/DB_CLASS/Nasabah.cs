@@ -141,13 +141,13 @@ namespace ISA_BANK.DB_CLASS
             //string sql = "insert into nasabahs(nama, ttl, nik, no_telepon, gender, username, password) values('" +
             //    n.Nama.Replace("'", "\\") + "','" + n.Ttl + "','" + n.Nik + "','" + n.No_telepon + "','" + n.Gender + "','" +
             //    n.Username + "','" + ", sha2('" + n.Password + "', 512),'" + "')";
-            string sql = "INSERT INTO nasabahs" + "(nama, ttl, nik, no_telepon, gender, username, password) VALUES ('" +
+            string sql = "INSERT INTO nasabahs (nama, ttl, nik, no_telepon, gender, username, password) VALUES ('" +
              n.Nama + "','" +
-             n.Ttl.ToString("yyyy-MM-dd") + "', SHA2('" +
-             n.Nik + "',512)','" +
+             n.Ttl.ToString("yyyy-MM-dd") + "', '" +
+             n.Nik + "','" +
              n.No_telepon + "','" +
              n.Gender + "','" +
-             n.Username + "', SHA2('" + 
+             n.Username + "', SHA2('" +
              n.Password + "',512));";
 
             Koneksi.JalankanPerintahDML(sql);

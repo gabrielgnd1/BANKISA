@@ -56,17 +56,18 @@ namespace ISA_BANK.DB_CLASS
             List<Rekening> listRekening = new List<Rekening>();
             while (hasil.Read() == true)
             {
-                
+
 
                 Rekening r = new Rekening();
-                Nasabah n = Nasabah.BacaId("id", hasil.GetString(5));
+                Nasabah n = Nasabah.BacaId("id", hasil.GetInt32(5).ToString());
 
-                r.Id = int.Parse(hasil.GetString(0));
+                r.Id = hasil.GetInt32(0);
                 r.Nomor = hasil.GetValue(1).ToString();
-                r.Jumlah_saldo = int.Parse(hasil.GetValue(2).ToString());
+                r.Jumlah_saldo = hasil.GetInt32(2);
                 r.Nomor_kartu = hasil.GetValue(3).ToString();
                 r.Jenis_kartu = hasil.GetValue(4).ToString();
                 r.Nasabah = n;
+
 
                 listRekening.Add(r);
             }
@@ -124,11 +125,9 @@ namespace ISA_BANK.DB_CLASS
             Koneksi.JalankanPerintahQuery(perintah); //kirim ke command
         }
 
-
-
-        public static void DepositData(Rekening rek, int jumlah_penambahan)
+        public static void DepositData(Rekening rek, int jumlah_penarikan)
         {   //susun perintah query
-            string perintah = "UPDATE rekenings SET jumlah_saldo = jumlah_saldo +" + jumlah_penambahan + " WHERE nasabahs_id = " + rek.Nasabah.Id + "";
+            string perintah = "UPDATE rekenings SET jumlah_saldo = jumlah_saldo +" + jumlah_penarikan + " WHERE nasabahs_id = " + rek.Nasabah.Id + "";
 
             Koneksi.JalankanPerintahQuery(perintah); //kirim ke command
         }

@@ -45,6 +45,7 @@
             this.addKaryawanToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panelMain = new System.Windows.Forms.Panel();
+            this.displayKaryawanAccountToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -76,21 +77,21 @@
             // AddNewRekToolStripMenuItem
             // 
             this.AddNewRekToolStripMenuItem.Name = "AddNewRekToolStripMenuItem";
-            this.AddNewRekToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.AddNewRekToolStripMenuItem.Size = new System.Drawing.Size(219, 26);
             this.AddNewRekToolStripMenuItem.Text = "Add New Rekening";
             this.AddNewRekToolStripMenuItem.Click += new System.EventHandler(this.addNewRekToolStripMenuItem_Click);
             // 
             // updateAccountToolStripMenuItem
             // 
             this.updateAccountToolStripMenuItem.Name = "updateAccountToolStripMenuItem";
-            this.updateAccountToolStripMenuItem.Size = new System.Drawing.Size(234, 26);
+            this.updateAccountToolStripMenuItem.Size = new System.Drawing.Size(219, 26);
             this.updateAccountToolStripMenuItem.Text = "Update Account";
             this.updateAccountToolStripMenuItem.Click += new System.EventHandler(this.updateAccountToolStripMenuItem_Click);
             // 
             // DisplayAccountToolStripMenuItem
             // 
             this.DisplayAccountToolStripMenuItem.Name = "DisplayAccountToolStripMenuItem";
-            this.DisplayAccountToolStripMenuItem.Size = new System.Drawing.Size(234, 26);
+            this.DisplayAccountToolStripMenuItem.Size = new System.Drawing.Size(219, 26);
             this.DisplayAccountToolStripMenuItem.Text = "Display Account";
             this.DisplayAccountToolStripMenuItem.Click += new System.EventHandler(this.DisplayAllAccountToolStripMenuItem_Click);
             // 
@@ -152,7 +153,8 @@
             // 
             this.managerToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.displayAccToolStripMenuItem,
-            this.addKaryawanToolStripMenuItem});
+            this.addKaryawanToolStripMenuItem,
+            this.displayKaryawanAccountToolStripMenuItem});
             this.managerToolStripMenuItem.Name = "managerToolStripMenuItem";
             this.managerToolStripMenuItem.Size = new System.Drawing.Size(82, 24);
             this.managerToolStripMenuItem.Text = "Manager";
@@ -160,14 +162,14 @@
             // displayAccToolStripMenuItem
             // 
             this.displayAccToolStripMenuItem.Name = "displayAccToolStripMenuItem";
-            this.displayAccToolStripMenuItem.Size = new System.Drawing.Size(221, 26);
+            this.displayAccToolStripMenuItem.Size = new System.Drawing.Size(267, 26);
             this.displayAccToolStripMenuItem.Text = "Display All Account";
             this.displayAccToolStripMenuItem.Click += new System.EventHandler(this.displayAccToolStripMenuItem_Click);
             // 
             // addKaryawanToolStripMenuItem
             // 
             this.addKaryawanToolStripMenuItem.Name = "addKaryawanToolStripMenuItem";
-            this.addKaryawanToolStripMenuItem.Size = new System.Drawing.Size(221, 26);
+            this.addKaryawanToolStripMenuItem.Size = new System.Drawing.Size(267, 26);
             this.addKaryawanToolStripMenuItem.Text = "Add Karyawan";
             this.addKaryawanToolStripMenuItem.Click += new System.EventHandler(this.addKaryawanToolStripMenuItem_Click);
             // 
@@ -185,6 +187,13 @@
             this.panelMain.Name = "panelMain";
             this.panelMain.Size = new System.Drawing.Size(1131, 971);
             this.panelMain.TabIndex = 1;
+            // 
+            // displayKaryawanAccountToolStripMenuItem
+            // 
+            this.displayKaryawanAccountToolStripMenuItem.Name = "displayKaryawanAccountToolStripMenuItem";
+            this.displayKaryawanAccountToolStripMenuItem.Size = new System.Drawing.Size(267, 26);
+            this.displayKaryawanAccountToolStripMenuItem.Text = "Display Karyawan Account";
+            this.displayKaryawanAccountToolStripMenuItem.Click += new System.EventHandler(this.displayKaryawanAccountToolStripMenuItem_Click);
             // 
             // FormMain
             // 
@@ -228,5 +237,6 @@
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem infoAccountToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem addKaryawanToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem displayKaryawanAccountToolStripMenuItem;
     }
 }

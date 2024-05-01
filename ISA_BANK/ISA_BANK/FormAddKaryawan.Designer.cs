@@ -362,7 +362,6 @@ namespace ISA_BANK
             this.comboBoxRoles.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxRoles.FormattingEnabled = true;
             this.comboBoxRoles.Items.AddRange(new object[] {
-            "Manajer",
             "CS",
             "Teller"});
             this.comboBoxRoles.Location = new System.Drawing.Point(382, 626);

@@ -76,6 +76,7 @@ namespace ISA_BANK
         {
             panelMain.Controls.Clear();
             FormTransfer transfer = new FormTransfer();
+            transfer.CurrentNasabah = nasabah;
             transfer.TopLevel = false;
             panelMain.Controls.Add(transfer);
             transfer.BringToFront();
@@ -202,6 +203,16 @@ namespace ISA_BANK
             panelMain.Controls.Add(addkar);
             addkar.BringToFront();
             addkar.Show();
+        }
+
+        private void displayKaryawanAccountToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            panelMain.Controls.Clear();
+            FormDisplayAccKaryawan acckar = new FormDisplayAccKaryawan();
+            acckar.TopLevel = false;
+            panelMain.Controls.Add(acckar);
+            acckar.BringToFront();
+            acckar.Show();
         }
     }
 

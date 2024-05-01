@@ -117,8 +117,17 @@ namespace ISA_BANK.DB_CLASS
 
         public static Boolean TambahData(Transaksi t)
         {
-            string sql = "insert into transaksis(tanggal, jumlah, keterangan, rekeings_id, karyawans_id) values('" +
-                t.Tanggal + "','" + t.Jumlah + "','" + t.Keterangan + "','" + t.Rekening.Id + "','" + t.Karyawan.Id  + "')";
+            string sql = "insert into transaksis(tanggal, jumlah, keterangan, karyawans_id) values('" +
+                t.Tanggal + "','" + t.Jumlah + "','" + t.Keterangan + "','";
+
+            if (t.Karyawan != null)
+            {
+                sql += "'" + t.Karyawan.Id + "')";
+            }
+            else
+            {
+                sql += "')";
+            }
             int jumlah = Koneksi.JalankanPerintahDML(sql);
 
             if (jumlah == 0)

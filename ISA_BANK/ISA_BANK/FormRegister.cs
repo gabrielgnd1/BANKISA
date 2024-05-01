@@ -78,6 +78,7 @@ namespace ISA_BANK
             {
                 txtPassword.Text = "";
                 txtPassword.ForeColor = Color.Black;
+                txtPassword.PasswordChar = '*';
             }
         }
 
@@ -87,6 +88,7 @@ namespace ISA_BANK
             {
                 txtPassword.Text = "Input Your Password";
                 txtPassword.ForeColor = Color.Silver;
+                txtPassword.PasswordChar = '\0';
             }
         }
 

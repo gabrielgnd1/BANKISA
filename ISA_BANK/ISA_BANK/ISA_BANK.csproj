@@ -100,6 +100,9 @@
   <ItemGroup>
     <Compile Include="DB_CLASS\AES.cs" />
     <Compile Include="DB_CLASS\Cabang.cs" />
+    <Compile Include="DB_CLASS\CustomPrintcs.cs" />
+    <Compile Include="DB_CLASS\EasKrim.cs" />
+    <Compile Include="DB_CLASS\FormHome.cs" />
     <Compile Include="DB_CLASS\Karyawan.cs" />
     <Compile Include="DB_CLASS\Koneksi.cs" />
     <Compile Include="DB_CLASS\Nasabah.cs" />
@@ -129,6 +132,12 @@
     </Compile>
     <Compile Include="FormCreateNewBankAccount.Designer.cs">
       <DependentUpon>FormCreateNewBankAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDisplayAccKaryawan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDisplayAccKaryawan.Designer.cs">
+      <DependentUpon>FormDisplayAccKaryawan.cs</DependentUpon>
     </Compile>
     <Compile Include="FormDisplayAllAccount.cs">
       <SubType>Form</SubType>
@@ -211,6 +220,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormCreateNewBankAccount.resx">
       <DependentUpon>FormCreateNewBankAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDisplayAccKaryawan.resx">
+      <DependentUpon>FormDisplayAccKaryawan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormDisplayAllAccount.resx">
       <DependentUpon>FormDisplayAllAccount.cs</DependentUpon>

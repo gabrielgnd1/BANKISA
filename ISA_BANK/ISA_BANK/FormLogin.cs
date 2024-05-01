@@ -43,6 +43,7 @@ namespace ISA_BANK
             {
                 txtPassword.Text = "";
                 txtPassword.ForeColor = Color.Black;
+                txtPassword.PasswordChar = '*';
             }
         }
 
@@ -50,6 +51,7 @@ namespace ISA_BANK
         {
             if (txtPassword.Text == "")
             {
+                txtPassword.PasswordChar = '\0';
                 txtPassword.Text = "Input Your Password";
                 txtPassword.ForeColor = Color.Silver;
                 MessageBox.Show("Input Password first");
@@ -105,7 +107,7 @@ namespace ISA_BANK
                     //{
                     FormMain frm = (FormMain)this.Owner;
                     frm.karyawan = k;
-                    MessageBox.Show("Selamat Datang di Bank ISA.", "Login Berhasil");
+                    //MessageBox.Show("Selamat Datang di Bank ISA.", "Login Berhasil");
 
                     frm.SetHakAkses();
 
