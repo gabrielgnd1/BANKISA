@@ -33,7 +33,7 @@ namespace ISA_BANK
             if (rekening != null )
             {
                 custName.Text = rekening.Nasabah.Nama;
-                nikNum.Text = rekening.Nasabah.Nik;
+                nikNum.Text =AES.Decrypt(rekening.Nasabah.Nik);
                 curBalance.Text = rekening.Jumlah_saldo.ToString("C", culture);
             }
             else

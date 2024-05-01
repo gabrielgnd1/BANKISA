@@ -123,6 +123,18 @@ namespace ISA_BANK.DB_CLASS
 
             Koneksi.JalankanPerintahQuery(perintah); //kirim ke command
         }
+
+
+
+        public static void DepositData(Rekening rek, int jumlah_penambahan)
+        {   //susun perintah query
+            string perintah = "UPDATE rekenings SET jumlah_saldo = jumlah_saldo +" + jumlah_penambahan + " WHERE nasabahs_id = " + rek.Nasabah.Id + "";
+
+            Koneksi.JalankanPerintahQuery(perintah); //kirim ke command
+        }
+
         #endregion
     }
+
+
 }

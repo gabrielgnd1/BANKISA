@@ -21,10 +21,9 @@ namespace ISA_BANK
         FormMain frmMain;
         List<Nasabah> listNasabah = new List<Nasabah>();
 
-        
+
         private void FormAddRekening_Load(object sender, EventArgs e)
         {
-
             frmMain = (FormMain)this.Owner;
             listNasabah = Nasabah.BacaData("", "");
 
@@ -34,10 +33,17 @@ namespace ISA_BANK
                 nasabah.Nik = AES.Decrypt(nasabah.Nik);
             }
 
+            // Add an empty item as the first item in the list
+            listNasabah.Insert(0, new Nasabah { Id = -1, Nik = "" }); // You can set appropriate default values
+
             cboNik.DataSource = listNasabah;
-            cboNik.DisplayMember = "NIK";
+            cboNik.DisplayMember = "Nik";
             cboNik.ValueMember = "Id";
+
+            // Select the first item in the combo box (empty item)
+            cboNik.SelectedIndex = 0;
         }
+
 
         private void cboNik_SelectedIndexChanged(object sender, EventArgs e)
         {
