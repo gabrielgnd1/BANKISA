@@ -111,7 +111,7 @@ namespace ISA_BANK.DB_CLASS
             }
             else
             {
-                sql = "select * from nasabahs where" + kriteria + " like %" + nilaiKriteria + "%";
+                sql = "select * from nasabahs where " + kriteria + " like '%" + nilaiKriteria + "%'";
             }
 
             MySqlDataReader hasil = Koneksi.JalankanPerintahQuery(sql);

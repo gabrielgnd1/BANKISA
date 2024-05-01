@@ -71,6 +71,7 @@
             this.btnSearch.TabIndex = 11;
             this.btnSearch.Text = "Search";
             this.btnSearch.UseVisualStyleBackColor = false;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // textBox1
             // 
@@ -82,12 +83,13 @@
             // 
             // cbSearchBy
             // 
+            this.cbSearchBy.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.cbSearchBy.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.cbSearchBy.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbSearchBy.FormattingEnabled = true;
             this.cbSearchBy.Items.AddRange(new object[] {
             "Fullname",
-            "NIK",
-            "Card Number"});
+            "NIK"});
             this.cbSearchBy.Location = new System.Drawing.Point(173, 31);
             this.cbSearchBy.Name = "cbSearchBy";
             this.cbSearchBy.Size = new System.Drawing.Size(148, 35);
@@ -118,6 +120,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormDisplayAllAccount";
             this.Text = "All Acoount";
+            this.Load += new System.EventHandler(this.FormDisplayAllAccount_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panelSearch.ResumeLayout(false);
             this.panelSearch.PerformLayout();
