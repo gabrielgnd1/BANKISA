@@ -60,20 +60,3 @@ Follow these steps to set up and run the project on your local machine.
 
 **This project is for educational purposes only.** It should **not** be used for any real-world banking or financial applications. While security measures have been implemented, the code is intended as a demonstration and may not cover all real-world security threats.
 
----
-
-### 📸 Screenshots
-
-*(Tambahkan tangkapan layar di sini untuk menunjukkan tampilan aplikasi Anda)*
-
----
-
-### 🙏 Acknowledgments
-
-This project was developed for the **Information Security Assurance** course. A special thank you to my lecturer for the guidance and valuable insights provided throughout the course.
-
----
-
-### 📄 License
-
-This project is licensed under the [MIT License](https://opensource.org/licenses/MIT). See the `LICENSE` file for more details.
