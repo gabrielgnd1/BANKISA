@@ -24,10 +24,9 @@ This project was developed to apply theoretical knowledge of information securit
 
 This project was built using the following technologies:
 
-* **Backend:** (Contoh: PHP, Node.js, atau Python)
+* **Backend:**  PHP
 * **Frontend:** HTML, CSS, JavaScript
-* **Database:** (Contoh: MySQL, PostgreSQL)
-* **Framework:** (Jika menggunakan: misalnya, Laravel, Express.js, atau Flask)
+* **Database:** MySQL
 
 ---
 
